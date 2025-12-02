@@ -1,76 +1,78 @@
-import { Building2, MapPin, Calendar, ExternalLink } from "lucide-react";
-
-const experiences = [
-  {
-    company: "Nearsure",
-    role: "Senior Software Engineer",
-    period: "Current",
-    location: "Remote - USA Client",
-    client: "Cenexel",
-    clientDescription: "Healthcare & Clinical Research",
-    highlights: [
-      "Working directly with US-based healthcare company",
-      "Building scalable solutions for clinical research",
-      "Full-stack development with modern technologies",
-    ],
-    flag: "🇺🇸",
-  },
-  {
-    company: "Code1",
-    role: "Senior Software Engineer",
-    period: "Previous",
-    location: "Remote - USA Client",
-    client: "Real Page",
-    clientDescription: "Real Estate Technology",
-    highlights: [
-      "Enterprise real estate solutions for US market",
-      "High-scale applications serving millions of users",
-      "Collaborative work with distributed teams",
-    ],
-    flag: "🇺🇸",
-  },
-  {
-    company: "Jaya",
-    role: "Software Engineer",
-    period: "Previous",
-    location: "Remote - USA Client",
-    client: "PWN Health",
-    clientDescription: "Healthcare Technology",
-    highlights: [
-      "Healthcare platform development",
-      "HIPAA-compliant solutions",
-      "Integration with US healthcare systems",
-    ],
-    flag: "🇺🇸",
-  },
-  {
-    company: "Startup Co-founder",
-    role: "Co-founder & Tech Lead",
-    period: "2017 - Previous",
-    location: "Copenhagen, Denmark",
-    client: "European Expansion",
-    clientDescription: "Scandinavia, Germany & Europe",
-    highlights: [
-      "Founded and scaled a tech startup",
-      "Expanded operations across multiple European countries",
-      "Built and led engineering teams",
-    ],
-    flag: "🇩🇰",
-  },
-];
+import { Building2, MapPin, Calendar } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Experience = () => {
+  const { t } = useLanguage();
+  
+  const experiences = [
+    {
+      company: "Nearsure",
+      role: "Senior Software Engineer",
+      period: t('exp.current'),
+      location: "Remote - USA Client",
+      client: "Cenexel",
+      clientDescription: "Healthcare & Clinical Research",
+      highlights: [
+        "Working directly with US-based healthcare company",
+        "Building scalable solutions for clinical research",
+        "Full-stack development with modern technologies",
+      ],
+      flag: "🇺🇸",
+    },
+    {
+      company: "Code1",
+      role: "Senior Software Engineer",
+      period: t('exp.previous'),
+      location: "Remote - USA Client",
+      client: "Real Page",
+      clientDescription: "Real Estate Technology",
+      highlights: [
+        "Enterprise real estate solutions for US market",
+        "High-scale applications serving millions of users",
+        "Collaborative work with distributed teams",
+      ],
+      flag: "🇺🇸",
+    },
+    {
+      company: "Jaya",
+      role: "Software Engineer",
+      period: t('exp.previous'),
+      location: "Remote - USA Client",
+      client: "PWN Health",
+      clientDescription: "Healthcare Technology",
+      highlights: [
+        "Healthcare platform development",
+        "HIPAA-compliant solutions",
+        "Integration with US healthcare systems",
+      ],
+      flag: "🇺🇸",
+    },
+    {
+      company: "Startup Co-founder",
+      role: "Co-founder & Tech Lead",
+      period: "2017 - " + t('exp.previous'),
+      location: "Copenhagen, Denmark",
+      client: "European Expansion",
+      clientDescription: "Scandinavia, Germany & Europe",
+      highlights: [
+        "Founded and scaled a tech startup",
+        "Expanded operations across multiple European countries",
+        "Built and led engineering teams",
+      ],
+      flag: "🇩🇰",
+    },
+  ];
+
   return (
     <section id="experience" className="py-24 bg-muted/30 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">Career Journey</span>
+          <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">{t('exp.label')}</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            International <span className="text-gradient-gold">Experience</span>
+            {t('exp.title')} <span className="text-gradient-gold">{t('exp.title_highlight')}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A track record of delivering excellence for American and European companies, 
-            from startup founding to enterprise solutions.
+            {t('exp.description')}
           </p>
         </div>
         

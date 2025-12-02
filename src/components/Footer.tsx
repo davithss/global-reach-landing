@@ -1,7 +1,10 @@
 import logo from "@/assets/thiesse-logo.png";
 import { Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-navy-deep py-12">
       <div className="container mx-auto px-6">
@@ -10,7 +13,7 @@ const Footer = () => {
             <img src={logo} alt="Thiesse Softwares" className="h-10 w-auto" />
             <div>
               <p className="font-semibold text-primary-foreground">Thiesse Softwares</p>
-              <p className="text-sm text-primary-foreground/60">International Tech Consulting</p>
+              <p className="text-sm text-primary-foreground/60">{t('footer.company')}</p>
             </div>
           </div>
           
@@ -34,7 +37,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-primary-foreground/10 text-center">
           <p className="text-sm text-primary-foreground/40">
-            © {new Date().getFullYear()} Thiesse Softwares. All rights reserved. | USA & Europe Markets Since 2017
+            © {new Date().getFullYear()} Thiesse Softwares. {t('footer.rights')} | {t('footer.markets')}
           </p>
         </div>
       </div>

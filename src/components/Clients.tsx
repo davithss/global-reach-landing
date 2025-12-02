@@ -1,4 +1,5 @@
 import { Shield, Building, Heart, Home } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const clients = [
   {
@@ -32,6 +33,8 @@ const clients = [
 ];
 
 const Clients = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="clients" className="py-24 bg-hero-gradient relative overflow-hidden">
       {/* Background decorations */}
@@ -42,17 +45,17 @@ const Clients = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">Trusted By</span>
+          <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">{t('clients.label')}</span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            Enterprise <span className="text-gradient-gold">Clients</span>
+            {t('clients.title')} <span className="text-gradient-gold">{t('clients.title_highlight')}</span>
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto">
-            Working with leading American companies across healthcare, real estate, and technology sectors.
+            {t('clients.description')}
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {clients.map((client, index) => (
+          {clients.map((client) => (
             <div 
               key={client.name}
               className="group p-8 bg-card/10 backdrop-blur-sm rounded-2xl border border-primary-foreground/10 hover:border-gold/30 hover:bg-card/20 transition-all duration-300"
@@ -78,15 +81,15 @@ const Clients = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-center">
           <div className="px-8">
             <p className="text-3xl font-bold text-gradient-gold mb-2">100%</p>
-            <p className="text-primary-foreground/60 text-sm">Client Satisfaction</p>
+            <p className="text-primary-foreground/60 text-sm">{t('clients.satisfaction')}</p>
           </div>
           <div className="px-8 border-l border-primary-foreground/10">
             <p className="text-3xl font-bold text-gradient-gold mb-2">5+</p>
-            <p className="text-primary-foreground/60 text-sm">Major US Projects</p>
+            <p className="text-primary-foreground/60 text-sm">{t('clients.projects')}</p>
           </div>
           <div className="px-8 border-l border-primary-foreground/10">
             <p className="text-3xl font-bold text-gradient-gold mb-2">3+</p>
-            <p className="text-primary-foreground/60 text-sm">European Countries</p>
+            <p className="text-primary-foreground/60 text-sm">{t('clients.eu_countries')}</p>
           </div>
         </div>
       </div>

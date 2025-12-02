@@ -1,37 +1,40 @@
 import { Code, Globe2, Rocket, Users } from "lucide-react";
 import speakingImage from "@/assets/diego-speaking.jpeg";
-
-const stats = [
-  { value: "8+", label: "Years Experience" },
-  { value: "3+", label: "Countries Worked" },
-  { value: "5+", label: "Major US Clients" },
-  { value: "1", label: "Startup Co-founded" },
-];
-
-const highlights = [
-  {
-    icon: Globe2,
-    title: "Global Reach",
-    description: "Working with American and European companies since 2017, delivering solutions across multiple time zones.",
-  },
-  {
-    icon: Rocket,
-    title: "Startup Founder",
-    description: "Co-founded a tech startup in Denmark, expanding across Scandinavia and Germany.",
-  },
-  {
-    icon: Code,
-    title: "Technical Excellence",
-    description: "Full-stack expertise with focus on scalable architectures and modern technologies.",
-  },
-  {
-    icon: Users,
-    title: "Enterprise Clients",
-    description: "Trusted by major US companies including healthcare and real estate sectors.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+  
+  const stats = [
+    { value: "18+", label: t('stat.years_exp') },
+    { value: "8+", label: t('stat.intl_exp') },
+    { value: "3+", label: t('stat.countries') },
+    { value: "1", label: t('stat.startup') },
+  ];
+
+  const highlights = [
+    {
+      icon: Globe2,
+      title: t('highlight.global.title'),
+      description: t('highlight.global.desc'),
+    },
+    {
+      icon: Rocket,
+      title: t('highlight.startup.title'),
+      description: t('highlight.startup.desc'),
+    },
+    {
+      icon: Code,
+      title: t('highlight.tech.title'),
+      description: t('highlight.tech.desc'),
+    },
+    {
+      icon: Users,
+      title: t('highlight.enterprise.title'),
+      description: t('highlight.enterprise.desc'),
+    },
+  ];
+
   return (
     <section id="about" className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -55,26 +58,17 @@ const About = () => {
         {/* About content */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">About Me</span>
+            <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">{t('about.label')}</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Bridging Continents Through <span className="text-gradient-gold">Technology</span>
+              {t('about.title')} <span className="text-gradient-gold">{t('about.title_highlight')}</span>
             </h2>
             <div className="space-y-4 text-muted-foreground">
+              <p>{t('about.p1')}</p>
+              <p>{t('about.p2')}</p>
               <p>
-                With over 8 years of experience working with international clients, I specialize in 
-                building robust software solutions that meet the demanding standards of both American 
-                and European markets.
-              </p>
-              <p>
-                My journey includes co-founding a startup in Denmark, where we successfully expanded 
-                operations across Scandinavia, Germany, and multiple European countries. This 
-                entrepreneurial experience gave me unique insights into building products that scale 
-                across different markets and cultures.
-              </p>
-              <p>
-                Today, through <span className="text-foreground font-semibold">Thiesse Softwares</span>, 
-                I continue to partner with leading American companies, delivering high-quality solutions 
-                in healthcare, real estate, and enterprise sectors.
+                {t('about.p3').split('Thiesse Softwares')[0]}
+                <span className="text-foreground font-semibold">Thiesse Softwares</span>
+                {t('about.p3').split('Thiesse Softwares')[1]}
               </p>
             </div>
           </div>
@@ -83,13 +77,13 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover">
               <img 
                 src={speakingImage} 
-                alt="Diego Thiesse speaking at a tech event" 
+                alt="Davi Thiesse speaking at a tech event" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-primary-foreground font-medium">Tech Speaker & Mentor</p>
-                <p className="text-primary-foreground/70 text-sm">Sharing knowledge about working internationally</p>
+                <p className="text-primary-foreground font-medium">{t('about.speaker')}</p>
+                <p className="text-primary-foreground/70 text-sm">{t('about.speaker_desc')}</p>
               </div>
             </div>
             {/* Decorative element */}
@@ -100,7 +94,7 @@ const About = () => {
         
         {/* Highlights grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {highlights.map((item, index) => (
+          {highlights.map((item) => (
             <div 
               key={item.title}
               className="group p-6 bg-card rounded-xl border border-border/50 hover:border-gold/30 hover:shadow-card-hover transition-all duration-300"
