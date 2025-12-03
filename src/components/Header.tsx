@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/thiesse-logo.png";
+import logo from "@/assets/thiesse-logo-premium.png";
 import LanguageToggle from "./LanguageToggle";
 import { useLanguage } from "@/contexts/LanguageContext";
 

@@ -1,0 +1,86 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente principal premium -->
+    <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0052A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003D7A;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente de brilho -->
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Sombra suave -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Efeito de profundidade -->
+    <filter id="depth" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Círculos sutis de fundo -->
+  <circle cx="400" cy="350" r="200" fill="url(#premiumGradient)" opacity="0.03"/>
+  <circle cx="400" cy="350" r="160" fill="url(#premiumGradient)" opacity="0.04"/>
+  
+  <!-- T Elegante e Moderno -->
+  <g filter="url(#depth)">
+    <!-- Letra T principal -->
+    <path d="M 260 240 L 540 240 L 540 295 L 430 295 L 430 510 L 370 510 L 370 295 L 260 295 Z" 
+          fill="url(#premiumGradient)"/>
+    
+    <!-- Runa Fehu (ᚠ) discreta - símbolo de prosperidade -->
+    <g opacity="0.6">
+      <!-- Haste vertical da runa -->
+      <rect x="485" y="310" width="6" height="130" fill="url(#premiumGradient)"/>
+      <!-- Ramo superior direito ascendente -->
+      <path d="M 488 320 L 488 326 L 518 316 L 518 310 Z" fill="url(#premiumGradient)"/>
+      <!-- Ramo inferior direito ascendente -->
+      <path d="M 488 360 L 488 366 L 518 356 L 518 350 Z" fill="url(#premiumGradient)"/>
+    </g>
+    
+    <!-- Brilho premium no T -->
+    <rect x="260" y="240" width="280" height="30" fill="url(#shineGradient)" opacity="0.35"/>
+  </g>
+  
+  <!-- Nome THIESSE com kerning refinado -->
+  <g filter="url(#softShadow)">
+    <text x="400" y="580" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" 
+          fill="url(#premiumGradient)" text-anchor="middle" letter-spacing="8">
+      THIESSE
+    </text>
+  </g>
+  
+  <!-- Subtitle SOFTWARES -->
+  <g opacity="0.85">
+    <text x="400" y="640" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="300" 
+          fill="url(#premiumGradient)" text-anchor="middle" letter-spacing="16">
+      SOFTWARES
+    </text>
+  </g>
+  
+  <!-- Linha decorativa inferior -->
+  <line x1="280" y1="665" x2="520" y2="665" stroke="url(#premiumGradient)" stroke-width="2" opacity="0.4"/>
+</svg>

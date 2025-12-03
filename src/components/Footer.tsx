@@ -1,4 +1,4 @@
-import logo from "@/assets/thiesse-logo.png";
+import logo from "@/assets/thiesse-logo-premium.png";
 import { Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
