@@ -24,7 +24,7 @@ const clients = [
     country: "USA",
   },
   {
-    name: "European Startup",
+    name: "Crably Startup",
     sector: "Tech Startup",
     description: "Scandinavia, Germany & multiple European markets",
     icon: Building,
@@ -84,11 +84,11 @@ const Clients = () => {
             <p className="text-primary-foreground/60 text-sm">{t('clients.satisfaction')}</p>
           </div>
           <div className="px-8 border-l border-primary-foreground/10">
-            <p className="text-3xl font-bold text-gradient-gold mb-2">5+</p>
+            <p className="text-3xl font-bold text-gradient-gold mb-2">12+</p>
             <p className="text-primary-foreground/60 text-sm">{t('clients.projects')}</p>
           </div>
           <div className="px-8 border-l border-primary-foreground/10">
-            <p className="text-3xl font-bold text-gradient-gold mb-2">3+</p>
+            <p className="text-3xl font-bold text-gradient-gold mb-2">7+</p>
             <p className="text-primary-foreground/60 text-sm">{t('clients.eu_countries')}</p>
           </div>
         </div>

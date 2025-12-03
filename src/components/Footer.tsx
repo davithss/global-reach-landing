@@ -27,7 +27,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:contact@thiesse.dev"
+              href="mailto:davi@thiesse.com.br"
               className="text-primary-foreground/60 hover:text-gold transition-colors"
             >
               <Mail className="w-5 h-5" />

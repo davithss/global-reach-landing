@@ -7,7 +7,7 @@ const Experience = () => {
   const experiences = [
     {
       company: "Nearsure",
-      role: "Senior Software Engineer",
+      role: "Tech Lead / Senior Software Engineer",
       period: t('exp.current'),
       location: "Remote - USA Client",
       client: "Cenexel",
@@ -21,7 +21,7 @@ const Experience = () => {
     },
     {
       company: "Code1",
-      role: "Senior Software Engineer",
+      role: "Engineering Manager / Senior Software Engineer",
       period: t('exp.previous'),
       location: "Remote - USA Client",
       client: "Real Page",
@@ -32,6 +32,20 @@ const Experience = () => {
         "Collaborative work with distributed teams",
       ],
       flag: "🇺🇸",
+    },
+    {
+      company: "Crably",
+      role: "Co-founder & Tech Lead",
+      period: t('exp.previous'),
+      location: "Copenhagen, Denmark",
+      client: "European Expansion",
+      clientDescription: "Scandinavia, Germany, Portugal, Spain and others",
+      highlights: [
+        "Founded and scaled a tech startup",
+        "Expanded operations across multiple European countries",
+        "Built and led engineering teams",
+      ],
+      flag: "🇩🇰",
     },
     {
       company: "Jaya",
@@ -46,21 +60,7 @@ const Experience = () => {
         "Integration with US healthcare systems",
       ],
       flag: "🇺🇸",
-    },
-    {
-      company: "Startup Co-founder",
-      role: "Co-founder & Tech Lead",
-      period: "2017 - " + t('exp.previous'),
-      location: "Copenhagen, Denmark",
-      client: "European Expansion",
-      clientDescription: "Scandinavia, Germany & Europe",
-      highlights: [
-        "Founded and scaled a tech startup",
-        "Expanded operations across multiple European countries",
-        "Built and led engineering teams",
-      ],
-      flag: "🇩🇰",
-    },
+    }
   ];
 
   return (

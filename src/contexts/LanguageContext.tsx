@@ -19,8 +19,8 @@ export const translations: Translations = {
   // Hero
   'hero.badge': { en: 'International Tech Consultant', pt: 'Consultor de Tech Internacional' },
   'hero.subtitle': { en: 'Senior Software Engineer & Entrepreneur', pt: 'Engenheiro de Software Sênior & Empreendedor' },
-  'hero.description': { en: 'Building world-class software solutions for American and European markets since 2017. Co-founder experience in Denmark, serving clients across Scandinavia, Germany, and beyond.', pt: 'Construindo soluções de software de classe mundial para mercados americanos e europeus desde 2017. Experiência como co-fundador na Dinamarca, atendendo clientes na Escandinávia, Alemanha e além.' },
-  'hero.markets': { en: 'USA & Europe Markets', pt: 'Mercados EUA & Europa' },
+  'hero.description': { en: 'Building world-class software solutions for American and European markets since 2017. Co-founder experience in Denmark, serving clients across Scandinavia, Germany, and beyond.', pt: 'Construindo soluções de software de alto nível para mercados americanos e europeus desde 2017. Experiência como co-fundador na Dinamarca, atendendo clientes na Escandinávia, Alemanha e outros países.' },
+  'hero.markets': { en: 'USA & Europe Markets', pt: 'Mercados Americano & Europeu' },
   'hero.years_intl': { en: 'Years International Experience', pt: 'Anos de Experiência Internacional' },
   'hero.years_total': { en: 'Years Total Experience', pt: 'Anos de Experiência Total' },
   'hero.cta': { en: 'Work With Me', pt: 'Trabalhe Comigo' },
