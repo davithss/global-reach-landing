@@ -35,15 +35,6 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center">
-                      <Calendar className="w-5 h-5 text-gold" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">{t('contact.availability')}</p>
-                      <p className="text-muted-foreground text-sm">{t('contact.availability_desc')}</p>
-                    </div>
-                  </div>
                 </div>
                 
                 <div className="mt-8 pt-8 border-t border-border">
