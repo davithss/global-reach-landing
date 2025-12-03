@@ -35,7 +35,7 @@ const Experience = () => {
     },
     {
       company: "Crably",
-      role: "Co-founder & Tech Lead",
+      role: "Co-founder & CTO",
       period: t('exp.previous'),
       location: "Copenhagen, Denmark",
       client: "European Expansion",
