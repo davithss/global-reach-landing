@@ -11,9 +11,6 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <img src={logo} alt="Thiesse Softwares" className="h-20 w-auto" />
-          <span className="font-outfit font-semibold text-lg text-foreground hidden sm:inline">
-            Thiesse Softwares
-          </span>
         </a>
         
         <div className="hidden md:flex items-center gap-8">
