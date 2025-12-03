@@ -10,7 +10,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img src={logo} alt="Thiesse Softwares" className="h-14 w-auto" />
+          <img src={logo} alt="Thiesse Softwares" className="h-20 w-auto" />
           <span className="font-outfit font-semibold text-lg text-foreground hidden sm:inline">
             Thiesse Softwares
           </span>
