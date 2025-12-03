@@ -1,5 +1,5 @@
 import { Code, Globe2, Rocket, Users } from "lucide-react";
-import speakingImage from "@/assets/diego-speaking.jpeg";
+import speakingImage from "@/assets/davi-speaking.jpeg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {

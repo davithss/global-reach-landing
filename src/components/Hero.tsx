@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Globe, Linkedin } from "lucide-react";
-import heroImage from "@/assets/diego-hero.jpeg";
+import heroImage from "@/assets/davi-hero.jpeg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
