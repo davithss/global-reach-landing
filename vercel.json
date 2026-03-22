@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/mission-control", "destination": "/mission-control/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
