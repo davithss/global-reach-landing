@@ -104,19 +104,19 @@ export default function VacinApp() {
           {[
             {
               icon: <Clock className="w-7 h-7 text-red-400" />,
-              title: ""Já passou da data?"",
+              title: "Já passou da data?",
               body:
                 "Você olha para a caderneta de vacinação e não consegue decifrar as letras do médico. A data da próxima dose ficou perdida entre consultas, trabalho e noites sem dormir.",
             },
             {
               icon: <AlertTriangle className="w-7 h-7 text-yellow-400" />,
-              title: ""E se eu tiver esquecido uma?"",
+              title: "E se eu tiver esquecido uma?",
               body:
                 "Sua filha está saudável — mas aquela dúvida fica roendo. A vacina da meningite foi no mês certo? E a do rotavírus, que só pode ser tomada até os 7 meses e 29 dias?",
             },
             {
               icon: <HeartPulse className="w-7 h-7 text-pink-400" />,
-              title: ""Não quero que nada aconteça com ele."",
+              title: "Não quero que nada aconteça com ele.",
               body:
                 "Sarampo, coqueluche, meningite — doenças que você achava extintas ainda existem. E a única coisa que protege o seu filho é uma dose dada na hora certa.",
             },
