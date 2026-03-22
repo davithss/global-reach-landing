@@ -1,6 +1,13 @@
 {
+  "headers": [
+    {
+      "source": "/mission-control",
+      "headers": [
+        { "key": "x-mc-route", "value": "true" }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/mission-control", "destination": "/mission-control/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
