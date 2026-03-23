@@ -8,6 +8,8 @@
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/mission-control/politica-de-privacidade", "destination": "/index.html" },
+    { "source": "/mission-control", "destination": "/mission-control/index.html" },
+    { "source": "/((?!mission-control).*)", "destination": "/index.html" }
   ]
 }
