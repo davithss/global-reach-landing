@@ -160,7 +160,7 @@ export default function MissionControl() {
               ))}
             </ul>
             <a
-              href="mailto:contato@thiesse.com.br?subject=Quero o WhatsApp Business AI"
+              href="https://payfast.greenn.com.br/g57my48"
               className="block text-center rounded-xl bg-blue-600 text-white py-3 font-bold hover:bg-blue-500 transition-colors"
             >
               Começar agora
@@ -197,7 +197,7 @@ export default function MissionControl() {
               ))}
             </ul>
             <a
-              href="mailto:contato@thiesse.com.br?subject=Quero o Instagram AI"
+              href="https://payfast.greenn.com.br/rq2cgye"
               className="block text-center rounded-xl bg-purple-600 text-white py-3 font-bold hover:bg-purple-500 transition-colors"
             >
               Começar agora
@@ -239,7 +239,7 @@ export default function MissionControl() {
               ))}
             </ul>
             <a
-              href="mailto:contato@thiesse.com.br?subject=Quero o Combo WhatsApp + Instagram"
+              href="https://payfast.greenn.com.br/42fkh99"
               className="block text-center rounded-xl py-3 font-bold text-white transition-colors"
               style={{ background: "linear-gradient(135deg, #2563eb, #7c3aed)" }}
             >
