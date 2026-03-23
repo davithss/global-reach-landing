@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-lg font-semibold text-white mb-3">1. Quem somos</h2>
             <p>
               O <strong>Mission Control</strong> é um serviço de automação de atendimento via WhatsApp e Instagram,
-              desenvolvido e operado por <strong>Global Reach</strong>. Esta Política de Privacidade descreve como
+              desenvolvido e operado por <strong>Thiesse Softwares</strong>. Esta Política de Privacidade descreve como
               coletamos, usamos e protegemos os dados de nossos clientes e usuários finais.
             </p>
           </section>
@@ -110,8 +110,8 @@ const PrivacyPolicy = () => {
             </ul>
             <p className="mt-3">
               Para exercer seus direitos, entre em contato pelo e-mail:{" "}
-              <a href="mailto:contato@globalreach.com.br" className="text-purple-400 hover:underline">
-                contato@globalreach.com.br
+              <a href="mailto:contato@thiesse.com.br" className="text-purple-400 hover:underline">
+                contato@thiesse.com.br
               </a>
             </p>
           </section>
@@ -139,8 +139,8 @@ const PrivacyPolicy = () => {
               Em caso de dúvidas sobre esta política ou sobre o tratamento de dados, entre em contato:
             </p>
             <div className="mt-3 text-gray-300 space-y-1">
-              <p><strong>Global Reach</strong></p>
-              <p>E-mail: <a href="mailto:contato@globalreach.com.br" className="text-purple-400 hover:underline">contato@globalreach.com.br</a></p>
+              <p><strong>Thiesse Softwares</strong></p>
+              <p>E-mail: <a href="mailto:contato@thiesse.com.br" className="text-purple-400 hover:underline">contato@thiesse.com.br</a></p>
             </div>
           </section>
 
