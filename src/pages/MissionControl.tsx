@@ -1,5 +1,6 @@
 import { Shield, MessageCircle, Instagram, Bot, CheckCircle2, ArrowRight, ChevronDown, Clock, TrendingUp, Zap } from "lucide-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const FAQ_ITEMS = [
   {
@@ -47,6 +48,17 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function MissionControl() {
   return (
     <div className="min-h-screen bg-gray-950 text-white font-sans">
+      <Helmet>
+        <title>Mission Control — Agente de IA para WhatsApp e Instagram</title>
+        <meta name="description" content="Agente de IA para WhatsApp e Instagram que atende, agenda e vende enquanto você dorme. A partir de R$297/mês." />
+        <meta property="og:title" content="Mission Control — Agente de IA para WhatsApp e Instagram" />
+        <meta property="og:description" content="Agente de IA para WhatsApp e Instagram que atende, agenda e vende enquanto você dorme. A partir de R$297/mês." />
+        <meta property="og:image" content="https://thiesse.com.br/og-mission-control.png" />
+        <meta property="og:url" content="https://thiesse.com.br/mission-control" />
+        <meta name="twitter:title" content="Mission Control — Agente de IA para WhatsApp e Instagram" />
+        <meta name="twitter:description" content="Agente de IA para WhatsApp e Instagram que atende, agenda e vende enquanto você dorme." />
+        <meta name="twitter:image" content="https://thiesse.com.br/og-mission-control.png" />
+      </Helmet>
 
       {/* Header */}
       <header className="border-b border-gray-800 px-6 py-4">
