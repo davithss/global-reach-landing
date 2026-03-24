@@ -23,15 +23,13 @@
 
     <link rel="canonical" href="https://thiesse.com.br/mission-control" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <script>
-      // Redirect to SPA
-      window.location.href = "/mission-control#loaded";
-    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   </head>
+
   <body>
-    <noscript>
-      <meta http-equiv="refresh" content="0;url=/mission-control" />
-    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
