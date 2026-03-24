@@ -9,7 +9,7 @@
   ],
   "rewrites": [
     { "source": "/mission-control/politica-de-privacidade", "destination": "/index.html" },
-    { "source": "/mission-control", "destination": "/index.html" },
+    { "source": "/mission-control/(.*)", "destination": "/index.html" },
     { "source": "/((?!mission-control).*)", "destination": "/index.html" }
   ]
 }
