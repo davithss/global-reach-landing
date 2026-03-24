@@ -17,7 +17,7 @@ const pages = [
     title: "Mission Control — Agente de IA para WhatsApp e Instagram",
     description:
       "Agente de IA para WhatsApp e Instagram que atende, agenda e vende enquanto você dorme. A partir de R$297/mês.",
-    ogImage: "https://thiesse.com.br/og-mission-control.png",
+    ogImage: "https://thiesse.com.br/og-mission-control.png?v=2",
     canonical: "https://thiesse.com.br/mission-control",
   },
 ];
