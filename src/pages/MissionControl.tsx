@@ -96,7 +96,7 @@ export default function MissionControl() {
             Ver planos <ArrowRight className="h-5 w-5" />
           </a>
           <a
-            href="mailto:contato@thiesse.com.br"
+            href="https://wa.me/557981029218?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+Mission+Control"
             className="inline-flex items-center gap-2 rounded-xl border border-gray-700 text-gray-300 px-8 py-4 font-semibold text-lg hover:border-gray-500 hover:text-white transition-colors"
           >
             Falar com a equipe
@@ -359,7 +359,7 @@ export default function MissionControl() {
           Não precisa assinar nada agora. Manda um e-mail, a gente entende seu negócio e te explica como funciona. Sem enrolação.
         </p>
         <a
-          href="mailto:contato@thiesse.com.br?subject=Quero conhecer o Mission Control"
+          href="https://wa.me/557981029218?text=Ol%C3%A1%2C+quero+conhecer+o+Mission+Control"
           className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 font-bold text-xl hover:opacity-90 transition-opacity"
         >
           Começar agora <ArrowRight className="h-6 w-6" />
@@ -389,7 +389,7 @@ export default function MissionControl() {
       <footer className="border-t border-gray-800 px-6 py-8 text-center text-sm text-gray-500">
         <p>© {new Date().getFullYear()} Thiesse — Mission Control. Todos os direitos reservados.</p>
         <p className="mt-1">
-          <a href="mailto:contato@thiesse.com.br" className="hover:text-gray-300 transition-colors">contato@thiesse.com.br</a>
+          <a href="https://wa.me/557981029218?text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+Mission+Control" className="hover:text-gray-300 transition-colors">💬 WhatsApp</a>
           {" · "}
           <a href="#privacidade" className="hover:text-gray-300 transition-colors">Política de Privacidade</a>
         </p>
