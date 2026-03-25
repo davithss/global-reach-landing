@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import MissionControl from "./pages/MissionControl";
 import VacinApp from "./pages/VacinApp";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/mission-control" element={<MissionControl />} />
           <Route path="/vacinapp" element={<VacinApp />} />
           <Route path="/mission-control/politica-de-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/mission-control/termos-de-servico" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
