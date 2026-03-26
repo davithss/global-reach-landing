@@ -172,50 +172,77 @@ export default function MissionControl() {
           </div>
 
           {/* Preview do carrossel */}
-          <div className="max-w-2xl mx-auto">
-            <div className="grid grid-cols-5 gap-2">
+          <div className="max-w-3xl mx-auto">
+            <div className="grid grid-cols-3 gap-4 items-stretch">
+
               {/* Slide 1 — Hook */}
-              <div className="col-span-2 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-purple-800 p-4 space-y-2">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xs font-bold text-purple-400 uppercase tracking-wide">Slide 1</span>
-                  <span className="text-xs bg-purple-900/50 text-purple-300 px-1.5 py-0.5 rounded">Hook</span>
+              <div className="rounded-2xl bg-gradient-to-br from-purple-950 to-gray-900 border border-purple-700 p-5 flex flex-col justify-between min-h-[180px] relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-purple-600/10 rounded-full -translate-y-6 translate-x-6" />
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-[10px] font-black text-purple-400 uppercase tracking-widest">Slide 1</span>
+                    <span className="text-[10px] bg-purple-800/60 text-purple-300 px-2 py-0.5 rounded-full font-semibold">Hook</span>
+                  </div>
+                  <p className="text-sm font-bold text-white leading-snug">
+                    "{niche.hook}"
+                  </p>
                 </div>
-                <p className="text-sm font-bold text-white leading-snug">
-                  "{niche.hook}"
-                </p>
-                <p className="text-xs text-gray-500">Para o scroll em 2s</p>
+                <div className="flex items-center gap-1.5 mt-4">
+                  <div className="h-1 w-1 rounded-full bg-purple-400" />
+                  <p className="text-[11px] text-purple-400 font-medium">Para o scroll em 2 segundos</p>
+                </div>
               </div>
 
               {/* Slide 2 — Retention */}
-              <div className="rounded-xl bg-gray-900 border border-gray-700 p-3 space-y-2 flex flex-col justify-between">
+              <div className="rounded-2xl bg-gradient-to-br from-yellow-950/60 to-gray-900 border border-yellow-800/60 p-5 flex flex-col justify-between min-h-[180px] relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-16 h-16 bg-yellow-600/10 rounded-full -translate-y-4 translate-x-4" />
                 <div>
-                  <span className="text-xs font-bold text-yellow-400 uppercase tracking-wide block mb-1">Slide 2</span>
-                  <p className="text-xs text-gray-300 font-medium leading-snug">E o pior é que a maioria não percebe até ser tarde →</p>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-[10px] font-black text-yellow-400 uppercase tracking-widest">Slide 2</span>
+                    <span className="text-[10px] bg-yellow-900/60 text-yellow-300 px-2 py-0.5 rounded-full font-semibold">Retenção</span>
+                  </div>
+                  <p className="text-sm font-semibold text-gray-200 leading-snug">
+                    "E o pior é que a maioria não percebe até ser tarde →"
+                  </p>
                 </div>
-                <p className="text-xs text-gray-600">Retention</p>
-              </div>
-
-              {/* Slides do meio */}
-              <div className="rounded-xl bg-gray-900 border border-gray-700 p-3 space-y-1.5 flex flex-col justify-between">
-                <div>
-                  <span className="text-xs font-bold text-blue-400 uppercase tracking-wide block mb-1">3–4</span>
-                  <p className="text-xs text-gray-400 leading-snug">Valor + desenvolvimento</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="h-1 bg-gray-700 rounded w-full" />
-                  <div className="h-1 bg-gray-700 rounded w-4/5" />
-                  <div className="h-1 bg-gray-700 rounded w-3/5" />
+                <div className="mt-4 space-y-1.5">
+                  <div className="h-1 bg-yellow-900/50 rounded-full w-full" />
+                  <div className="h-1 bg-yellow-900/40 rounded-full w-3/4" />
                 </div>
               </div>
 
               {/* Último — CTA */}
-              <div className="rounded-xl bg-gradient-to-br from-pink-900/30 to-purple-900/30 border border-pink-800 p-3 space-y-2 flex flex-col justify-between">
-                <span className="text-xs font-bold text-pink-400 uppercase tracking-wide">Último</span>
-                <p className="text-xs text-white font-bold leading-snug">"{niche.cta}"</p>
-                <p className="text-xs text-gray-500">CTA do nicho</p>
+              <div className="rounded-2xl bg-gradient-to-br from-pink-950 to-purple-950 border border-pink-700 p-5 flex flex-col justify-between min-h-[180px] relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-pink-600/10 rounded-full -translate-y-6 translate-x-6" />
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-[10px] font-black text-pink-400 uppercase tracking-widest">Último</span>
+                    <span className="text-[10px] bg-pink-900/60 text-pink-300 px-2 py-0.5 rounded-full font-semibold">CTA</span>
+                  </div>
+                  <p className="text-sm font-bold text-white leading-snug">
+                    "{niche.cta}"
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 mt-4">
+                  <div className="h-1 w-1 rounded-full bg-pink-400" />
+                  <p className="text-[11px] text-pink-400 font-medium">Gera saves e shares</p>
+                </div>
               </div>
+
             </div>
-            <p className="text-center text-xs text-gray-500 mt-4">
+
+            {/* Indicador dos slides do meio */}
+            <div className="flex items-center justify-center gap-2 mt-4">
+              <div className="h-1.5 w-1.5 rounded-full bg-purple-500" />
+              <div className="h-1 w-8 rounded-full bg-gray-700" />
+              <div className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
+              <div className="h-1 w-8 rounded-full bg-gray-700" />
+              <span className="text-xs text-gray-600 font-medium">slides 3–4 (valor)</span>
+              <div className="h-1 w-8 rounded-full bg-gray-700" />
+              <div className="h-1.5 w-1.5 rounded-full bg-pink-500" />
+            </div>
+
+            <p className="text-center text-xs text-gray-500 mt-3">
               ✦ Estrutura gerada automaticamente pelo Hook Engine — adaptada para o nicho <strong className="text-gray-400">{niche.label}</strong>
             </p>
           </div>
