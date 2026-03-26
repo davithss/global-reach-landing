@@ -94,23 +94,43 @@ export default function MissionControl() {
 
       {/* HERO */}
       <section className="max-w-4xl mx-auto px-6 py-24 text-center">
-        <div className="inline-flex items-center gap-1.5 rounded-full bg-purple-950 border border-purple-800 px-3 py-1 text-xs font-semibold text-purple-400 mb-8">
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-gray-900 border border-gray-700 px-3 py-1 text-xs font-semibold text-gray-400 mb-8">
           🇧🇷 Para qualquer nicho — Saúde · Moda · Gastronomia · Educação · B2B
         </div>
         <h1 className="text-4xl sm:text-6xl font-bold leading-tight mb-6 tracking-tight">
-          Seu Instagram postando todo dia
+          Atende no WhatsApp 24h.
           <br />
-          <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-            com estrutura viral.
+          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Posta no Instagram todo dia.
           </span>
         </h1>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Hooks que param o scroll. Carrosséis que o algoritmo ama. CTAs que geram saves e compartilhamentos — tudo com a <strong className="text-white">voz da sua marca</strong>, adaptado ao seu nicho.
+          Enquanto você dorme, o Mission Control responde leads, agenda consultas e publica posts virais —
+          tudo com a <strong className="text-white">voz da sua marca</strong>, adaptado ao seu nicho.
         </p>
+
+        {/* Dois pilares em destaque */}
+        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
+          <div className="rounded-xl border border-blue-800 bg-blue-950/30 px-5 py-4 text-left space-y-1">
+            <div className="flex items-center gap-2">
+              <MessageCircle className="h-4 w-4 text-blue-400" />
+              <span className="text-sm font-bold text-blue-300">WhatsApp Business AI</span>
+            </div>
+            <p className="text-xs text-gray-400">Atende, qualifica e agenda automaticamente. Primeiro a responder fecha o cliente.</p>
+          </div>
+          <div className="rounded-xl border border-purple-800 bg-purple-950/30 px-5 py-4 text-left space-y-1">
+            <div className="flex items-center gap-2">
+              <Instagram className="h-4 w-4 text-purple-400" />
+              <span className="text-sm font-bold text-purple-300">Instagram AI com Hook Engine</span>
+            </div>
+            <p className="text-xs text-gray-400">Hooks virais, carrosséis que retêm, CTAs que geram saves. Estrutura profissional por nicho.</p>
+          </div>
+        </div>
+
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <a
             href="#planos"
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-4 font-bold text-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 font-bold text-lg hover:opacity-90 transition-opacity"
           >
             Ver planos <ArrowRight className="h-5 w-5" />
           </a>
@@ -252,25 +272,47 @@ export default function MissionControl() {
       <section className="bg-gray-900 border-y border-gray-800 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold mb-4">Você está perdendo leads toda hora</h2>
+            <h2 className="text-3xl font-bold mb-4">Você está perdendo em duas frentes ao mesmo tempo</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              78% dos clientes fecham com o primeiro profissional que responde. E seu Instagram parado não está trazendo ninguém novo.
+              78% dos clientes fecham com quem responde primeiro. E quem não aparece no Instagram simplesmente não existe.
             </p>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              { icon: Clock, title: "Sem tempo pra responder", desc: "Entre atendimentos, reuniões e vida pessoal — você simplesmente não consegue estar disponível 24h." },
-              { icon: Film, title: "Instagram parado", desc: "Você sabe que precisaria postar todo dia, mas criar conteúdo do zero consome horas que você não tem." },
-              { icon: Zap, title: "Concorrência mais rápida", desc: "Enquanto você pensa na resposta, o concorrente já agendou. Enquanto você planeja o post, ele já publicou 3." },
-            ].map((item) => (
-              <div key={item.title} className="rounded-xl border border-gray-700 bg-gray-950 p-6 space-y-3">
-                <div className="h-10 w-10 rounded-xl flex items-center justify-center bg-red-900/30">
-                  <item.icon className="h-5 w-5 text-red-400" />
+          <div className="grid sm:grid-cols-2 gap-6 mb-6">
+            <div className="rounded-xl border border-blue-900/50 bg-blue-950/20 p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl flex items-center justify-center bg-blue-900/40">
+                  <Clock className="h-5 w-5 text-blue-400" />
                 </div>
-                <h3 className="font-bold text-white">{item.title}</h3>
-                <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-white">WhatsApp — respondendo tarde demais</h3>
               </div>
-            ))}
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Entre atendimentos, reuniões e vida pessoal, você demora. O cliente que mandou mensagem às 20h já agendou com o concorrente antes das 20h05.
+              </p>
+              <p className="text-xs text-blue-400 font-semibold">Solução: agente que responde em segundos, 24h, com a sua voz.</p>
+            </div>
+            <div className="rounded-xl border border-purple-900/50 bg-purple-950/20 p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl flex items-center justify-center bg-purple-900/40">
+                  <Film className="h-5 w-5 text-purple-400" />
+                </div>
+                <h3 className="font-bold text-white">Instagram — parado ou sem resultado</h3>
+              </div>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Você posta quando dá, sem estrutura, sem hook. O algoritmo ignora. Quem não posta com consistência simplesmente não existe para os novos seguidores.
+              </p>
+              <p className="text-xs text-purple-400 font-semibold">Solução: posts virais todo dia, estrutura profissional por nicho.</p>
+            </div>
+          </div>
+          <div className="rounded-xl border border-gray-700 bg-gray-950 p-6 flex items-start gap-4">
+            <div className="h-10 w-10 rounded-xl flex items-center justify-center bg-red-900/30 shrink-0">
+              <Zap className="h-5 w-5 text-red-400" />
+            </div>
+            <div>
+              <h3 className="font-bold text-white mb-1">Concorrência mais rápida nos dois canais</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Enquanto você pensa na resposta, o concorrente já agendou. Enquanto você planeja o post, ele já publicou 3. O Mission Control é o empate — ou a virada.
+              </p>
+            </div>
           </div>
         </div>
       </section>
