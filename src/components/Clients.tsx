@@ -1,7 +1,14 @@
-import { Shield, Building, Heart, Home } from "lucide-react";
+import { Shield, Building, Heart, Home, Landmark } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const clients = [
+  {
+    name: "Governo de Sergipe",
+    sector: "Setor Público / Regularização Urbana",
+    description: "Sistema e aplicativo mobile para o programa estadual de regularização fundiária urbana",
+    icon: Landmark,
+    country: "Brasil",
+  },
   {
     name: "Cenexel",
     sector: "Healthcare & Clinical Research",

@@ -6,6 +6,20 @@ const Experience = () => {
   
   const experiences = [
     {
+      company: "Thiesse Software",
+      role: "Software & Mobile App Development",
+      period: t('exp.current'),
+      location: "Sergipe, Brasil",
+      client: "Governo do Estado de Sergipe",
+      clientDescription: "Regularização Fundiária Urbana",
+      highlights: [
+        "Sistema de gestão para o programa de regularização fundiária urbana",
+        "Aplicativo mobile/tablet para agentes de campo em vistorias e cadastros",
+        "Solução end-to-end para o setor público, do levantamento à emissão de documentos",
+      ],
+      flag: "🇧🇷",
+    },
+    {
       company: "Nortal / Nearsure",
       role: "Tech Lead / Senior Software Engineer",
       period: t('exp.current'),

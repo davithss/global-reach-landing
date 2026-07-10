@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
             
             <h1 className="animate-fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              Davi <span className="text-gradient-gold">Thiesse</span>
+              Thiesse <span className="text-gradient-gold">Software</span>
             </h1>
             
             <p className="animate-fade-up-delay-2 text-xl md:text-2xl text-primary-foreground/80 mb-4 font-light">
@@ -75,19 +75,19 @@ const Hero = () => {
               
               {/* Main image */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold/30 shadow-2xl">
-                <img 
-                  src={heroImage} 
-                  alt="Davi Thiesse" 
+                <img
+                  src={heroImage}
+                  alt="Thiesse Software - founder and team"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              
+
               {/* Floating badges */}
               <div className="absolute -right-4 top-1/4 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float">
                 <p className="text-sm font-semibold text-foreground">🇺🇸 USA</p>
               </div>
               <div className="absolute -left-4 bottom-1/4 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float" style={{ animationDelay: '0.5s' }}>
-                <p className="text-sm font-semibold text-foreground">🇪🇺 Europe</p>
+                <p className="text-sm font-semibold text-foreground">🇧🇷 Brasil / 🇪🇺 Europe</p>
               </div>
               <div className="absolute right-8 -bottom-2 bg-gold px-4 py-2 rounded-lg shadow-gold-glow animate-float" style={{ animationDelay: '1s' }}>
                 <p className="text-sm font-semibold text-primary">Since 2017</p>
