@@ -27,6 +27,10 @@ export const translations: Translations = {
   'hero.years_intl': { en: 'Years International Experience', pt: 'Anos de Experiência Internacional' },
   'hero.years_total': { en: 'Years in the Market', pt: 'Anos de Mercado' },
   'hero.cta': { en: 'Get in Touch', pt: 'Fale Conosco' },
+  'hero.badge_us': { en: 'USA', pt: 'EUA' },
+  'hero.badge_br': { en: 'Brazil', pt: 'Brasil' },
+  'hero.badge_eu': { en: 'Europe', pt: 'Europa' },
+  'hero.badge_since': { en: 'Since 2017', pt: 'Desde 2017' },
   
   // About
   'about.label': { en: 'About Us', pt: 'Sobre Nós' },
