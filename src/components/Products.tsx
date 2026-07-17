@@ -16,6 +16,11 @@ const Products = () => {
       icon: MessageSquare,
       link: "https://agentes.thiesse.com.br",
     },
+    {
+      key: "vacinapp",
+      icon: HeartPulse,
+      link: "https://vacinapp.com",
+    },
   ];
 
   return (
