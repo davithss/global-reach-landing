@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "thiesse-software-mcp",
+      "version": "0.1.0",
+      "title": "Thiesse Software MCP"
+    },
+    "tools": [
+      {
+        "name": "get_company_info",
+        "title": "Informações da Thiesse Software",
+        "description": "Retorna informações institucionais sobre a Thiesse Software: nome, sede, áreas de atuação, fundadores e site.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_clients",
+        "title": "Listar clientes e parceiros",
+        "description": "Lista clientes e parceiros públicos da Thiesse Software, incluindo região, setor e projeto associado.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "region": {
+              "description": "Filtro opcional por região (ex.: 'Brasil', 'Europa', 'América do Norte').",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_experience",
+        "title": "Histórico e projetos",
+        "description": "Lista o histórico e os principais projetos da Thiesse Software, incluindo a parceria com o Governo de Sergipe.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_contact",
+        "title": "Informações de contato",
+        "description": "Retorna canais públicos de contato da Thiesse Software (site, LinkedIn e localização).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
