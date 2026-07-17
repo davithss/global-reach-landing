@@ -17,78 +17,114 @@ export const translations: Translations = {
   'nav.contact': { en: 'Get in Touch', pt: 'Contato' },
   
   // Hero
-  'hero.badge': { en: 'International Tech Consultant', pt: 'Consultor de Tech Internacional' },
-  'hero.subtitle': { en: 'Senior Software Engineer & Entrepreneur', pt: 'Engenheiro de Software Sênior & Empreendedor' },
-  'hero.description': { en: 'Building world-class software solutions for American and European markets since 2017. Co-founder experience in Denmark, serving clients across Scandinavia, Germany, and beyond.', pt: 'Construindo soluções de software de alto nível para mercados americanos e europeus desde 2017. Experiência como co-fundador na Dinamarca, atendendo clientes na Escandinávia, Alemanha e outros países.' },
-  'hero.markets': { en: 'USA & Europe Markets', pt: 'Mercados Americano & Europeu' },
+  'hero.badge': { en: 'Software Development Company', pt: 'Empresa de Desenvolvimento de Software' },
+  'hero.subtitle': { en: 'International Projects & Public Sector Solutions', pt: 'Projetos Internacionais & Soluções para o Setor Público' },
+  'hero.description': {
+    en: 'We build high-quality software for the American and European markets, and for the Brazilian public sector, since 2017. We combine international experience in healthcare, real estate and enterprise with solutions for government.',
+    pt: 'Desenvolvemos software de alto nível para os mercados dos EUA e da Europa e para o setor público brasileiro desde 2017. Unimos experiência internacional em saúde, mercado imobiliário e empresas de tecnologia à entrega de soluções para o governo.',
+  },
+  'hero.markets': { en: 'USA, Europe & Brazil', pt: 'EUA, Europa & Brasil' },
   'hero.years_intl': { en: 'Years International Experience', pt: 'Anos de Experiência Internacional' },
-  'hero.years_total': { en: 'Years Total Experience', pt: 'Anos de Experiência Total' },
-  'hero.cta': { en: 'Work With Me', pt: 'Trabalhe Comigo' },
+  'hero.years_total': { en: 'Years in the Market', pt: 'Anos de Mercado' },
+  'hero.cta': { en: 'Get in Touch', pt: 'Fale Conosco' },
   
   // About
-  'about.label': { en: 'About Me', pt: 'Sobre Mim' },
+  'about.label': { en: 'About Us', pt: 'Sobre Nós' },
   'about.title': { en: 'Bridging Continents Through', pt: 'Conectando Continentes Através da' },
   'about.title_highlight': { en: 'Technology', pt: 'Tecnologia' },
-  'about.p1': { en: 'With over 18 years of experience in software development and 8 years working with international clients, I specialize in building robust software solutions that meet the demanding standards of both American and European markets.', pt: 'Com mais de 18 anos de experiência em desenvolvimento de software e 8 anos trabalhando com clientes internacionais, me especializo em construir soluções robustas que atendem aos padrões exigentes dos mercados americano e europeu.' },
-  'about.p2': { en: 'My journey includes co-founding a startup in Denmark, where we successfully expanded operations across Scandinavia, Germany, and multiple European countries. This entrepreneurial experience gave me unique insights into building products that scale across different markets and cultures.', pt: 'Minha jornada inclui co-fundar uma startup na Dinamarca, onde expandimos com sucesso operações pela Escandinávia, Alemanha e vários países europeus. Essa experiência empreendedora me deu insights únicos sobre construir produtos que escalam em diferentes mercados e culturas.' },
-  'about.p3': { en: 'Today, through Thiesse Softwares, I continue to partner with leading American companies, delivering high-quality solutions in healthcare, real estate, and enterprise sectors.', pt: 'Hoje, através da Thiesse Softwares, continuo a fazer parcerias com empresas americanas líderes, entregando soluções de alta qualidade em saúde, imobiliário e setores empresariais.' },
-  'about.speaker': { en: 'Tech Speaker & Mentor', pt: 'Palestrante de Tech & Mentor' },
-  'about.speaker_desc': { en: 'Sharing knowledge about working internationally', pt: 'Compartilhando conhecimento sobre trabalho internacional' },
+  'about.p1': {
+    en: 'With more than 18 years in software development and 8 years serving international clients, we build robust solutions that meet the demanding standards of both the American and European markets.',
+    pt: 'Com mais de 18 anos em desenvolvimento de software e 8 anos atendendo clientes internacionais, construímos soluções robustas que atendem aos padrões exigentes dos mercados dos EUA e da Europa.',
+  },
+  'about.p2': {
+    en: 'Our history includes cofounding a tech startup in Denmark, from where we expanded operations across Scandinavia, Germany and other European countries. This entrepreneurial experience gives us a unique perspective on building products that scale across different markets and cultures.',
+    pt: 'Nossa trajetória inclui a cofundação de uma startup de tecnologia na Dinamarca, a partir da qual expandimos operações pela Escandinávia, Alemanha e outros países da Europa. Essa vivência empreendedora nos dá uma visão única sobre construir produtos que escalam por diferentes mercados e culturas.',
+  },
+  'about.p3': {
+    en: 'Today, through Thiesse Softwares, we partner with leading American companies in healthcare, real estate and enterprise sectors — and we are proud to work alongside the Government of the State of Sergipe, developing the system and mobile app for the state Urban Land Regularization program.',
+    pt: 'Hoje, por meio da Thiesse Softwares, atuamos em parceria com empresas americanas líderes nos setores de saúde, mercado imobiliário e tecnologia — e temos orgulho de trabalhar junto ao Governo do Estado de Sergipe, desenvolvendo o sistema e o aplicativo mobile do programa estadual de Regularização Fundiária Urbana.',
+  },
+  'about.speaker': { en: 'Tech Talks & Mentorship', pt: 'Palestras e Mentoria' },
+  'about.speaker_desc': { en: 'Sharing knowledge about working internationally', pt: 'Compartilhando conhecimento sobre atuação internacional' },
   
   // Stats
-  'stat.years_exp': { en: 'Years Experience', pt: 'Anos de Experiência' },
+  'stat.years_exp': { en: 'Years in the Market', pt: 'Anos de Mercado' },
   'stat.intl_exp': { en: 'International Years', pt: 'Anos Internacionais' },
-  'stat.countries': { en: 'Countries Worked', pt: 'Países Trabalhados' },
-  'stat.us_clients': { en: 'Major US Clients', pt: 'Clientes EUA' },
-  'stat.startup': { en: 'Startup Co-founded', pt: 'Startup Co-fundada' },
+  'stat.countries': { en: 'Countries Served', pt: 'Países Atendidos' },
+  'stat.us_clients': { en: 'Major US Clients', pt: 'Clientes nos EUA' },
+  'stat.startup': { en: 'Startup Cofounded', pt: 'Startup Cofundada' },
   
   // Highlights
   'highlight.global.title': { en: 'Global Reach', pt: 'Alcance Global' },
-  'highlight.global.desc': { en: 'Working with American and European companies since 2017, delivering solutions across multiple time zones.', pt: 'Trabalhando com empresas americanas e europeias desde 2017, entregando soluções em múltiplos fusos horários.' },
-  'highlight.startup.title': { en: 'Startup Founder', pt: 'Fundador de Startup' },
-  'highlight.startup.desc': { en: 'Co-founded a tech startup in Denmark, expanding across Scandinavia and Germany.', pt: 'Co-fundei uma startup de tech na Dinamarca, expandindo pela Escandinávia e Alemanha.' },
+  'highlight.global.desc': {
+    en: 'Serving American and European companies since 2017, delivering solutions across multiple time zones.',
+    pt: 'Atendemos empresas nos EUA e na Europa desde 2017, com entrega de soluções em múltiplos fusos horários.',
+  },
+  'highlight.publicsector.title': { en: 'Public Sector', pt: 'Setor Público' },
+  'highlight.publicsector.desc': {
+    en: 'Partner of the Government of the State of Sergipe in developing the system and mobile app for the Urban Land Regularization program.',
+    pt: 'Parceiros do Governo do Estado de Sergipe no desenvolvimento do sistema e do aplicativo mobile para o programa de Regularização Fundiária Urbana.',
+  },
   'highlight.tech.title': { en: 'Technical Excellence', pt: 'Excelência Técnica' },
-  'highlight.tech.desc': { en: 'Full-stack expertise with focus on scalable architectures and modern technologies.', pt: 'Expertise full-stack com foco em arquiteturas escaláveis e tecnologias modernas.' },
+  'highlight.tech.desc': {
+    en: 'Full-stack expertise focused on scalable architectures and modern technologies.',
+    pt: 'Expertise full-stack com foco em arquiteturas escaláveis e tecnologias modernas.',
+  },
   'highlight.enterprise.title': { en: 'Enterprise Clients', pt: 'Clientes Enterprise' },
-  'highlight.enterprise.desc': { en: 'Trusted by major US companies including healthcare and real estate sectors.', pt: 'Confiado por grandes empresas americanas incluindo setores de saúde e imobiliário.' },
+  'highlight.enterprise.desc': {
+    en: 'Trusted by leading US companies in healthcare and real estate.',
+    pt: 'Empresas americanas líderes nos setores de saúde e mercado imobiliário confiam em nós.',
+  },
   
   // Experience
-  'exp.label': { en: 'Career Journey', pt: 'Trajetória Profissional' },
+  'exp.label': { en: 'Company Journey', pt: 'Nossa Trajetória' },
   'exp.title': { en: 'International', pt: 'Experiência' },
   'exp.title_highlight': { en: 'Experience', pt: 'Internacional' },
-  'exp.description': { en: 'A track record of delivering excellence for American and European companies, from startup founding to enterprise solutions.', pt: 'Um histórico de entregar excelência para empresas americanas e europeias, desde fundação de startup até soluções enterprise.' },
+  'exp.description': {
+    en: 'A track record of quality delivery for American and European companies and for the Brazilian public sector — from cofounding a startup to enterprise and government solutions.',
+    pt: 'Um histórico de entregas de qualidade para empresas dos EUA e da Europa e para o setor público brasileiro — da cofundação de uma startup a soluções enterprise e de governo.',
+  },
   'exp.current': { en: 'Current', pt: 'Atual' },
   'exp.previous': { en: 'Previous', pt: 'Anterior' },
   
   // Clients
-  'clients.label': { en: 'Trusted By', pt: 'Clientes' },
-  'clients.title': { en: 'Enterprise', pt: 'Clientes' },
-  'clients.title_highlight': { en: 'Clients', pt: 'Enterprise' },
-  'clients.description': { en: 'Working with leading American companies across healthcare, real estate, and technology sectors.', pt: 'Trabalhando com empresas americanas líderes nos setores de saúde, imobiliário e tecnologia.' },
+  'clients.label': { en: 'Trusted By', pt: 'Quem Confia em Nós' },
+  'clients.title': { en: 'Our', pt: 'Nossos' },
+  'clients.title_highlight': { en: 'Clients', pt: 'Clientes' },
+  'clients.description': {
+    en: 'We work with leading American companies in healthcare, real estate and technology, and with the Brazilian public sector.',
+    pt: 'Trabalhamos com empresas americanas líderes nos setores de saúde, mercado imobiliário e tecnologia, e com o setor público brasileiro.',
+  },
   'clients.satisfaction': { en: 'Client Satisfaction', pt: 'Satisfação dos Clientes' },
-  'clients.projects': { en: 'Major US Projects', pt: 'Projetos EUA' },
-  'clients.eu_countries': { en: 'European Countries', pt: 'Países Europeus' },
+  'clients.projects': { en: 'Delivered Projects', pt: 'Projetos Entregues' },
+  'clients.eu_countries': { en: 'Countries Served', pt: 'Países Atendidos' },
   
   // Contact
-  'contact.label': { en: 'Get In Touch', pt: 'Entre em Contato' },
+  'contact.label': { en: 'Get In Touch', pt: 'Fale Conosco' },
   'contact.title': { en: 'Ready to Build Something', pt: 'Pronto para Construir Algo' },
   'contact.title_highlight': { en: 'Great?', pt: 'Incrível?' },
-  'contact.description': { en: "Whether you need a senior developer for your American or European project, or want to discuss a potential collaboration, I'd love to hear from you.", pt: 'Se você precisa de um desenvolvedor sênior para seu projeto americano ou europeu, ou quer discutir uma colaboração potencial, adoraria ouvir de você.' },
+  'contact.description': {
+    en: 'Whether you need a partner for your international project or for a public sector initiative, we would love to talk.',
+    pt: 'Se você precisa de um parceiro para um projeto internacional ou para uma iniciativa do setor público, vamos conversar.',
+  },
   'contact.info': { en: 'Contact Information', pt: 'Informações de Contato' },
   'contact.location': { en: 'Location', pt: 'Localização' },
-  'contact.location_desc': { en: 'Available for US & European timezones', pt: 'Disponível para fusos horários EUA e Europa' },
+  'contact.location_desc': { en: 'Available for US, European and Brazilian time zones', pt: 'Disponíveis para os fusos horários dos EUA, da Europa e do Brasil' },
   'contact.availability': { en: 'Availability', pt: 'Disponibilidade' },
-  'contact.availability_desc': { en: 'Open to new opportunities', pt: 'Aberto a novas oportunidades' },
-  'contact.connect': { en: 'Connect with me', pt: 'Conecte-se comigo' },
+  'contact.availability_desc': { en: 'Open to new projects', pt: 'Abertos a novos projetos' },
+  'contact.connect': { en: 'Connect with us', pt: 'Conecte-se conosco' },
   'contact.cta_title': { en: "Let's Work Together", pt: 'Vamos Trabalhar Juntos' },
-  'contact.cta_desc': { en: 'Looking for a senior developer with proven international experience? I specialize in full-stack development for healthcare, real estate, and enterprise applications.', pt: 'Procurando um desenvolvedor sênior com experiência internacional comprovada? Me especializo em desenvolvimento full-stack para aplicações de saúde, imobiliário e enterprise.' },
+  'contact.cta_desc': {
+    en: 'Looking for a partner with proven international experience and public sector expertise? We specialize in full-stack development for healthcare, real estate, enterprise and government.',
+    pt: 'Procurando um parceiro com experiência internacional comprovada e atuação no setor público? Somos especialistas em desenvolvimento full-stack para saúde, mercado imobiliário, enterprise e governo.',
+  },
   'contact.linkedin': { en: 'Connect on LinkedIn', pt: 'Conectar no LinkedIn' },
-  'contact.email': { en: 'Send Email', pt: 'Enviar Email' },
+  'contact.email': { en: 'Send E-mail', pt: 'Enviar E-mail' },
   
   // Footer
-  'footer.company': { en: 'International Tech Consulting', pt: 'Consultoria de Tech Internacional' },
+  'footer.company': { en: 'Software Development Company', pt: 'Empresa de Desenvolvimento de Software' },
   'footer.rights': { en: 'All rights reserved.', pt: 'Todos os direitos reservados.' },
-  'footer.markets': { en: 'USA & Europe Markets Since 2017', pt: 'Mercados EUA & Europa desde 2017' },
+  'footer.markets': { en: 'USA, Europe & Brazil Since 2017', pt: 'EUA, Europa e Brasil desde 2017' },
 };
 
 interface LanguageContextType {
@@ -100,7 +136,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('pt');
 
   const t = (key: string): string => {
     return translations[key]?.[language] || key;
