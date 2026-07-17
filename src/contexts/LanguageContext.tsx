@@ -134,6 +134,38 @@ export const translations: Translations = {
   'exp.jaya.highlight2': { en: 'HIPAA-compliant solutions', pt: 'Soluções em conformidade com HIPAA' },
   'exp.jaya.highlight3': { en: 'Integration with US healthcare systems', pt: 'Integração com sistemas de saúde dos EUA' },
   
+  // Products
+  'products.label': { en: 'Products', pt: 'Produtos' },
+  'products.title': { en: 'Our', pt: 'Nossos' },
+  'products.title_highlight': { en: 'Products', pt: 'Produtos' },
+  'products.description': {
+    en: 'Operational intelligence and automation solutions built to scale workflows for content teams, brands and public sector managers.',
+    pt: 'Soluções de inteligência operacional e automação construídas para escalar fluxos de trabalho de equipes de conteúdo, marcas e gestores públicos.',
+  },
+  'products.mission.tag': { en: 'SaaS Platform', pt: 'Plataforma SaaS' },
+  'products.mission.name': { en: 'Mission Control', pt: 'Mission Control' },
+  'products.mission.subtitle': { en: 'Content Operation & Automation', pt: 'Operação e Automação de Conteúdo' },
+  'products.mission.description': {
+    en: 'Mission Control centralizes the routines of creators, brands and content teams, connecting automations, editorial calendar, WhatsApp, Instagram and operational flows in a single dashboard.',
+    pt: 'O Mission Control centraliza as rotinas de criadores, marcas e equipes de conteúdo, conectando automações, calendário editorial, WhatsApp, Instagram e fluxos operacionais em um painel único.',
+  },
+  'products.mission.benefit1': { en: 'Centralized content operation', pt: 'Centralização da operação de conteúdo' },
+  'products.mission.benefit2': { en: 'Automation of repetitive tasks', pt: 'Automação de tarefas repetitivas' },
+  'products.mission.benefit3': { en: 'Clear view of calendar, channels and execution', pt: 'Visão clara de calendário, canais e execução' },
+  'products.mission.cta': { en: 'Discover Mission Control', pt: 'Conhecer o Mission Control' },
+  'products.ops.tag': { en: 'WhatsApp Agent', pt: 'Agente WhatsApp' },
+  'products.ops.name': { en: 'OpsAgent', pt: 'OpsAgent' },
+  'products.ops.subtitle': { en: 'Conversational Agent for Operations', pt: 'Agente Conversacional para Operações' },
+  'products.ops.description': {
+    en: 'OpsAgent is a conversational agent via WhatsApp for public managers, directors and operational teams. It answers, guides, collects information, organizes demands and supports internal workflows directly on WhatsApp, reducing operational noise and accelerating decisions.',
+    pt: 'O OpsAgent é um agente conversacional via WhatsApp para gestores públicos, diretores e equipes operacionais. Atende, orienta, coleta informações, organiza demandas e apoia fluxos internos diretamente pelo WhatsApp, reduzindo ruído operacional e acelerando decisões.',
+  },
+  'products.ops.benefit1': { en: 'Service and triage via WhatsApp', pt: 'Atendimento e triagem via WhatsApp' },
+  'products.ops.benefit2': { en: 'Real-time demand organization', pt: 'Organização de demandas em tempo real' },
+  'products.ops.benefit3': { en: 'Support for public managers and operational teams', pt: 'Apoio a gestores públicos e equipes operacionais' },
+  'products.ops.cta': { en: 'Discover OpsAgent', pt: 'Conhecer o OpsAgent' },
+  'products.footnote': { en: 'We build products that operate, not just software that runs.', pt: 'Construímos produtos que operam, não apenas software que executa.' },
+
   // Clients
   'clients.label': { en: 'Trusted By', pt: 'Quem Confia em Nós' },
   'clients.title': { en: 'Our', pt: 'Nossos' },
