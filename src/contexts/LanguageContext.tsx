@@ -115,7 +115,8 @@ export const translations: Translations = {
   // Experience items — Crably
   'exp.crably.role': { en: 'Cofounder and CTO', pt: 'Cofundador e CTO' },
   'exp.crably.location': { en: 'Copenhagen, Denmark', pt: 'Copenhague, Dinamarca' },
-  'exp.crably.clientDesc': { en: 'European Expansion', pt: 'Expansão Europeia' },
+  'exp.crably.client': { en: 'European Expansion', pt: 'Expansão Europeia' },
+  'exp.crably.clientDesc': { en: 'Scandinavia, Germany, Portugal, Spain and others', pt: 'Escandinávia, Alemanha, Portugal, Espanha e outros' },
   'exp.crably.highlight1': { en: 'Founded and scaled a technology startup', pt: 'Fundação e escala de uma startup de tecnologia' },
   'exp.crably.highlight2': { en: 'Expanded operations across several European countries', pt: 'Expansão das operações por diversos países europeus' },
   'exp.crably.highlight3': { en: 'Built and led engineering teams', pt: 'Formação e liderança de times de engenharia' },
