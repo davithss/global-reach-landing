@@ -1,42 +1,12 @@
 import { Shield, Building, Heart, Home, Landmark } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const clients = [
-  {
-    name: "Governo de Sergipe",
-    sector: "Setor Público / Regularização Fundiária Urbana",
-    description: "Sistema de gestão e aplicativo mobile para agentes de campo do programa estadual",
-    icon: Landmark,
-    country: "Brasil",
-  },
-  {
-    name: "Cenexel",
-    sector: "Saúde e Pesquisa Clínica",
-    description: "Apoio às operações de pesquisa clínica em todo o território dos EUA",
-    icon: Heart,
-    country: "EUA",
-  },
-  {
-    name: "Real Page",
-    sector: "Tecnologia para o Mercado Imobiliário",
-    description: "Soluções corporativas de gestão imobiliária que atendem milhões de usuários",
-    icon: Home,
-    country: "EUA",
-  },
-  {
-    name: "PWN Health",
-    sector: "Tecnologia para Saúde",
-    description: "Desenvolvimento de plataforma de saúde em conformidade com HIPAA",
-    icon: Shield,
-    country: "EUA",
-  },
-  {
-    name: "Crably",
-    sector: "Startup de Tecnologia",
-    description: "Escandinávia, Alemanha e diversos mercados europeus",
-    icon: Building,
-    country: "Dinamarca",
-  },
+const clientsData = [
+  { name: "Governo de Sergipe", key: "sergipe", icon: Landmark },
+  { name: "Cenexel", key: "cenexel", icon: Heart },
+  { name: "Real Page", key: "realpage", icon: Home },
+  { name: "PWN Health", key: "pwn", icon: Shield },
+  { name: "Crably", key: "crably", icon: Building },
 ];
 
 const Clients = () => {
@@ -62,7 +32,7 @@ const Clients = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {clients.map((client) => (
+          {clientsData.map((client) => (
             <div 
               key={client.name}
               className="group p-8 bg-card/10 backdrop-blur-sm rounded-2xl border border-primary-foreground/10 hover:border-gold/30 hover:bg-card/20 transition-all duration-300"
@@ -73,11 +43,11 @@ const Clients = () => {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-bold text-primary-foreground text-lg">{client.name}</h3>
-                    <span className="text-xs px-2 py-0.5 bg-gold/20 text-gold rounded-full">{client.country}</span>
+                    <h3 className="font-bold text-primary-foreground text-lg">{t(`clients.${client.key}.name`)}</h3>
+                    <span className="text-xs px-2 py-0.5 bg-gold/20 text-gold rounded-full">{t(`clients.${client.key}.country`)}</span>
                   </div>
-                  <p className="text-gold text-sm font-medium mb-2">{client.sector}</p>
-                  <p className="text-primary-foreground/60 text-sm">{client.description}</p>
+                  <p className="text-gold text-sm font-medium mb-2">{t(`clients.${client.key}.sector`)}</p>
+                  <p className="text-primary-foreground/60 text-sm">{t(`clients.${client.key}.desc`)}</p>
                 </div>
               </div>
             </div>

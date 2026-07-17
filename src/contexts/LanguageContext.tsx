@@ -27,6 +27,10 @@ export const translations: Translations = {
   'hero.years_intl': { en: 'Years International Experience', pt: 'Anos de Experiência Internacional' },
   'hero.years_total': { en: 'Years in the Market', pt: 'Anos de Mercado' },
   'hero.cta': { en: 'Get in Touch', pt: 'Fale Conosco' },
+  'hero.badge_us': { en: 'USA', pt: 'EUA' },
+  'hero.badge_br': { en: 'Brazil', pt: 'Brasil' },
+  'hero.badge_eu': { en: 'Europe', pt: 'Europa' },
+  'hero.badge_since': { en: 'Since 2017', pt: 'Desde 2017' },
   
   // About
   'about.label': { en: 'About Us', pt: 'Sobre Nós' },
@@ -140,6 +144,28 @@ export const translations: Translations = {
   'clients.satisfaction': { en: 'Client Satisfaction', pt: 'Satisfação dos Clientes' },
   'clients.projects': { en: 'Delivered Projects', pt: 'Projetos Entregues' },
   'clients.eu_countries': { en: 'Countries Served', pt: 'Países Atendidos' },
+
+  // Client cards
+  'clients.sergipe.name': { en: 'Government of Sergipe', pt: 'Governo de Sergipe' },
+  'clients.sergipe.country': { en: 'Brazil', pt: 'Brasil' },
+  'clients.sergipe.sector': { en: 'Public Sector / Urban Land Regularization', pt: 'Setor Público / Regularização Fundiária Urbana' },
+  'clients.sergipe.desc': { en: 'Management system and mobile app for field agents of the state program', pt: 'Sistema de gestão e aplicativo mobile para agentes de campo do programa estadual' },
+  'clients.cenexel.name': { en: 'Cenexel', pt: 'Cenexel' },
+  'clients.cenexel.country': { en: 'USA', pt: 'EUA' },
+  'clients.cenexel.sector': { en: 'Healthcare and Clinical Research', pt: 'Saúde e Pesquisa Clínica' },
+  'clients.cenexel.desc': { en: 'Supporting clinical research operations across the United States', pt: 'Apoio às operações de pesquisa clínica em todo o território dos EUA' },
+  'clients.realpage.name': { en: 'Real Page', pt: 'Real Page' },
+  'clients.realpage.country': { en: 'USA', pt: 'EUA' },
+  'clients.realpage.sector': { en: 'Real Estate Technology', pt: 'Tecnologia para o Mercado Imobiliário' },
+  'clients.realpage.desc': { en: 'Enterprise real estate management solutions serving millions of users', pt: 'Soluções corporativas de gestão imobiliária que atendem milhões de usuários' },
+  'clients.pwn.name': { en: 'PWN Health', pt: 'PWN Health' },
+  'clients.pwn.country': { en: 'USA', pt: 'EUA' },
+  'clients.pwn.sector': { en: 'Health Technology', pt: 'Tecnologia para Saúde' },
+  'clients.pwn.desc': { en: 'Development of a HIPAA-compliant healthcare platform', pt: 'Desenvolvimento de plataforma de saúde em conformidade com HIPAA' },
+  'clients.crably.name': { en: 'Crably', pt: 'Crably' },
+  'clients.crably.country': { en: 'Denmark', pt: 'Dinamarca' },
+  'clients.crably.sector': { en: 'Technology Startup', pt: 'Startup de Tecnologia' },
+  'clients.crably.desc': { en: 'Scandinavia, Germany and several European markets', pt: 'Escandinávia, Alemanha e diversos mercados europeus' },
   
   // Contact
   'contact.label': { en: 'Get In Touch', pt: 'Fale Conosco' },

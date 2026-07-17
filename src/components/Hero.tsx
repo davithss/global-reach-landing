@@ -86,13 +86,13 @@ const Hero = () => {
               
               {/* Floating badges */}
               <div className="absolute -right-4 top-1/4 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float">
-                <p className="text-sm font-semibold text-foreground">🇺🇸 EUA</p>
+                <p className="text-sm font-semibold text-foreground">🇺🇸 {t('hero.badge_us')}</p>
               </div>
               <div className="absolute -left-4 bottom-1/4 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float" style={{ animationDelay: '0.5s' }}>
-                <p className="text-sm font-semibold text-foreground">🇧🇷 Brasil / 🇪🇺 Europa</p>
+                <p className="text-sm font-semibold text-foreground">🇧🇷 {t('hero.badge_br')} / 🇪🇺 {t('hero.badge_eu')}</p>
               </div>
               <div className="absolute right-8 -bottom-2 bg-gold px-4 py-2 rounded-lg shadow-gold-glow animate-float" style={{ animationDelay: '1s' }}>
-                <p className="text-sm font-semibold text-primary">Desde 2017</p>
+                <p className="text-sm font-semibold text-primary">{t('hero.badge_since')}</p>
               </div>
             </div>
           </div>
