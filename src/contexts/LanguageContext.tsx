@@ -13,6 +13,7 @@ export const translations: Translations = {
   // Header
   'nav.about': { en: 'About', pt: 'Sobre' },
   'nav.experience': { en: 'Experience', pt: 'Experiência' },
+  'nav.products': { en: 'Products', pt: 'Produtos' },
   'nav.clients': { en: 'Clients', pt: 'Clientes' },
   'nav.contact': { en: 'Get in Touch', pt: 'Contato' },
   

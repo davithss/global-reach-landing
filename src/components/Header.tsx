@@ -20,6 +20,9 @@ const Header = () => {
           <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.experience')}
           </a>
+          <a href="#products" className="text-muted-foreground hover:text-foreground transition-colors">
+            {t('nav.products')}
+          </a>
           <a href="#clients" className="text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.clients')}
           </a>
