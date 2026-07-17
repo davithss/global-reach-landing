@@ -32,7 +32,7 @@ const Clients = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {clients.map((client) => (
+          {clientsData.map((client) => (
             <div 
               key={client.name}
               className="group p-8 bg-card/10 backdrop-blur-sm rounded-2xl border border-primary-foreground/10 hover:border-gold/30 hover:bg-card/20 transition-all duration-300"
@@ -43,11 +43,11 @@ const Clients = () => {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-bold text-primary-foreground text-lg">{client.name}</h3>
-                    <span className="text-xs px-2 py-0.5 bg-gold/20 text-gold rounded-full">{client.country}</span>
+                    <h3 className="font-bold text-primary-foreground text-lg">{t(`clients.${client.key}.name`)}</h3>
+                    <span className="text-xs px-2 py-0.5 bg-gold/20 text-gold rounded-full">{t(`clients.${client.key}.country`)}</span>
                   </div>
-                  <p className="text-gold text-sm font-medium mb-2">{client.sector}</p>
-                  <p className="text-primary-foreground/60 text-sm">{client.description}</p>
+                  <p className="text-gold text-sm font-medium mb-2">{t(`clients.${client.key}.sector`)}</p>
+                  <p className="text-primary-foreground/60 text-sm">{t(`clients.${client.key}.desc`)}</p>
                 </div>
               </div>
             </div>
