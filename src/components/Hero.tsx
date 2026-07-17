@@ -79,7 +79,7 @@ const Hero = () => {
                 <img 
                   src={heroImage} 
                   alt="Davi Thiesse, fundador da Thiesse Software, palestrando em evento com marcas da SergipeTec, Banco do Brasil e parceiros ao fundo" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-[1.18]"
                   style={{ objectPosition: '55% 35%' }}
                 />
               </div>
