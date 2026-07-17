@@ -49,7 +49,7 @@ const Contact = () => {
                       <Linkedin className="w-5 h-5 text-gold" />
                     </a>
                     <a 
-                      href="mailto:contact@thiesse.dev" 
+                      href="mailto:davi@thiesse.com.br" 
                       className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
                     >
                       <Mail className="w-5 h-5 text-gold" />
@@ -73,7 +73,7 @@ const Contact = () => {
                       </a>
                     </Button>
                     <Button variant="outline" size="lg" className="w-full" asChild>
-                      <a href="mailto:contact@thiesse.dev">
+                      <a href="mailto:davi@thiesse.com.br">
                         <Mail className="w-5 h-5 mr-2" />
                         {t('contact.email')}
                       </a>
