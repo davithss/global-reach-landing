@@ -52,7 +52,7 @@ const Experience = () => {
       role: t('exp.crably.role'),
       period: t('exp.previous'),
       location: t('exp.crably.location'),
-      client: "Expansão Europeia",
+      client: t('exp.crably.client'),
       clientDescription: t('exp.crably.clientDesc'),
       highlights: [
         t('exp.crably.highlight1'),
