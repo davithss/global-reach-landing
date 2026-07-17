@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CheckCircle2, Layers, MessageSquare, Bot } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Layers, MessageSquare, HeartPulse, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Products = () => {
@@ -15,6 +15,11 @@ const Products = () => {
       key: "ops",
       icon: MessageSquare,
       link: "https://agentes.thiesse.com.br",
+    },
+    {
+      key: "vacinapp",
+      icon: HeartPulse,
+      link: "https://vacinapp.com",
     },
   ];
 
@@ -40,7 +45,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {products.map((product) => (
             <div
               key={product.key}
