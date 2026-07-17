@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Globe, Linkedin } from "lucide-react";
-import heroImage from "@/assets/davi-speaking.jpeg";
+import heroAsset from "@/assets/davi-hero-sergipe.jpeg.asset.json";
+const heroImage = heroAsset.url;
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
@@ -77,9 +78,9 @@ const Hero = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold/30 shadow-2xl">
                 <img 
                   src={heroImage} 
-                  alt="Davi Thiesse, fundador da Thiesse Software, palestrando sobre atuação internacional em tecnologia" 
+                  alt="Davi Thiesse, fundador da Thiesse Software, palestrando em evento com marcas da SergipeTec, Banco do Brasil e parceiros ao fundo" 
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: '50% 22%' }}
+                  style={{ objectPosition: '55% 35%' }}
                 />
               </div>
               
