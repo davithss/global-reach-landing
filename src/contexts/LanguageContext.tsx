@@ -168,8 +168,8 @@ export const translations: Translations = {
   'products.vacinapp.name': { en: 'VacinApp Brasil', pt: 'VacinApp Brasil' },
   'products.vacinapp.subtitle': { en: 'Vaccination Reminders for Families', pt: 'Lembretes de Vacinação para Famílias' },
   'products.vacinapp.description': {
-    en: 'VacinApp helps parents keep their children\'s vaccination schedule on track. Free app with alerts, digital history and offline access — already protecting more than 47,000 families in Brazil.',
-    pt: 'O VacinApp ajuda pais a manter a caderneta de vacinação dos filhos em dia. Aplicativo gratuito com alertas, histórico digital e acesso offline — já protege mais de 47 mil famílias no Brasil.',
+    en: 'VacinApp helps parents keep their children\'s vaccination schedule on track. Free app with alerts, digital history and offline access — already protecting more than 3,000 families in Brazil.',
+    pt: 'O VacinApp ajuda pais a manter a caderneta de vacinação dos filhos em dia. Aplicativo gratuito com alertas, histórico digital e acesso offline — já protege mais de 3 mil famílias no Brasil.',
   },
   'products.vacinapp.benefit1': { en: 'Automatic alerts for every vaccine dose', pt: 'Alertas automáticos para cada dose' },
   'products.vacinapp.benefit2': { en: 'Complete SUS + private calendar', pt: 'Calendário completo do SUS + particular' },
