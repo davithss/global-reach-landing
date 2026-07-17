@@ -1,42 +1,12 @@
 import { Shield, Building, Heart, Home, Landmark } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const clients = [
-  {
-    name: "Governo de Sergipe",
-    sector: "Setor Público / Regularização Fundiária Urbana",
-    description: "Sistema de gestão e aplicativo mobile para agentes de campo do programa estadual",
-    icon: Landmark,
-    country: "Brasil",
-  },
-  {
-    name: "Cenexel",
-    sector: "Saúde e Pesquisa Clínica",
-    description: "Apoio às operações de pesquisa clínica em todo o território dos EUA",
-    icon: Heart,
-    country: "EUA",
-  },
-  {
-    name: "Real Page",
-    sector: "Tecnologia para o Mercado Imobiliário",
-    description: "Soluções corporativas de gestão imobiliária que atendem milhões de usuários",
-    icon: Home,
-    country: "EUA",
-  },
-  {
-    name: "PWN Health",
-    sector: "Tecnologia para Saúde",
-    description: "Desenvolvimento de plataforma de saúde em conformidade com HIPAA",
-    icon: Shield,
-    country: "EUA",
-  },
-  {
-    name: "Crably",
-    sector: "Startup de Tecnologia",
-    description: "Escandinávia, Alemanha e diversos mercados europeus",
-    icon: Building,
-    country: "Dinamarca",
-  },
+const clientsData = [
+  { name: "Governo de Sergipe", key: "sergipe", icon: Landmark },
+  { name: "Cenexel", key: "cenexel", icon: Heart },
+  { name: "Real Page", key: "realpage", icon: Home },
+  { name: "PWN Health", key: "pwn", icon: Shield },
+  { name: "Crably", key: "crably", icon: Building },
 ];
 
 const Clients = () => {
