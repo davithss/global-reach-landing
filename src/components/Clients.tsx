@@ -1,34 +1,41 @@
-import { Shield, Building, Heart, Home } from "lucide-react";
+import { Shield, Building, Heart, Home, Landmark } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const clients = [
   {
+    name: "Governo de Sergipe",
+    sector: "Setor Público / Regularização Fundiária Urbana",
+    description: "Sistema de gestão e aplicativo mobile para agentes de campo do programa estadual",
+    icon: Landmark,
+    country: "Brasil",
+  },
+  {
     name: "Cenexel",
-    sector: "Healthcare & Clinical Research",
-    description: "Supporting clinical research operations across the United States",
+    sector: "Saúde e Pesquisa Clínica",
+    description: "Apoio às operações de pesquisa clínica em todo o território dos EUA",
     icon: Heart,
-    country: "USA",
+    country: "EUA",
   },
   {
     name: "Real Page",
-    sector: "Real Estate Technology",
-    description: "Enterprise property management solutions serving millions",
+    sector: "Tecnologia para o Mercado Imobiliário",
+    description: "Soluções corporativas de gestão imobiliária que atendem milhões de usuários",
     icon: Home,
-    country: "USA",
+    country: "EUA",
   },
   {
     name: "PWN Health",
-    sector: "Healthcare Technology",
-    description: "HIPAA-compliant healthcare platform development",
+    sector: "Tecnologia para Saúde",
+    description: "Desenvolvimento de plataforma de saúde em conformidade com HIPAA",
     icon: Shield,
-    country: "USA",
+    country: "EUA",
   },
   {
-    name: "Crably Startup",
-    sector: "Tech Startup",
-    description: "Scandinavia, Germany & multiple European markets",
+    name: "Crably",
+    sector: "Startup de Tecnologia",
+    description: "Escandinávia, Alemanha e diversos mercados europeus",
     icon: Building,
-    country: "Denmark",
+    country: "Dinamarca",
   },
 ];
 

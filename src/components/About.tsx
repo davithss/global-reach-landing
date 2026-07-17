@@ -1,5 +1,5 @@
-import { Code, Globe2, Rocket, Users } from "lucide-react";
-import speakingImage from "@/assets/davi-speaking.jpeg";
+import { Code, Globe2, Landmark, Users } from "lucide-react";
+import speakingImage from "@/assets/davi-hero.jpeg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
@@ -19,9 +19,9 @@ const About = () => {
       description: t('highlight.global.desc'),
     },
     {
-      icon: Rocket,
-      title: t('highlight.startup.title'),
-      description: t('highlight.startup.desc'),
+      icon: Landmark,
+      title: t('highlight.publicsector.title'),
+      description: t('highlight.publicsector.desc'),
     },
     {
       icon: Code,
@@ -77,7 +77,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover">
               <img 
                 src={speakingImage} 
-                alt="Davi Thiesse speaking at a tech event" 
+                alt="Retrato de Davi Thiesse, fundador da Thiesse Software" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 to-transparent" />
