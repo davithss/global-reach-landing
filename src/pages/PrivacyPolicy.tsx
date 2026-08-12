@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             ← Voltar para Mission Control
           </a>
           <h1 className="text-3xl font-bold text-white mb-2">Política de Privacidade</h1>
-          <p className="text-gray-500 text-sm">Última atualização: março de 2026</p>
+          <p className="text-gray-500 text-sm">Última atualização: 12 de agosto de 2026</p>
         </div>
 
         <div className="space-y-10 text-sm leading-relaxed">
@@ -28,7 +28,8 @@ const PrivacyPolicy = () => {
               <li><strong>Dados de cadastro:</strong> nome, e-mail e informações de contato fornecidas ao criar uma conta.</li>
               <li><strong>Dados de mensagens:</strong> conteúdo das conversas processadas pelo agente de IA para fins de atendimento automatizado.</li>
               <li><strong>Dados de uso:</strong> logs de acesso, horários de uso e métricas de desempenho do agente.</li>
-              <li><strong>Dados de integração:</strong> tokens de acesso à API do WhatsApp (Meta) e do Instagram necessários para o funcionamento do serviço.</li>
+              <li><strong>Dados de integração:</strong> tokens de acesso às APIs do WhatsApp (Meta), Instagram e Google Calendar necessários para o funcionamento do serviço.</li>
+              <li><strong>Dados do Google Calendar:</strong> identificação da conta conectada, calendários selecionados, horários disponíveis, eventos, participantes, descrições e metadados necessários para criar, consultar, atualizar ou cancelar agendamentos quando essa integração é conectada pelo usuário.</li>
             </ul>
           </section>
 
@@ -36,7 +37,8 @@ const PrivacyPolicy = () => {
             <h2 className="text-lg font-semibold text-white mb-3">3. Como usamos os dados</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Fornecer e operar o serviço de atendimento automatizado.</li>
-              <li>Treinar e melhorar o agente de IA conforme o perfil da marca do cliente.</li>
+              <li>Treinar e melhorar o agente de IA conforme o perfil da marca do cliente, exceto dados recebidos das APIs do Google.</li>
+              <li>Operar recursos de Google Calendar, como consultar disponibilidade, exibir próximos eventos, criar eventos de atendimento, atualizar horários e cancelar agendamentos solicitados pelo usuário ou por automações configuradas por ele.</li>
               <li>Enviar comunicações relacionadas ao serviço (alertas, relatórios, atualizações).</li>
               <li>Cumprir obrigações legais e regulatórias aplicáveis.</li>
             </ul>
@@ -50,6 +52,7 @@ const PrivacyPolicy = () => {
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li><strong>Meta Platforms:</strong> para operar as integrações com WhatsApp e Instagram, conforme os Termos de Uso da plataforma.</li>
+              <li><strong>Google:</strong> para operar a integração com Google Calendar quando conectada pelo usuário.</li>
               <li><strong>Provedores de infraestrutura:</strong> como serviços de hospedagem e banco de dados (ex: Supabase, Vercel), sob acordos de confidencialidade.</li>
               <li><strong>Autoridades competentes:</strong> quando exigido por lei ou ordem judicial.</li>
             </ul>
@@ -83,7 +86,38 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">6. Retenção de dados</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">6. Integração com Google Calendar e Uso Limitado</h2>
+            <p className="mb-3">
+              Quando o usuário conecta o Google Calendar, o Mission Control usa os dados recebidos das
+              APIs do Google exclusivamente para disponibilizar recursos de agenda dentro da plataforma.
+              Isso inclui consultar disponibilidade, exibir próximos eventos, criar eventos de
+              atendimento, atualizar horários e cancelar agendamentos solicitados pelo usuário ou por
+              automações configuradas por ele.
+            </p>
+            <p className="mb-3">
+              Não vendemos dados do Google Calendar, não usamos esses dados para publicidade, não
+              permitimos acesso humano sem necessidade operacional ou consentimento, e não usamos dados
+              recebidos das APIs do Google para desenvolver, treinar ou melhorar modelos generalizados
+              de inteligência artificial ou machine learning.
+            </p>
+            <p>
+              O uso e a transferência de informações recebidas das APIs do Google seguem a{" "}
+              <a
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-400 hover:underline"
+              >
+                Google API Services User Data Policy
+              </a>
+              , incluindo os requisitos de Uso Limitado (Limited Use). O usuário pode desconectar o
+              Google Calendar a qualquer momento nas configurações da plataforma ou solicitar a exclusão
+              dos dados relacionados pelo canal de contato desta Política.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-white mb-3">7. Retenção de dados</h2>
             <p>
               Mantemos os dados pelo tempo necessário para a prestação do serviço. Após o cancelamento da conta,
               os dados são excluídos em até <strong>30 dias</strong>, salvo obrigação legal de retenção por prazo maior.
@@ -91,7 +125,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">7. Segurança</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">8. Segurança</h2>
             <p>
               Adotamos medidas técnicas e organizacionais para proteger seus dados, incluindo criptografia em
               trânsito (HTTPS/TLS), autenticação por token JWT e controle de acesso baseado em perfis (RLS).
@@ -100,7 +134,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">8. Seus direitos (LGPD)</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">9. Seus direitos (LGPD)</h2>
             <p className="mb-3">Conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a:</p>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Confirmar a existência de tratamento de seus dados.</li>
@@ -117,7 +151,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">9. Cookies</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">10. Cookies</h2>
             <p>
               Nosso site pode utilizar cookies técnicos essenciais para o funcionamento das páginas.
               Não utilizamos cookies para rastreamento publicitário de terceiros.
@@ -125,7 +159,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">10. Alterações desta política</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">11. Alterações desta política</h2>
             <p>
               Podemos atualizar esta Política de Privacidade periodicamente. Alterações relevantes serão
               comunicadas por e-mail ou aviso no painel. O uso continuado do serviço após a notificação
@@ -134,7 +168,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white mb-3">11. Contato</h2>
+            <h2 className="text-lg font-semibold text-white mb-3">12. Contato</h2>
             <p>
               Em caso de dúvidas sobre esta política ou sobre o tratamento de dados, entre em contato:
             </p>
