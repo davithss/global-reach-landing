@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.23.0";
+import { defineMcp, auth } from "npm:@lovable.dev/mcp-js@0.23.0";
 
 // src/lib/mcp/tools/get-company-info.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.23.0";
@@ -111,11 +111,18 @@ var get_contact_default = defineTool4({
 });
 
 // src/lib/mcp/index.ts
+var SUPABASE_URL = "https://qnfucgafrdhhfwaaqgpo.supabase.co";
 var mcp_default = defineMcp({
   name: "thiesse-software-mcp",
   title: "Thiesse Software MCP",
   version: "0.1.0",
   instructions: "Ferramentas p\xFAblicas do site institucional da Thiesse Software. Use para consultar informa\xE7\xF5es sobre a empresa, clientes, projetos (incluindo a parceria com o Governo de Sergipe para Reurb) e canais de contato.",
+  auth: auth.oauth.issuer({
+    issuer: `${SUPABASE_URL}/auth/v1`,
+    jwksUri: `${SUPABASE_URL}/auth/v1/.well-known/jwks.json`,
+    acceptedAudiences: ["authenticated"],
+    resourceName: "Thiesse Software MCP"
+  }),
   tools: [get_company_info_default, list_clients_default, list_experience_default, get_contact_default]
 });
 
