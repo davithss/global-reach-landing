@@ -110,6 +110,9 @@ const PrivacyPolicy = () => {
               </a>
               :
             </p>
+            <p className="mb-3">
+              O uso das informações recebidas das APIs do Google pelo Mission Control aderirá à Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de Uso Limitado.
+            </p>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Os dados do Google Calendar são utilizados exclusivamente para fornecer e melhorar a funcionalidade de agendamento descrita acima, e não para nenhuma outra finalidade.</li>
               <li>Não utilizamos dados do Google Calendar para veicular anúncios ou publicidade.</li>
