@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, MapPin, Calendar } from "lucide-react";
+import { Mail, Linkedin, MapPin, Calendar, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
@@ -73,9 +73,9 @@ const Contact = () => {
                       </a>
                     </Button>
                     <Button variant="outline" size="lg" className="w-full" asChild>
-                      <a href="mailto:davi@thiesse.com.br">
-                        <Mail className="w-5 h-5 mr-2" />
-                        {t('contact.email')}
+                      <a href="https://wa.me/5579981029218" target="_blank" rel="noopener noreferrer">
+                        <MessageCircle className="w-5 h-5 mr-2" />
+                        {t('contact.whatsapp')}
                       </a>
                     </Button>
                   </div>
