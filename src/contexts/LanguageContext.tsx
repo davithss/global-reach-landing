@@ -273,7 +273,7 @@ export const translations: Translations = {
     pt: 'Procurando um parceiro com experiência internacional comprovada e atuação no setor público? Somos especialistas em desenvolvimento full-stack para saúde, mercado imobiliário, enterprise e governo.',
   },
   'contact.linkedin': { en: 'Connect on LinkedIn', pt: 'Conectar no LinkedIn' },
-  'contact.email': { en: 'Send E-mail', pt: 'Enviar E-mail' },
+  'contact.whatsapp': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
   
   // Footer
   'footer.company': { en: 'Software Development Company', pt: 'Empresa de Desenvolvimento de Software' },
