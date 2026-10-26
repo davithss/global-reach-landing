@@ -26,6 +26,9 @@ const Header = () => {
           <a href="#clients" className="text-muted-foreground hover:text-foreground transition-colors">
             {t('nav.clients')}
           </a>
+          <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
+            {t('nav.testimonials')}
+          </a>
         </div>
         
         <div className="flex items-center gap-4">

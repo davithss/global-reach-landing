@@ -15,6 +15,7 @@ export const translations: Translations = {
   'nav.experience': { en: 'Experience', pt: 'Experiência' },
   'nav.products': { en: 'Products', pt: 'Produtos' },
   'nav.clients': { en: 'Clients', pt: 'Clientes' },
+  'nav.testimonials': { en: 'Recommendations', pt: 'Depoimentos' },
   'nav.contact': { en: 'Get in Touch', pt: 'Contato' },
   
   // Hero

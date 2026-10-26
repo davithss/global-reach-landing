@@ -7,11 +7,6 @@ const Products = () => {
 
   const products = [
     {
-      key: "mission",
-      icon: Layers,
-      link: "https://thiesse.com.br/mission-control",
-    },
-    {
       key: "ops",
       icon: MessageSquare,
       link: "https://agentes.thiesse.com.br",
