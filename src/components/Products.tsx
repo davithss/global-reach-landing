@@ -1,16 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CheckCircle2, Layers, MessageSquare, HeartPulse, Bot } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, MessageSquare, HeartPulse, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Products = () => {
   const { t } = useLanguage();
 
   const products = [
-    {
-      key: "mission",
-      icon: Layers,
-      link: "https://thiesse.com.br/mission-control",
-    },
     {
       key: "ops",
       icon: MessageSquare,
@@ -45,7 +40,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {products.map((product) => (
             <div
               key={product.key}
