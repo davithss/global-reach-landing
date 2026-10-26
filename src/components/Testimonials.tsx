@@ -38,7 +38,7 @@ const Testimonials = () => {
             return (
               <figure
                 key={item.key}
-                className="flex flex-col h-full bg-card-gradient rounded-2xl border border-border/50 shadow-card hover:shadow-card-hover hover:border-gold/20 transition-all duration-300 p-8"
+                className="flex flex-col bg-card-gradient rounded-2xl border border-border/50 shadow-card hover:shadow-card-hover hover:border-gold/20 transition-all duration-300 p-8"
               >
                 <Quote className="w-8 h-8 text-gold/40 mb-5 shrink-0" />
                 <blockquote
