@@ -167,6 +167,58 @@ export const translations: Translations = {
   'products.vacinapp.cta': { en: 'Download VacinApp', pt: 'Baixar o VacinApp' },
   'products.footnote': { en: 'We build products that operate, not just software that runs.', pt: 'Construímos produtos que operam, não apenas software que executa.' },
 
+  // Testimonials
+  'testimonials.label': { en: 'Recommendations', pt: 'Depoimentos' },
+  'testimonials.title': { en: 'What Clients and', pt: 'O que clientes e' },
+  'testimonials.title_highlight': { en: 'Colleagues Say', pt: 'colegas dizem' },
+  'testimonials.description': {
+    en: 'Recommendations published on LinkedIn by managers, clients and teammates from the American and European projects we took part in.',
+    pt: 'Recomendações publicadas no LinkedIn por gestores, clientes e colegas dos projetos americanos e europeus em que atuamos.',
+  },
+  'testimonials.read_more': { en: 'Read full recommendation', pt: 'Ler depoimento completo' },
+  'testimonials.read_less': { en: 'Show less', pt: 'Mostrar menos' },
+  'testimonials.source': { en: 'See all recommendations on LinkedIn', pt: 'Ver todas as recomendações no LinkedIn' },
+
+  'testimonials.brett.role': {
+    en: 'VP of Platform Enablement @ CenExel | Former CTO',
+    pt: 'VP de Platform Enablement @ CenExel | Ex-CTO',
+  },
+  'testimonials.brett.relation': {
+    en: 'February 7, 2026 · Brett managed Davi directly',
+    pt: '7 de fevereiro de 2026 · Brett gerenciava o Davi diretamente',
+  },
+  'testimonials.brett.text': {
+    en: "I highly recommend Davi as an engineering leader and team lead. I had the pleasure of working alongside Davi for a year while he led our mobile app development team, and his impact was immediate and lasting.\n\nDavi brought much-needed structure and discipline to our development workflows. He established Git flows and branching strategies that improved our team's efficiency and code quality. Davi also architected entirely new Azure environments from scratch, implementing containerized applications, firewalls, and user access controls to secure our VPNs. His infrastructure work resulted in significant annual cost savings for the organization.\n\nBeyond his technical contributions, Davi is an exceptional people leader. He held consistent 1:1s with team members and took a genuine interest in their growth. His mentorship of junior developers stood out to me. He invested the time to help them level up and become stronger contributors. This dedication to developing others is what sets Davi apart.\n\nDavi is friendly, hardworking, and gets the job done. I highly recommend him for any engineering management or team lead role. Any team would greatly benefit from his leadership, technical expertise, and commitment to building strong engineering culture. I hope to have the opportunity to work with him again.",
+    pt: "Recomendo amplamente o Davi como líder de engenharia e tech lead. Tive o prazer de trabalhar ao lado do Davi por um ano, enquanto ele liderava nossa equipe de desenvolvimento de aplicativos mobile, e o impacto dele foi imediato e duradouro.\n\nO Davi trouxe a estrutura e a disciplina que nossos fluxos de desenvolvimento tanto precisavam. Ele estabeleceu fluxos de Git e estratégias de branching que melhoraram a eficiência e a qualidade do código da equipe. Também arquitetou do zero novos ambientes no Azure, com aplicações conteinerizadas, firewalls e controles de acesso de usuário para proteger nossas VPNs. Seu trabalho de infraestrutura resultou em uma economia anual significativa para a organização.\n\nAlém das contribuições técnicas, o Davi é um líder de pessoas excepcional. Mantinha 1:1s constantes com os integrantes da equipe e tinha interesse genuíno no crescimento de cada um. A mentoria que oferecia aos desenvolvedores juniores me chamou muito a atenção: ele investia tempo para ajudá-los a evoluir e se tornarem contribuidores mais fortes. Essa dedicação a desenvolver os outros é o que diferencia o Davi.\n\nO Davi é simpático, trabalhador e entrega o que propõe. Recomendo amplamente para qualquer posição de gestão de engenharia ou tech lead. Qualquer equipe se beneficiaria muito da sua liderança, da sua expertise técnica e do seu compromisso em construir uma cultura de engenharia sólida. Espero ter a oportunidade de trabalhar com ele novamente.",
+  },
+
+  'testimonials.marcelo.role': {
+    en: 'Senior Software Engineer | Tech Lead | Ruby on Rails since 2010',
+    pt: 'Engenheiro de Software Sênior | Tech Lead | Ruby on Rails desde 2010',
+  },
+  'testimonials.marcelo.relation': {
+    en: 'May 31, 2024 · Marcelo worked with Davi on the same team',
+    pt: '31 de maio de 2024 · Marcelo trabalhou com o Davi na mesma equipe',
+  },
+  'testimonials.marcelo.text': {
+    en: "I am pleased to recommend Davi Thiesse, an exceptional professional with whom I worked at Code1. Davi stood out as a trusted individual within our company and among our clients. He led teams with a human approach, always committed to the well-being and success of each team member. His ability to build trust was fundamental to the success of our projects.\n\nAs a leader, Davi was a beacon of excellent management skills, always prioritizing the mental health of his team. His proactive efforts to secure partnerships, such as with Zenklub, for the collective well-being of the team were commendable. Moreover, he consistently brought up management topics centered on people, fostering a healthy and productive work environment.\n\nDavi is a dedicated, reliable, and deeply human person. He always strives to deliver what is proposed, putting his heart and mind into everything he does. His dedication and commitment to the team are inspiring, making him a precious leader.",
+    pt: "Fico feliz em recomendar o Davi Thiesse, um profissional excepcional com quem trabalhei na Code1. O Davi se destacou como uma pessoa de confiança dentro da nossa empresa e entre os nossos clientes. Ele liderava equipes com uma abordagem humana, sempre comprometido com o bem-estar e o sucesso de cada integrante. Sua capacidade de construir confiança foi fundamental para o sucesso dos nossos projetos.\n\nComo líder, o Davi foi um exemplo de excelentes habilidades de gestão, priorizando sempre a saúde mental da equipe. Seus esforços proativos para firmar parcerias, como com o Zenklub, em prol do bem-estar coletivo, foram dignos de nota. Além disso, ele sempre trazia temas de gestão centrados nas pessoas, promovendo um ambiente de trabalho saudável e produtivo.\n\nO Davi é uma pessoa dedicada, confiável e profundamente humana. Ele sempre busca entregar aquilo que se propõe, colocando coração e mente em tudo o que faz. Sua dedicação e seu compromisso com a equipe são inspiradores, o que o torna um líder precioso.",
+  },
+
+  'testimonials.ernie.role': {
+    en: 'Engineering Leader | Marketing Technology, AI/ML & Analytics Architecture',
+    pt: 'Líder de Engenharia | Marketing Technology, AI/ML & Arquitetura de Analytics',
+  },
+  'testimonials.ernie.relation': {
+    en: 'May 31, 2024 · Ernie was Davi\'s client',
+    pt: '31 de maio de 2024 · Ernie foi cliente do Davi',
+  },
+  'testimonials.ernie.text': {
+    en: "Davi was a software engineer on one of my Ruby/Rails/Vue software engineering teams for about two years. During our time working together, Davi was able to rapidly spin up and contribute heavily on a large variety of different applications which the team maintained. He worked in conjunction with our US based team to deliver software products in the marketing analytics space.\n\nDavi delivered projects around Call Tracking, Analytics report delivery, Built custom UI's for report visualization, Integrated our back end systems with a new parent companies systems, and performed much maintenance on existing systems including bug fixing, enhancements, version upgrades and troubleshooting.\n\nWhat I really liked about working with Davi is his ability to organize the developers that he's working with. He's an effective team leader who collaborates across his group and often pairs with other developers to make sure that projects are moving forward. I recommend Davi for engineering team roles from individual contributor to team lead.",
+    pt: "O Davi foi engenheiro de software em uma das minhas equipes de engenharia Ruby/Rails/Vue por cerca de dois anos. Durante o tempo em que trabalhamos juntos, ele conseguiu se ambientar muito rápido e contribuir de forma intensa em uma grande variedade de aplicações mantidas pela equipe. Trabalhou em conjunto com nossa equipe baseada nos EUA para entregar produtos de software na área de marketing analytics.\n\nO Davi entregou projetos de Call Tracking, entrega de relatórios de analytics, construção de interfaces customizadas para visualização de relatórios, integração dos nossos sistemas de back-end com os sistemas da nova empresa controladora, além de muita manutenção em sistemas existentes, incluindo correção de bugs, melhorias, upgrades de versão e troubleshooting.\n\nO que eu realmente gostei de trabalhar com o Davi foi sua capacidade de organizar os desenvolvedores ao seu redor. Ele é um líder de equipe eficaz, que colabora por todo o grupo e frequentemente faz pair programming com outros desenvolvedores para garantir que os projetos avancem. Recomendo o Davi para posições em equipes de engenharia, de contribuidor individual a tech lead.",
+  },
+
+
   // Clients
   'clients.label': { en: 'Trusted By', pt: 'Quem Confia em Nós' },
   'clients.title': { en: 'Our', pt: 'Nossos' },
