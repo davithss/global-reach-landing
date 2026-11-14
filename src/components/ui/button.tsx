@@ -16,10 +16,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Hero variants
-        hero: "bg-gold text-primary font-semibold hover:bg-gold-light shadow-gold-glow hover:shadow-lg transform hover:-translate-y-0.5",
-        heroOutline: "border-2 border-gold/40 bg-transparent text-gold hover:bg-gold/10 hover:border-gold",
+        hero: "bg-gold text-white font-semibold hover:bg-gold-light shadow-gold-glow hover:shadow-lg transform hover:-translate-y-0.5",
+        heroOutline: "border-2 border-gold/40 bg-transparent text-gold-light hover:bg-gold/10 hover:border-gold",
         // Gold accent button
-        gold: "bg-gradient-to-r from-gold to-gold-light text-primary font-semibold hover:shadow-gold-glow transform hover:-translate-y-0.5",
+        gold: "bg-gradient-to-r from-gold to-gold-light text-white font-semibold hover:shadow-gold-glow transform hover:-translate-y-0.5",
         // Navy solid
         navy: "bg-navy-deep text-primary-foreground hover:bg-navy-medium shadow-card hover:shadow-card-hover",
       },

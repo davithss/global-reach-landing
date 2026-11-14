@@ -4,84 +4,79 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { t } = useLanguage();
-  
+
   return (
-    <section id="contact" className="py-24 bg-background relative">
+    <section id="contact" className="py-24 bg-background relative overflow-hidden">
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/8 rounded-full blur-3xl" />
+      </div>
+
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-gold font-medium text-sm uppercase tracking-wider mb-4 block">{t('contact.label')}</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {t('contact.title')} <span className="text-gradient-gold">{t('contact.title_highlight')}</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              {t('contact.description')}
-            </p>
+        <div className="max-w-3xl mx-auto text-center mb-14">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent mb-4">
+            {t("contact.label")}
+          </p>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            {t("contact.title")}{" "}
+            <span className="text-gradient-gold">{t("contact.title_highlight")}</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            {t("contact.description")}
+          </p>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Button variant="hero" size="xl" asChild>
+              <a
+                href="https://wa.me/5579981029218"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <MessageCircle className="w-5 h-5" />
+                {t("contact.whatsapp")}
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="xl" asChild>
+              <a href="mailto:davi@thiesse.com.br" className="flex items-center gap-2">
+                <Mail className="w-5 h-5" />
+                {t("contact.email")}
+              </a>
+            </Button>
           </div>
-          
-          <div className="bg-card-gradient rounded-3xl shadow-card-hover border border-border/50 p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact info */}
-              <div>
-                <h3 className="font-semibold text-foreground text-xl mb-6">{t('contact.info')}</h3>
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-gold" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">{t('contact.location')}</p>
-                      <p className="text-muted-foreground text-sm">{t('contact.location_desc')}</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-                <div className="mt-8 pt-8 border-t border-border">
-                  <p className="text-sm text-muted-foreground mb-4">{t('contact.connect')}</p>
-                  <div className="flex gap-4">
-                    <a 
-                      href="https://linkedin.com/in/thiesse" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
-                    >
-                      <Linkedin className="w-5 h-5 text-gold" />
-                    </a>
-                    <a 
-                      href="mailto:davi@thiesse.com.br" 
-                      className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center hover:bg-gold/20 transition-colors"
-                    >
-                      <Mail className="w-5 h-5 text-gold" />
-                    </a>
-                  </div>
-                </div>
+
+          <div className="grid sm:grid-cols-2 gap-px bg-border/50 rounded-2xl overflow-hidden border border-border/50">
+            <div className="bg-card p-6 flex items-center gap-4">
+              <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <MapPin className="w-5 h-5 text-primary" />
               </div>
-              
-              {/* CTA */}
-              <div className="flex flex-col justify-center">
-                <div className="bg-navy-deep/5 rounded-2xl p-8 border border-navy-deep/10">
-                  <h4 className="font-semibold text-foreground text-lg mb-3">{t('contact.cta_title')}</h4>
-                  <p className="text-muted-foreground text-sm mb-6">
-                    {t('contact.cta_desc')}
-                  </p>
-                  <div className="space-y-3">
-                    <Button variant="gold" size="lg" className="w-full" asChild>
-                      <a href="https://linkedin.com/in/thiesse" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="w-5 h-5 mr-2" />
-                        {t('contact.linkedin')}
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="lg" className="w-full" asChild>
-                      <a href="https://wa.me/5579981029218" target="_blank" rel="noopener noreferrer">
-                        <MessageCircle className="w-5 h-5 mr-2" />
-                        {t('contact.whatsapp')}
-                      </a>
-                    </Button>
-                  </div>
-                </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">{t("contact.location")}</p>
+                <p className="text-muted-foreground text-xs mt-0.5">{t("contact.location_desc")}</p>
               </div>
             </div>
+            <div className="bg-card p-6 flex items-center gap-4">
+              <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <Calendar className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">{t("contact.availability")}</p>
+                <p className="text-muted-foreground text-xs mt-0.5">{t("contact.availability_desc")}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <a
+              href="https://linkedin.com/in/thiesse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin className="w-4 h-4" />
+              {t("contact.linkedin")}
+            </a>
           </div>
         </div>
       </div>
