@@ -19,6 +19,8 @@ export default {
       },
       colors: {
         border: "hsl(var(--border))",
+        "mc-success": "hsl(var(--mc-success))",
+        "mc-warning": "hsl(var(--mc-warning))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
