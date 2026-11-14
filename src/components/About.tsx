@@ -54,7 +54,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card-hover border border-border/60">
               <img
                 src={standingAsset.url}
-                alt="Davi Thiesse, fundador da Thiesse Software, em retrato profissional de terno"
+                alt={`${t("about.founder_name")} — TSoftwares`}
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />

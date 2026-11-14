@@ -19,18 +19,23 @@ export const translations: Translations = {
   'nav.menu': { en: 'Open menu', pt: 'Abrir menu' },
 
   // Hero
-  'hero.kicker': { en: 'THIESSE SOFTWARE · BR — US — EU', pt: 'THIESSE SOFTWARE · BR — EUA — UE' },
-  'hero.title': { en: 'Software engineering for businesses that', pt: 'Engenharia de software para negócios que' },
-  'hero.title_highlight': { en: 'go beyond.', pt: 'vão além.' },
+  'hero.kicker': { en: 'Custom software · Brazil, USA & Europe', pt: 'Software sob medida · Brasil, EUA e Europa' },
+  'hero.title': { en: 'Less manual work.', pt: 'Menos trabalho manual.' },
+  'hero.title_highlight': { en: 'More room to grow.', pt: 'Mais espaço para crescer.' },
   'hero.subtitle': {
-    en: 'We build digital products and tailored solutions for international companies and for the Brazilian public sector.',
-    pt: 'Criamos produtos digitais e soluções sob medida para empresas internacionais e para o setor público brasileiro.',
+    en: 'We build systems, apps and AI automation to simplify your operations and bring your next digital product to life. International expertise, close to your business.',
+    pt: 'Desenvolvemos sistemas, aplicativos e automações com IA para simplificar sua operação e tirar seu próximo produto digital do papel. Experiência internacional, perto do seu negócio.',
   },
-  'hero.cta_primary': { en: 'Talk about my project', pt: 'Conversar sobre meu projeto' },
-  'hero.cta_secondary': { en: 'Explore solutions', pt: 'Explorar soluções' },
-  'hero.stat_years': { en: 'years in the market', pt: 'anos de mercado' },
-  'hero.stat_intl': { en: 'years international', pt: 'anos internacionais' },
-  'hero.stat_since': { en: 'global operations', pt: 'atuação global' },
+  'hero.cta_primary': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
+  'hero.cta_secondary': { en: 'See our solutions', pt: 'Conhecer soluções' },
+  'hero.benefit1': { en: 'Custom systems', pt: 'Sistemas sob medida' },
+  'hero.benefit2': { en: 'Web & mobile apps', pt: 'Aplicativos web e mobile' },
+  'hero.benefit3': { en: 'AI automation', pt: 'Automação com IA' },
+  'hero.contact_note': { en: 'Tell us what you need. Speak directly with our founder.', pt: 'Conte o que você precisa. Converse diretamente com o fundador.' },
+  'hero.proof_label': { en: 'Company projects & founder’s experience', pt: 'Projetos da empresa e experiência do fundador' },
+  'hero.stat_years': { en: 'years of experience', pt: 'anos de experiência' },
+  'hero.stat_intl': { en: 'international years', pt: 'anos internacionais' },
+  'hero.stat_since': { en: 'international work since', pt: 'atuação internacional desde' },
   'hero.diagram_title': { en: 'software architecture', pt: 'arquitetura de software' },
   'hero.diagram_core': { en: 'Thiesse Core', pt: 'Núcleo Thiesse' },
   'hero.diagram_products': { en: 'Products', pt: 'Produtos' },
@@ -149,7 +154,7 @@ export const translations: Translations = {
   },
   'exp.current': { en: 'Current', pt: 'Atual' },
   'exp.previous': { en: 'Previous', pt: 'Anterior' },
-  'exp.company_delivery': { en: 'Thiesse Software delivery', pt: 'Entrega Thiesse Software' },
+  'exp.company_delivery': { en: 'TSoftwares delivery', pt: 'Entrega TSoftwares' },
   'exp.founder_track': { en: 'Founder’s track record', pt: 'Trajetória do fundador' },
 
   'exp.thiesse.role': { en: 'System & Mobile App Development', pt: 'Desenvolvimento de Sistema e Aplicativo Mobile' },
@@ -190,12 +195,12 @@ export const translations: Translations = {
   'exp.jaya.highlight3': { en: 'Integration with US healthcare systems', pt: 'Integração com sistemas de saúde dos EUA' },
 
   // About
-  'about.label': { en: 'About Thiesse', pt: 'Sobre a Thiesse' },
+  'about.label': { en: 'About TSoftwares', pt: 'Sobre a TSoftwares' },
   'about.title': { en: 'International engineering,', pt: 'Engenharia internacional,' },
   'about.title_highlight': { en: 'Brazilian roots', pt: 'raízes brasileiras' },
   'about.p1': {
-    en: 'Thiesse Software was born from more than 18 years of software development — 8 of them serving international clients in the demanding standards of the American and European markets.',
-    pt: 'A Thiesse Software nasce de mais de 18 anos de desenvolvimento de software — 8 deles atendendo clientes internacionais nos padrões exigentes dos mercados americano e europeu.',
+    en: 'TSoftwares was born from more than 18 years of software development — 8 of them serving international clients in the demanding standards of the American and European markets.',
+    pt: 'A TSoftwares nasce de mais de 18 anos de desenvolvimento de software — 8 deles atendendo clientes internacionais nos padrões exigentes dos mercados americano e europeu.',
   },
   'about.p2': {
     en: 'Our history includes cofounding a tech startup in Denmark, from where we expanded operations across Scandinavia, Germany and other European countries. This entrepreneurial experience shapes how we build products that scale across markets and cultures.',

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Thiesse Software" className="h-9 w-auto" />
+            <img src={logo} alt="TSoftwares" className="h-9 w-auto" />
           </div>
 
           <nav className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm">
@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div className="mt-10 pt-8 border-t border-border/50 text-center">
           <p className="font-mono text-xs text-muted-foreground/70">
-            © {new Date().getFullYear()} Thiesse Software. {t("footer.rights")} · {t("footer.markets")}
+            © {new Date().getFullYear()} TSoftwares. {t("footer.rights")} · {t("footer.markets")}
           </p>
         </div>
       </div>

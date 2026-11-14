@@ -19,8 +19,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/60">
       <nav className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3" aria-label="Thiesse Software">
-          <img src={logo} alt="Thiesse Software" className="h-10 w-auto object-contain" />
+        <a href="#" className="flex items-center gap-3" aria-label="TSoftwares">
+          <img src={logo} alt="TSoftwares" className="h-10 w-auto object-contain" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
