@@ -11,55 +11,209 @@ interface Translations {
 
 export const translations: Translations = {
   // Header
-  'nav.about': { en: 'About', pt: 'Sobre' },
-  'nav.experience': { en: 'Experience', pt: 'Experiência' },
+  'nav.solutions': { en: 'Solutions', pt: 'Soluções' },
   'nav.products': { en: 'Products', pt: 'Produtos' },
-  'nav.clients': { en: 'Clients', pt: 'Clientes' },
-  'nav.testimonials': { en: 'Recommendations', pt: 'Depoimentos' },
-  'nav.contact': { en: 'Get in Touch', pt: 'Contato' },
-  
+  'nav.experience': { en: 'Experience', pt: 'Experiência' },
+  'nav.about': { en: 'About', pt: 'Sobre' },
+  'nav.contact': { en: "Let's talk", pt: 'Vamos conversar' },
+  'nav.menu': { en: 'Open menu', pt: 'Abrir menu' },
+
   // Hero
-  'hero.badge': { en: 'Software Development Company', pt: 'Empresa de Desenvolvimento de Software' },
-  'hero.subtitle': { en: 'International Projects & Public Sector Solutions', pt: 'Projetos Internacionais & Soluções para o Setor Público' },
-  'hero.description': {
-    en: 'We build high-quality software for the American and European markets, and for the Brazilian public sector, since 2017. We combine international experience in healthcare, real estate and enterprise with solutions for government.',
-    pt: 'Desenvolvemos software de alto nível para os mercados dos EUA e da Europa e para o setor público brasileiro desde 2017. Unimos experiência internacional em saúde, mercado imobiliário e empresas de tecnologia à entrega de soluções para o governo.',
+  'hero.kicker': { en: 'THIESSE SOFTWARE · BR — US — EU', pt: 'THIESSE SOFTWARE · BR — EUA — UE' },
+  'hero.title': { en: 'Software engineering for businesses that', pt: 'Engenharia de software para negócios que' },
+  'hero.title_highlight': { en: 'go beyond.', pt: 'vão além.' },
+  'hero.subtitle': {
+    en: 'We build digital products and tailored solutions for international companies and for the Brazilian public sector.',
+    pt: 'Criamos produtos digitais e soluções sob medida para empresas internacionais e para o setor público brasileiro.',
   },
-  'hero.markets': { en: 'USA, Europe & Brazil', pt: 'EUA, Europa & Brasil' },
-  'hero.years_intl': { en: 'Years International Experience', pt: 'Anos de Experiência Internacional' },
-  'hero.years_total': { en: 'Years in the Market', pt: 'Anos de Mercado' },
-  'hero.cta': { en: 'Get in Touch', pt: 'Fale Conosco' },
-  'hero.badge_us': { en: 'USA', pt: 'EUA' },
-  'hero.badge_br': { en: 'Brazil', pt: 'Brasil' },
-  'hero.badge_eu': { en: 'Europe', pt: 'Europa' },
-  'hero.badge_since': { en: 'Since 2017', pt: 'Desde 2017' },
-  
+  'hero.cta_primary': { en: 'Talk about my project', pt: 'Conversar sobre meu projeto' },
+  'hero.cta_secondary': { en: 'Explore solutions', pt: 'Explorar soluções' },
+  'hero.stat_years': { en: 'years in the market', pt: 'anos de mercado' },
+  'hero.stat_intl': { en: 'years international', pt: 'anos internacionais' },
+  'hero.stat_since': { en: 'global operations', pt: 'atuação global' },
+  'hero.diagram_title': { en: 'software architecture', pt: 'arquitetura de software' },
+  'hero.diagram_core': { en: 'Thiesse Core', pt: 'Núcleo Thiesse' },
+  'hero.diagram_products': { en: 'Products', pt: 'Produtos' },
+  'hero.diagram_operations': { en: 'Operations', pt: 'Operações' },
+  'hero.diagram_public': { en: 'Public Sector', pt: 'Setor Público' },
+  'hero.diagram_markets': { en: 'Markets BR · US · EU', pt: 'Mercados BR · EUA · UE' },
+
+  // Credibility / Clients
+  'clients.label': { en: 'Credibility', pt: 'Credibilidade' },
+  'clients.title': { en: 'Who we have', pt: 'Com quem já' },
+  'clients.title_highlight': { en: 'worked with', pt: 'trabalhamos' },
+  'clients.description': {
+    en: 'Direct clients, work delivered through partners, and the founder’s track record — each relationship presented as it is.',
+    pt: 'Clientes diretos, atuação por meio de parceiros e a trajetória do fundador — cada relação apresentada como ela é.',
+  },
+  'clients.sergipe.name': { en: 'Government of Sergipe', pt: 'Governo de Sergipe' },
+  'clients.sergipe.relation': { en: 'Direct client · Public sector', pt: 'Cliente direto · Setor público' },
+  'clients.sergipe.desc': { en: 'Urban Land Regularization system and field app', pt: 'Sistema e app de Regularização Fundiária Urbana' },
+  'clients.cenexel.name': { en: 'Cenexel', pt: 'Cenexel' },
+  'clients.cenexel.relation': { en: 'Via Nortal / Nearsure · USA', pt: 'Via Nortal / Nearsure · EUA' },
+  'clients.cenexel.desc': { en: 'Healthcare and clinical research', pt: 'Saúde e pesquisa clínica' },
+  'clients.realpage.name': { en: 'Real Page', pt: 'Real Page' },
+  'clients.realpage.relation': { en: 'Via Code1 · USA', pt: 'Via Code1 · EUA' },
+  'clients.realpage.desc': { en: 'Real estate technology', pt: 'Tecnologia imobiliária' },
+  'clients.pwn.name': { en: 'PWN Health', pt: 'PWN Health' },
+  'clients.pwn.relation': { en: 'Via Jaya · USA', pt: 'Via Jaya · EUA' },
+  'clients.pwn.desc': { en: 'HIPAA-compliant health platform', pt: 'Plataforma de saúde em conformidade com HIPAA' },
+  'clients.crably.name': { en: 'Crably', pt: 'Crably' },
+  'clients.crably.relation': { en: 'Cofounded startup · Denmark', pt: 'Startup cofundada · Dinamarca' },
+  'clients.crably.desc': { en: 'Operations across Scandinavia, Germany and Europe', pt: 'Operação na Escandinávia, Alemanha e Europa' },
+  'clients.strip': { en: '7+ countries served · International operations since 2017', pt: '7+ países atendidos · Atuação internacional desde 2017' },
+
+  // Solutions
+  'solutions.label': { en: 'Solutions', pt: 'Soluções' },
+  'solutions.title': { en: 'What we', pt: 'O que' },
+  'solutions.title_highlight': { en: 'deliver', pt: 'entregamos' },
+  'solutions.description': {
+    en: 'Three fronts of work, one standard of engineering: software that solves real problems and keeps running.',
+    pt: 'Três frentes de atuação, um único padrão de engenharia: software que resolve problemas reais e continua operando.',
+  },
+  'solutions.eng.title': { en: 'Software engineering & digital products', pt: 'Engenharia de software e produtos digitais' },
+  'solutions.eng.desc': {
+    en: 'Design and development of web and mobile products for companies that need reliable software — from architecture to production.',
+    pt: 'Desenho e desenvolvimento de produtos web e mobile para empresas que precisam de software confiável — da arquitetura à produção.',
+  },
+  'solutions.eng.cap1': { en: 'Full-stack web and mobile development', pt: 'Desenvolvimento full-stack web e mobile' },
+  'solutions.eng.cap2': { en: 'Scalable architecture and cloud infrastructure', pt: 'Arquitetura escalável e infraestrutura em nuvem' },
+  'solutions.eng.cap3': { en: 'Technical leadership and team enablement', pt: 'Liderança técnica e capacitação de times' },
+  'solutions.gov.title': { en: 'Systems & apps for the public sector', pt: 'Sistemas e aplicativos para o setor público' },
+  'solutions.gov.desc': {
+    en: 'Digital solutions for government programs — like the Urban Land Regularization system and field app built for the Government of Sergipe.',
+    pt: 'Soluções digitais para programas de governo — como o sistema e o aplicativo de campo de Regularização Fundiária Urbana construídos para o Governo de Sergipe.',
+  },
+  'solutions.gov.cap1': { en: 'Management systems for public programs', pt: 'Sistemas de gestão para programas públicos' },
+  'solutions.gov.cap2': { en: 'Mobile apps for field agents', pt: 'Aplicativos mobile para agentes de campo' },
+  'solutions.gov.cap3': { en: 'End-to-end delivery, from survey to documents', pt: 'Entrega completa, do levantamento à emissão de documentos' },
+  'solutions.auto.title': { en: 'Automation & operations integration', pt: 'Automação e integração de operações' },
+  'solutions.auto.desc': {
+    en: 'AI agents and integrations that organize demands, answer people and connect tools — reducing operational noise where work already happens.',
+    pt: 'Agentes de IA e integrações que organizam demandas, atendem pessoas e conectam ferramentas — reduzindo ruído operacional onde o trabalho já acontece.',
+  },
+  'solutions.auto.cap1': { en: 'Conversational AI agents on WhatsApp', pt: 'Agentes conversacionais de IA no WhatsApp' },
+  'solutions.auto.cap2': { en: 'Workflow and systems integration', pt: 'Integração de fluxos e sistemas' },
+  'solutions.auto.cap3': { en: 'Content and operations automation', pt: 'Automação de conteúdo e de operações' },
+
+  // Products
+  'products.label': { en: 'Own Products', pt: 'Produtos Próprios' },
+  'products.title': { en: 'Products built', pt: 'Produtos construídos' },
+  'products.title_highlight': { en: 'by us', pt: 'por nós' },
+  'products.description': {
+    en: 'Operational intelligence, automation and digital health — products we design, build and operate.',
+    pt: 'Inteligência operacional, automação e saúde digital — produtos que desenhamos, construímos e operamos.',
+  },
+  'products.mission.tag': { en: 'Content Automation SaaS', pt: 'SaaS de Automação de Conteúdo' },
+  'products.mission.name': { en: 'Mission Control', pt: 'Mission Control' },
+  'products.mission.subtitle': { en: 'Content operations on autopilot', pt: 'Operação de conteúdo no piloto automático' },
+  'products.mission.description': {
+    en: 'Mission Control is a content automation platform: it plans, generates and publishes across channels with approval flows and your brand identity.',
+    pt: 'O Mission Control é uma plataforma de automação de conteúdo: planeja, gera e publica em múltiplos canais com fluxos de aprovação e a identidade da sua marca.',
+  },
+  'products.mission.benefit1': { en: 'Multi-channel planning and publishing', pt: 'Planejamento e publicação multicanal' },
+  'products.mission.benefit2': { en: 'AI generation with brand voice', pt: 'Geração com IA na voz da marca' },
+  'products.mission.benefit3': { en: 'Approval flows and editorial calendar', pt: 'Fluxos de aprovação e calendário editorial' },
+  'products.mission.cta': { en: 'Discover Mission Control', pt: 'Conhecer o Mission Control' },
+  'products.ops.tag': { en: 'WhatsApp AI Agent', pt: 'Agente de IA no WhatsApp' },
+  'products.ops.name': { en: 'OpsAgent', pt: 'OpsAgent' },
+  'products.ops.subtitle': { en: 'Conversational agent for operations', pt: 'Agente conversacional para operações' },
+  'products.ops.description': {
+    en: 'OpsAgent is a conversational agent on WhatsApp for public managers, directors and operational teams. It answers, guides, collects information and organizes demands directly on WhatsApp.',
+    pt: 'O OpsAgent é um agente conversacional via WhatsApp para gestores públicos, diretores e equipes operacionais. Atende, orienta, coleta informações e organiza demandas diretamente pelo WhatsApp.',
+  },
+  'products.ops.benefit1': { en: 'Service and triage via WhatsApp', pt: 'Atendimento e triagem via WhatsApp' },
+  'products.ops.benefit2': { en: 'Real-time demand organization', pt: 'Organização de demandas em tempo real' },
+  'products.ops.benefit3': { en: 'Support for managers and operational teams', pt: 'Apoio a gestores e equipes operacionais' },
+  'products.ops.cta': { en: 'Discover OpsAgent', pt: 'Conhecer o OpsAgent' },
+  'products.vacinapp.tag': { en: 'Public Health App', pt: 'App de Saúde Pública' },
+  'products.vacinapp.name': { en: 'VacinApp Brasil', pt: 'VacinApp Brasil' },
+  'products.vacinapp.subtitle': { en: 'Vaccination reminders for families', pt: 'Lembretes de vacinação para famílias' },
+  'products.vacinapp.description': {
+    en: 'VacinApp helps parents keep their children’s vaccination schedule on track. Free app with alerts, digital history and offline access — already protecting more than 3,000 families in Brazil.',
+    pt: 'O VacinApp ajuda pais a manter a caderneta de vacinação dos filhos em dia. Aplicativo gratuito com alertas, histórico digital e acesso offline — já protege mais de 3 mil famílias no Brasil.',
+  },
+  'products.vacinapp.benefit1': { en: 'Automatic alerts for every vaccine dose', pt: 'Alertas automáticos para cada dose' },
+  'products.vacinapp.benefit2': { en: 'Complete SUS + private calendar', pt: 'Calendário completo do SUS + particular' },
+  'products.vacinapp.benefit3': { en: 'Saved history and offline access', pt: 'Histórico salvo e acesso offline' },
+  'products.vacinapp.cta': { en: 'Download VacinApp', pt: 'Baixar o VacinApp' },
+  'products.footnote': { en: 'We build products that operate, not just software that runs.', pt: 'Construímos produtos que operam, não apenas software que executa.' },
+
+  // Experience
+  'exp.label': { en: 'Experience', pt: 'Experiência' },
+  'exp.title': { en: 'A track record across', pt: 'Uma trajetória entre' },
+  'exp.title_highlight': { en: 'borders', pt: 'fronteiras' },
+  'exp.description': {
+    en: 'Deliveries for American and European companies and for the Brazilian public sector — from cofounding a startup to enterprise and government solutions.',
+    pt: 'Entregas para empresas dos EUA e da Europa e para o setor público brasileiro — da cofundação de uma startup a soluções enterprise e de governo.',
+  },
+  'exp.current': { en: 'Current', pt: 'Atual' },
+  'exp.previous': { en: 'Previous', pt: 'Anterior' },
+  'exp.company_delivery': { en: 'Thiesse Software delivery', pt: 'Entrega Thiesse Software' },
+  'exp.founder_track': { en: 'Founder’s track record', pt: 'Trajetória do fundador' },
+
+  'exp.thiesse.role': { en: 'System & Mobile App Development', pt: 'Desenvolvimento de Sistema e Aplicativo Mobile' },
+  'exp.thiesse.location': { en: 'Sergipe, Brazil', pt: 'Sergipe, Brasil' },
+  'exp.thiesse.client': { en: 'Government of the State of Sergipe', pt: 'Governo do Estado de Sergipe' },
+  'exp.thiesse.clientDesc': { en: 'Urban Land Regularization', pt: 'Regularização Fundiária Urbana' },
+  'exp.thiesse.highlight1': { en: 'Management system for the state Urban Land Regularization program', pt: 'Sistema de gestão para o programa estadual de Regularização Fundiária Urbana' },
+  'exp.thiesse.highlight2': { en: 'Mobile and tablet app for field agents (inspections and registrations)', pt: 'Aplicativo mobile e tablet para agentes de campo (vistorias e cadastros)' },
+  'exp.thiesse.highlight3': { en: 'End-to-end solution, from field survey to document issuance', pt: 'Solução completa, do levantamento em campo à emissão de documentos' },
+
+  'exp.nortal.role': { en: 'Tech Lead / Senior Software Engineer', pt: 'Tech Lead / Engenheiro de Software Sênior' },
+  'exp.nortal.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
+  'exp.nortal.clientDesc': { en: 'Health and Clinical Research', pt: 'Saúde e Pesquisa Clínica' },
+  'exp.nortal.highlight1': { en: 'Direct work with a US-based healthcare company', pt: 'Atuação direta com empresa de saúde sediada nos EUA' },
+  'exp.nortal.highlight2': { en: 'Building scalable solutions for clinical research', pt: 'Construção de soluções escaláveis para pesquisa clínica' },
+  'exp.nortal.highlight3': { en: 'Full-stack development with modern technologies', pt: 'Desenvolvimento full-stack com tecnologias modernas' },
+
+  'exp.code1.role': { en: 'Engineering Manager / Senior Software Engineer', pt: 'Engineering Manager / Engenheiro de Software Sênior' },
+  'exp.code1.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
+  'exp.code1.clientDesc': { en: 'Real Estate Technology', pt: 'Tecnologia para o Mercado Imobiliário' },
+  'exp.code1.highlight1': { en: 'Enterprise real estate solutions for the US market', pt: 'Soluções corporativas de mercado imobiliário para o mercado americano' },
+  'exp.code1.highlight2': { en: 'High-scale applications serving millions of users', pt: 'Aplicações de alta escala servindo milhões de usuários' },
+  'exp.code1.highlight3': { en: 'Collaborative work with distributed teams', pt: 'Trabalho colaborativo com times distribuídos' },
+
+  'exp.crably.role': { en: 'Cofounder and CTO', pt: 'Cofundador e CTO' },
+  'exp.crably.location': { en: 'Copenhagen, Denmark', pt: 'Copenhague, Dinamarca' },
+  'exp.crably.client': { en: 'European Expansion', pt: 'Expansão Europeia' },
+  'exp.crably.clientDesc': { en: 'Scandinavia, Germany, Portugal, Spain and others', pt: 'Escandinávia, Alemanha, Portugal, Espanha e outros' },
+  'exp.crably.highlight1': { en: 'Founded and scaled a technology startup', pt: 'Fundação e escala de uma startup de tecnologia' },
+  'exp.crably.highlight2': { en: 'Expanded operations across several European countries', pt: 'Expansão das operações por diversos países europeus' },
+  'exp.crably.highlight3': { en: 'Built and led engineering teams', pt: 'Formação e liderança de times de engenharia' },
+
+  'exp.jaya.role': { en: 'Software Engineer', pt: 'Engenheiro de Software' },
+  'exp.jaya.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
+  'exp.jaya.clientDesc': { en: 'Health Technology', pt: 'Tecnologia para Saúde' },
+  'exp.jaya.highlight1': { en: 'Development of a health platform', pt: 'Desenvolvimento de plataforma de saúde' },
+  'exp.jaya.highlight2': { en: 'HIPAA-compliant solutions', pt: 'Soluções em conformidade com HIPAA' },
+  'exp.jaya.highlight3': { en: 'Integration with US healthcare systems', pt: 'Integração com sistemas de saúde dos EUA' },
+
   // About
-  'about.label': { en: 'About Us', pt: 'Sobre Nós' },
-  'about.title': { en: 'Bridging Continents Through', pt: 'Conectando Continentes Através da' },
-  'about.title_highlight': { en: 'Technology', pt: 'Tecnologia' },
+  'about.label': { en: 'About Thiesse', pt: 'Sobre a Thiesse' },
+  'about.title': { en: 'International engineering,', pt: 'Engenharia internacional,' },
+  'about.title_highlight': { en: 'Brazilian roots', pt: 'raízes brasileiras' },
   'about.p1': {
-    en: 'With more than 18 years in software development and 8 years serving international clients, we build robust solutions that meet the demanding standards of both the American and European markets.',
-    pt: 'Com mais de 18 anos em desenvolvimento de software e 8 anos atendendo clientes internacionais, construímos soluções robustas que atendem aos padrões exigentes dos mercados dos EUA e da Europa.',
+    en: 'Thiesse Software was born from more than 18 years of software development — 8 of them serving international clients in the demanding standards of the American and European markets.',
+    pt: 'A Thiesse Software nasce de mais de 18 anos de desenvolvimento de software — 8 deles atendendo clientes internacionais nos padrões exigentes dos mercados americano e europeu.',
   },
   'about.p2': {
-    en: 'Our history includes cofounding a tech startup in Denmark, from where we expanded operations across Scandinavia, Germany and other European countries. This entrepreneurial experience gives us a unique perspective on building products that scale across different markets and cultures.',
-    pt: 'Nossa trajetória inclui a cofundação de uma startup de tecnologia na Dinamarca, a partir da qual expandimos operações pela Escandinávia, Alemanha e outros países da Europa. Essa vivência empreendedora nos dá uma visão única sobre construir produtos que escalam por diferentes mercados e culturas.',
+    en: 'Our history includes cofounding a tech startup in Denmark, from where we expanded operations across Scandinavia, Germany and other European countries. This entrepreneurial experience shapes how we build products that scale across markets and cultures.',
+    pt: 'Nossa trajetória inclui a cofundação de uma startup de tecnologia na Dinamarca, a partir da qual expandimos operações pela Escandinávia, Alemanha e outros países da Europa. Essa vivência empreendedora orienta como construímos produtos que escalam entre mercados e culturas.',
   },
   'about.p3': {
-    en: 'Today, through Thiesse Softwares, we partner with leading American companies in healthcare, real estate and enterprise sectors — and we are proud to work alongside the Government of the State of Sergipe, developing the system and mobile app for the state Urban Land Regularization program.',
-    pt: 'Hoje, por meio da Thiesse Softwares, atuamos em parceria com empresas americanas líderes nos setores de saúde, mercado imobiliário e tecnologia — e temos orgulho de trabalhar junto ao Governo do Estado de Sergipe, desenvolvendo o sistema e o aplicativo mobile do programa estadual de Regularização Fundiária Urbana.',
+    en: 'Today we partner with leading American companies in healthcare, real estate and enterprise — and we work alongside the Government of the State of Sergipe, developing the system and mobile app for the state Urban Land Regularization program.',
+    pt: 'Hoje atuamos em parceria com empresas americanas líderes nos setores de saúde, mercado imobiliário e tecnologia — e trabalhamos junto ao Governo do Estado de Sergipe, desenvolvendo o sistema e o aplicativo mobile do programa estadual de Regularização Fundiária Urbana.',
   },
-  'about.speaker': { en: 'Tech Talks & Mentorship', pt: 'Palestras e Mentoria' },
-  'about.speaker_desc': { en: 'Sharing knowledge about working internationally', pt: 'Compartilhando conhecimento sobre atuação internacional' },
-  
+  'about.founder_name': { en: 'Davi Thiesse', pt: 'Davi Thiesse' },
+  'about.founder_role': { en: 'Founder & Technical Leadership', pt: 'Fundador & Liderança Técnica' },
+
   // Stats
   'stat.years_exp': { en: 'Years in the Market', pt: 'Anos de Mercado' },
   'stat.intl_exp': { en: 'International Years', pt: 'Anos Internacionais' },
   'stat.countries': { en: 'Countries Served', pt: 'Países Atendidos' },
-  'stat.us_clients': { en: 'Major US Clients', pt: 'Clientes nos EUA' },
   'stat.startup': { en: 'Startup Cofounded', pt: 'Startup Cofundada' },
-  
+
   // Highlights
   'highlight.global.title': { en: 'Global Reach', pt: 'Alcance Global' },
   'highlight.global.desc': {
@@ -81,96 +235,11 @@ export const translations: Translations = {
     en: 'Trusted by leading US companies in healthcare and real estate.',
     pt: 'Empresas americanas líderes nos setores de saúde e mercado imobiliário confiam em nós.',
   },
-  
-  // Experience
-  'exp.label': { en: 'Company Journey', pt: 'Nossa Trajetória' },
-  'exp.title': { en: 'International', pt: 'Experiência' },
-  'exp.title_highlight': { en: 'Experience', pt: 'Internacional' },
-  'exp.description': {
-    en: 'A track record of quality delivery for American and European companies and for the Brazilian public sector — from cofounding a startup to enterprise and government solutions.',
-    pt: 'Um histórico de entregas de qualidade para empresas dos EUA e da Europa e para o setor público brasileiro — da cofundação de uma startup a soluções enterprise e de governo.',
-  },
-  'exp.current': { en: 'Current', pt: 'Atual' },
-  'exp.previous': { en: 'Previous', pt: 'Anterior' },
-
-  // Experience items — Thiesse Software / Governo de Sergipe
-  'exp.thiesse.role': { en: 'System & Mobile App Development', pt: 'Desenvolvimento de Sistema e Aplicativo Mobile' },
-  'exp.thiesse.location': { en: 'Sergipe, Brazil', pt: 'Sergipe, Brasil' },
-  'exp.thiesse.client': { en: 'Government of the State of Sergipe', pt: 'Governo do Estado de Sergipe' },
-  'exp.thiesse.clientDesc': { en: 'Urban Land Regularization', pt: 'Regularização Fundiária Urbana' },
-  'exp.thiesse.highlight1': { en: 'Management system for the state Urban Land Regularization program', pt: 'Sistema de gestão para o programa estadual de Regularização Fundiária Urbana' },
-  'exp.thiesse.highlight2': { en: 'Mobile and tablet app for field agents (inspections and registrations)', pt: 'Aplicativo mobile e tablet para agentes de campo (vistorias e cadastros)' },
-  'exp.thiesse.highlight3': { en: 'End-to-end solution, from field survey to document issuance', pt: 'Solução completa, do levantamento em campo à emissão de documentos' },
-
-  // Experience items — Nortal / Nearsure
-  'exp.nortal.role': { en: 'Tech Lead / Senior Software Engineer', pt: 'Tech Lead / Engenheiro de Software Sênior' },
-  'exp.nortal.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
-  'exp.nortal.clientDesc': { en: 'Health and Clinical Research', pt: 'Saúde e Pesquisa Clínica' },
-  'exp.nortal.highlight1': { en: 'Direct work with a US-based healthcare company', pt: 'Atuação direta com empresa de saúde sediada nos EUA' },
-  'exp.nortal.highlight2': { en: 'Building scalable solutions for clinical research', pt: 'Construção de soluções escaláveis para pesquisa clínica' },
-  'exp.nortal.highlight3': { en: 'Full-stack development with modern technologies', pt: 'Desenvolvimento full-stack com tecnologias modernas' },
-
-  // Experience items — Code1
-  'exp.code1.role': { en: 'Engineering Manager / Senior Software Engineer', pt: 'Engineering Manager / Engenheiro de Software Sênior' },
-  'exp.code1.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
-  'exp.code1.clientDesc': { en: 'Real Estate Technology', pt: 'Tecnologia para o Mercado Imobiliário' },
-  'exp.code1.highlight1': { en: 'Enterprise real estate solutions for the US market', pt: 'Soluções corporativas de mercado imobiliário para o mercado americano' },
-  'exp.code1.highlight2': { en: 'High-scale applications serving millions of users', pt: 'Aplicações de alta escala servindo milhões de usuários' },
-  'exp.code1.highlight3': { en: 'Collaborative work with distributed teams', pt: 'Trabalho colaborativo com times distribuídos' },
-
-  // Experience items — Crably
-  'exp.crably.role': { en: 'Cofounder and CTO', pt: 'Cofundador e CTO' },
-  'exp.crably.location': { en: 'Copenhagen, Denmark', pt: 'Copenhague, Dinamarca' },
-  'exp.crably.client': { en: 'European Expansion', pt: 'Expansão Europeia' },
-  'exp.crably.clientDesc': { en: 'Scandinavia, Germany, Portugal, Spain and others', pt: 'Escandinávia, Alemanha, Portugal, Espanha e outros' },
-  'exp.crably.highlight1': { en: 'Founded and scaled a technology startup', pt: 'Fundação e escala de uma startup de tecnologia' },
-  'exp.crably.highlight2': { en: 'Expanded operations across several European countries', pt: 'Expansão das operações por diversos países europeus' },
-  'exp.crably.highlight3': { en: 'Built and led engineering teams', pt: 'Formação e liderança de times de engenharia' },
-
-  // Experience items — Jaya
-  'exp.jaya.role': { en: 'Software Engineer', pt: 'Engenheiro de Software' },
-  'exp.jaya.location': { en: 'Remote — US Client', pt: 'Remoto — Cliente nos EUA' },
-  'exp.jaya.clientDesc': { en: 'Health Technology', pt: 'Tecnologia para Saúde' },
-  'exp.jaya.highlight1': { en: 'Development of a health platform', pt: 'Desenvolvimento de plataforma de saúde' },
-  'exp.jaya.highlight2': { en: 'HIPAA-compliant solutions', pt: 'Soluções em conformidade com HIPAA' },
-  'exp.jaya.highlight3': { en: 'Integration with US healthcare systems', pt: 'Integração com sistemas de saúde dos EUA' },
-  
-  // Products
-  'products.label': { en: 'Products', pt: 'Produtos' },
-  'products.title': { en: 'Our', pt: 'Nossos' },
-  'products.title_highlight': { en: 'Products', pt: 'Produtos' },
-  'products.description': {
-    en: 'Operational intelligence, automation and digital health solutions built to scale workflows for public managers, operational teams and families.',
-    pt: 'Soluções de inteligência operacional, automação e saúde digital construídas para escalar fluxos de trabalho de gestores públicos, equipes operacionais e famílias.',
-  },
-  'products.ops.tag': { en: 'WhatsApp Agent', pt: 'Agente WhatsApp' },
-  'products.ops.name': { en: 'OpsAgent', pt: 'OpsAgent' },
-  'products.ops.subtitle': { en: 'Conversational Agent for Operations', pt: 'Agente Conversacional para Operações' },
-  'products.ops.description': {
-    en: 'OpsAgent is a conversational agent via WhatsApp for public managers, directors and operational teams. It answers, guides, collects information, organizes demands and supports internal workflows directly on WhatsApp, reducing operational noise and accelerating decisions.',
-    pt: 'O OpsAgent é um agente conversacional via WhatsApp para gestores públicos, diretores e equipes operacionais. Atende, orienta, coleta informações, organiza demandas e apoia fluxos internos diretamente pelo WhatsApp, reduzindo ruído operacional e acelerando decisões.',
-  },
-  'products.ops.benefit1': { en: 'Service and triage via WhatsApp', pt: 'Atendimento e triagem via WhatsApp' },
-  'products.ops.benefit2': { en: 'Real-time demand organization', pt: 'Organização de demandas em tempo real' },
-  'products.ops.benefit3': { en: 'Support for public managers and operational teams', pt: 'Apoio a gestores públicos e equipes operacionais' },
-  'products.ops.cta': { en: 'Discover OpsAgent', pt: 'Conhecer o OpsAgent' },
-  'products.vacinapp.tag': { en: 'Public Health App', pt: 'App de Saúde Pública' },
-  'products.vacinapp.name': { en: 'VacinApp Brasil', pt: 'VacinApp Brasil' },
-  'products.vacinapp.subtitle': { en: 'Vaccination Reminders for Families', pt: 'Lembretes de Vacinação para Famílias' },
-  'products.vacinapp.description': {
-    en: 'VacinApp helps parents keep their children\'s vaccination schedule on track. Free app with alerts, digital history and offline access — already protecting more than 3,000 families in Brazil.',
-    pt: 'O VacinApp ajuda pais a manter a caderneta de vacinação dos filhos em dia. Aplicativo gratuito com alertas, histórico digital e acesso offline — já protege mais de 3 mil famílias no Brasil.',
-  },
-  'products.vacinapp.benefit1': { en: 'Automatic alerts for every vaccine dose', pt: 'Alertas automáticos para cada dose' },
-  'products.vacinapp.benefit2': { en: 'Complete SUS + private calendar', pt: 'Calendário completo do SUS + particular' },
-  'products.vacinapp.benefit3': { en: 'Saved history and offline access', pt: 'Histórico salvo e acesso offline' },
-  'products.vacinapp.cta': { en: 'Download VacinApp', pt: 'Baixar o VacinApp' },
-  'products.footnote': { en: 'We build products that operate, not just software that runs.', pt: 'Construímos produtos que operam, não apenas software que executa.' },
 
   // Testimonials
   'testimonials.label': { en: 'Recommendations', pt: 'Depoimentos' },
-  'testimonials.title': { en: 'What Clients and', pt: 'O que clientes e' },
-  'testimonials.title_highlight': { en: 'Colleagues Say', pt: 'colegas dizem' },
+  'testimonials.title': { en: 'What clients and', pt: 'O que clientes e' },
+  'testimonials.title_highlight': { en: 'colleagues say', pt: 'colegas dizem' },
   'testimonials.description': {
     en: 'Recommendations published on LinkedIn by managers, clients and teammates from the American and European projects we took part in.',
     pt: 'Recomendações publicadas no LinkedIn por gestores, clientes e colegas dos projetos americanos e europeus em que atuamos.',
@@ -218,67 +287,26 @@ export const translations: Translations = {
     pt: "O Davi foi engenheiro de software em uma das minhas equipes de engenharia Ruby/Rails/Vue por cerca de dois anos. Durante o tempo em que trabalhamos juntos, ele conseguiu se ambientar muito rápido e contribuir de forma intensa em uma grande variedade de aplicações mantidas pela equipe. Trabalhou em conjunto com nossa equipe baseada nos EUA para entregar produtos de software na área de marketing analytics.\n\nO Davi entregou projetos de Call Tracking, entrega de relatórios de analytics, construção de interfaces customizadas para visualização de relatórios, integração dos nossos sistemas de back-end com os sistemas da nova empresa controladora, além de muita manutenção em sistemas existentes, incluindo correção de bugs, melhorias, upgrades de versão e troubleshooting.\n\nO que eu realmente gostei de trabalhar com o Davi foi sua capacidade de organizar os desenvolvedores ao seu redor. Ele é um líder de equipe eficaz, que colabora por todo o grupo e frequentemente faz pair programming com outros desenvolvedores para garantir que os projetos avancem. Recomendo o Davi para posições em equipes de engenharia, de contribuidor individual a tech lead.",
   },
 
-
-  // Clients
-  'clients.label': { en: 'Trusted By', pt: 'Quem Confia em Nós' },
-  'clients.title': { en: 'Our', pt: 'Nossos' },
-  'clients.title_highlight': { en: 'Clients', pt: 'Clientes' },
-  'clients.description': {
-    en: 'We work with leading American companies in healthcare, real estate and technology, and with the Brazilian public sector.',
-    pt: 'Trabalhamos com empresas americanas líderes nos setores de saúde, mercado imobiliário e tecnologia, e com o setor público brasileiro.',
-  },
-  'clients.satisfaction': { en: 'Client Satisfaction', pt: 'Satisfação dos Clientes' },
-  'clients.projects': { en: 'Delivered Projects', pt: 'Projetos Entregues' },
-  'clients.eu_countries': { en: 'Countries Served', pt: 'Países Atendidos' },
-
-  // Client cards
-  'clients.sergipe.name': { en: 'Government of Sergipe', pt: 'Governo de Sergipe' },
-  'clients.sergipe.country': { en: 'Brazil', pt: 'Brasil' },
-  'clients.sergipe.sector': { en: 'Public Sector / Urban Land Regularization', pt: 'Setor Público / Regularização Fundiária Urbana' },
-  'clients.sergipe.desc': { en: 'Management system and mobile app for field agents of the state program', pt: 'Sistema de gestão e aplicativo mobile para agentes de campo do programa estadual' },
-  'clients.cenexel.name': { en: 'Cenexel', pt: 'Cenexel' },
-  'clients.cenexel.country': { en: 'USA', pt: 'EUA' },
-  'clients.cenexel.sector': { en: 'Healthcare and Clinical Research', pt: 'Saúde e Pesquisa Clínica' },
-  'clients.cenexel.desc': { en: 'Supporting clinical research operations across the United States', pt: 'Apoio às operações de pesquisa clínica em todo o território dos EUA' },
-  'clients.realpage.name': { en: 'Real Page', pt: 'Real Page' },
-  'clients.realpage.country': { en: 'USA', pt: 'EUA' },
-  'clients.realpage.sector': { en: 'Real Estate Technology', pt: 'Tecnologia para o Mercado Imobiliário' },
-  'clients.realpage.desc': { en: 'Enterprise real estate management solutions serving millions of users', pt: 'Soluções corporativas de gestão imobiliária que atendem milhões de usuários' },
-  'clients.pwn.name': { en: 'PWN Health', pt: 'PWN Health' },
-  'clients.pwn.country': { en: 'USA', pt: 'EUA' },
-  'clients.pwn.sector': { en: 'Health Technology', pt: 'Tecnologia para Saúde' },
-  'clients.pwn.desc': { en: 'Development of a HIPAA-compliant healthcare platform', pt: 'Desenvolvimento de plataforma de saúde em conformidade com HIPAA' },
-  'clients.crably.name': { en: 'Crably', pt: 'Crably' },
-  'clients.crably.country': { en: 'Denmark', pt: 'Dinamarca' },
-  'clients.crably.sector': { en: 'Technology Startup', pt: 'Startup de Tecnologia' },
-  'clients.crably.desc': { en: 'Scandinavia, Germany and several European markets', pt: 'Escandinávia, Alemanha e diversos mercados europeus' },
-  
   // Contact
-  'contact.label': { en: 'Get In Touch', pt: 'Fale Conosco' },
-  'contact.title': { en: 'Ready to Build Something', pt: 'Pronto para Construir Algo' },
-  'contact.title_highlight': { en: 'Great?', pt: 'Incrível?' },
+  'contact.label': { en: 'Contact', pt: 'Contato' },
+  'contact.title': { en: "Let's build your", pt: 'Vamos construir seu' },
+  'contact.title_highlight': { en: 'next product?', pt: 'próximo produto?' },
   'contact.description': {
-    en: 'Whether you need a partner for your international project or for a public sector initiative, we would love to talk.',
-    pt: 'Se você precisa de um parceiro para um projeto internacional ou para uma iniciativa do setor público, vamos conversar.',
+    en: 'Whether it is an international project, a public sector initiative or a product of your own — the simplest way to start is a conversation.',
+    pt: 'Seja um projeto internacional, uma iniciativa do setor público ou um produto próprio — o caminho mais simples para começar é uma conversa.',
   },
-  'contact.info': { en: 'Contact Information', pt: 'Informações de Contato' },
-  'contact.location': { en: 'Location', pt: 'Localização' },
+  'contact.whatsapp': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
+  'contact.email': { en: 'Send an email', pt: 'Enviar e-mail' },
+  'contact.linkedin': { en: 'Connect on LinkedIn', pt: 'Conectar no LinkedIn' },
+  'contact.location': { en: 'Based in Brazil', pt: 'Base no Brasil' },
   'contact.location_desc': { en: 'Available for US, European and Brazilian time zones', pt: 'Disponíveis para os fusos horários dos EUA, da Europa e do Brasil' },
   'contact.availability': { en: 'Availability', pt: 'Disponibilidade' },
   'contact.availability_desc': { en: 'Open to new projects', pt: 'Abertos a novos projetos' },
-  'contact.connect': { en: 'Connect with us', pt: 'Conecte-se conosco' },
-  'contact.cta_title': { en: "Let's Work Together", pt: 'Vamos Trabalhar Juntos' },
-  'contact.cta_desc': {
-    en: 'Looking for a partner with proven international experience and public sector expertise? We specialize in full-stack development for healthcare, real estate, enterprise and government.',
-    pt: 'Procurando um parceiro com experiência internacional comprovada e atuação no setor público? Somos especialistas em desenvolvimento full-stack para saúde, mercado imobiliário, enterprise e governo.',
-  },
-  'contact.linkedin': { en: 'Connect on LinkedIn', pt: 'Conectar no LinkedIn' },
-  'contact.whatsapp': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
-  
+
   // Footer
-  'footer.company': { en: 'Software Development Company', pt: 'Empresa de Desenvolvimento de Software' },
+  'footer.company': { en: 'Software engineering with a global vision', pt: 'Engenharia de software com visão global' },
   'footer.rights': { en: 'All rights reserved.', pt: 'Todos os direitos reservados.' },
-  'footer.markets': { en: 'USA, Europe & Brazil Since 2017', pt: 'EUA, Europa e Brasil desde 2017' },
+  'footer.markets': { en: 'Brazil · USA · Europe — since 2017', pt: 'Brasil · EUA · Europa — desde 2017' },
 };
 
 interface LanguageContextType {
