@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="relative border-y border-border bg-background/90">
         <div className="container mx-auto flex flex-col gap-6 px-6 py-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="grid grid-cols-3 gap-4 sm:gap-10">
-            {[["18+", "hero.stat_years"], ["8+", "hero.stat_intl"], ["2017", "hero.stat_since"]].map(([value, key]) => (
+            {[["20+", "hero.stat_years"], ["9+", "hero.stat_intl"], ["2017", "hero.stat_since"]].map(([value, key]) => (
               <div key={key} className="border-l border-primary/40 pl-3">
                 <p className="text-xl font-semibold leading-none text-foreground md:text-2xl">{value}</p>
                 <p className="mt-2 text-xs text-muted-foreground">{t(key)}</p>
