@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CheckCircle2, MessageSquare, HeartPulse, LayoutDashboard, Bot } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, HeartPulse, LayoutDashboard, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Products = () => {
