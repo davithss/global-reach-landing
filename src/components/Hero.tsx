@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="hero-photo-shade absolute inset-0" />
       </div>
 
-      <div className="container relative mx-auto px-6 pt-28 pb-8 md:pt-32 md:pb-10">
+      <div className="container relative mx-auto px-6 pt-24 pb-6 md:pt-32 md:pb-10">
         <div className="max-w-xl md:w-[60%] lg:w-[57%] lg:max-w-2xl">
           <p className="animate-fade-up mb-4 flex items-center gap-2 text-xs font-medium uppercase text-accent">
             <span className="h-px w-6 bg-accent" aria-hidden="true" />
@@ -26,10 +26,10 @@ const Hero = () => {
             {t("hero.title")}<br />
             <span className="text-accent">{t("hero.title_highlight")}</span>
           </h2>
-          <p className="animate-fade-up-delay-2 mb-6 max-w-lg text-base leading-relaxed text-foreground/80 md:text-lg">
+          <p className="animate-fade-up-delay-2 mb-5 max-w-lg text-sm leading-relaxed text-foreground/80 md:mb-6 md:text-lg">
             {t("hero.subtitle")}
           </p>
-          <ul className="animate-fade-up-delay-2 mb-7 flex flex-wrap gap-x-5 gap-y-2 text-xs text-foreground/80 md:text-sm">
+          <ul className="animate-fade-up-delay-2 mb-5 flex flex-wrap gap-x-5 gap-y-2 text-xs text-foreground/80 md:mb-7 md:text-sm">
             {["hero.benefit1", "hero.benefit2", "hero.benefit3"].map((key) => (
               <li key={key} className="flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-accent" aria-hidden="true" />{t(key)}</li>
             ))}
