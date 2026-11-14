@@ -17,7 +17,7 @@ for (const [path, page] of Object.entries(pages)) {
   ]) html = html.replace(new RegExp(`<meta ${attribute}="${key}"[^>]*>`), `<meta ${attribute}="${key}" content="${escape(value)}" />`);
   // Route canonicals are absent from the app shell: Helmet owns them at runtime.
   html = html.replace(/<link rel="canonical"[^>]*>/g, "");
-  html = html.replace("</head>", `  <link rel="canonical" href="${url}" />\n    <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": page.schemaType, name: page.title, description: page.description, url, inLanguage: "pt-BR", publisher: { "@id": "https://thiesse.com.br/#organization" } }).replaceAll("<", "\\u003c")}</script>\n  </head>`);
+  html = html.replace("</head>", `  <link rel="canonical" href="${url}" data-rh="true" />\n    <script type="application/ld+json" data-rh="true">${JSON.stringify({ "@context": "https://schema.org", "@type": page.schemaType, name: page.title, description: page.description, url, inLanguage: "pt-BR", publisher: { "@id": "https://thiesse.com.br/#organization" } }).replaceAll("<", "\\u003c")}</script>\n  </head>`);
   // Preserve the existing Mission Control share image; don't generate a new image.
   if (path.startsWith("/mission-control")) {
     html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")[^"]*(")/g, '$1https://thiesse.com.br/og-mission-control.png?v=2$2');
