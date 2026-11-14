@@ -1,0 +1,39 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="electricGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Símbolo T com Runa Fehu -->
+  <g>
+    <path d="M 8 12 L 38 12 L 38 18 L 28 18 L 28 48 L 18 48 L 18 18 L 8 18 Z"
+          fill="url(#electricGradient)"/>
+    <g opacity="0.75">
+      <rect x="32" y="22" width="2" height="18" fill="url(#electricGradient)"/>
+      <path d="M 33 24 L 33 26 L 40 23 L 40 21 Z" fill="url(#electricGradient)"/>
+      <path d="M 33 32 L 33 34 L 40 31 L 40 29 Z" fill="url(#electricGradient)"/>
+    </g>
+  </g>
+
+  <!-- Texto THIESSE -->
+  <text x="52" y="38"
+        font-family="Outfit, Arial, Helvetica, sans-serif"
+        font-size="26"
+        font-weight="700"
+        fill="#F4F7FB"
+        letter-spacing="2">
+    THIESSE
+  </text>
+
+  <!-- Subtitle -->
+  <text x="52" y="52"
+        font-family="Outfit, Arial, Helvetica, sans-serif"
+        font-size="9"
+        font-weight="400"
+        fill="#8A94A6"
+        letter-spacing="3">
+    SOFTWARE
+  </text>
+</svg>
