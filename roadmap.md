@@ -4,3 +4,4 @@
 - [x] Verify desktop, mobile, and contact links.
 - [x] Create the Mission Control sales page with a command-center preview, transparent custom implementation, and application form.
 - [x] Store and validate applications securely; verify a real test submission and desktop/mobile views.
+- [x] Replace the Mission Control form with TSoftwares WhatsApp contact and verify all contact buttons.
