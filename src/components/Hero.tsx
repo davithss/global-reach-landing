@@ -36,7 +36,7 @@ const Hero = () => {
           </ul>
           <div className="animate-fade-up-delay-3 flex flex-col gap-3 sm:flex-row">
             <Button size="lg" asChild className="px-5 font-semibold">
-              <a href="https://wa.me/5579981029218" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5579936181642" target="_blank" rel="noopener noreferrer">
                 <MessageCircle aria-hidden="true" />{t("hero.cta_primary")}<ArrowRight aria-hidden="true" />
               </a>
             </Button>

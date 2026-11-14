@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, MapPin, Calendar, MessageCircle } from "lucide-react";
+import { Linkedin, MapPin, Calendar, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
@@ -29,19 +29,13 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="xl" asChild>
               <a
-                href="https://wa.me/5579981029218"
+                href="https://wa.me/5579936181642"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
                 {t("contact.whatsapp")}
-              </a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href="mailto:davi@thiesse.com.br" className="flex items-center gap-2">
-                <Mail className="w-5 h-5" />
-                {t("contact.email")}
               </a>
             </Button>
           </div>
