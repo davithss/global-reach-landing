@@ -65,7 +65,7 @@ const About = () => {
               </div>
             </div>
             {/* Secondary portrait */}
-            <div className="absolute -bottom-8 -left-8 w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-primary/40 shadow-gold-glow hidden sm:block">
+            <div className="absolute -top-8 -left-8 w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-primary/40 shadow-gold-glow hidden sm:block">
               <img
                 src={profileAsset.url}
                 alt="Perfil de Davi Thiesse"

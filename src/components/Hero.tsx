@@ -117,13 +117,12 @@ const Hero = () => {
                   </text>
                 </g>
 
-                {/* Connection dots */}
+                {/* Connection dots at module edges */}
                 <g fill="hsl(187 92% 50%)">
-                  <circle cx="110" cy="70" r="3" />
-                  <circle cx="370" cy="70" r="3" />
-                  <circle cx="110" cy="270" r="3" />
-                  <circle cx="370" cy="270" r="3" />
-                  <circle cx="240" cy="170" r="4" />
+                  <circle cx="175" cy="115" r="3" />
+                  <circle cx="305" cy="115" r="3" />
+                  <circle cx="175" cy="225" r="3" />
+                  <circle cx="305" cy="225" r="3" />
                 </g>
               </svg>
             </div>
