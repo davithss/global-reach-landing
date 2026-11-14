@@ -9,6 +9,39 @@ export const analyticsConsentKey = "tsoftwares-analytics-consent";
 let initialized = false;
 let lastPath: string | undefined;
 
+type ClickEvent = { name: "whatsapp_click" | "product_click" | "community_click"; target: "company_whatsapp" | "mission_control" | "vacinapp_brasil" | "comunidade_imparaveis" };
+
+export function classifyAnalyticsLink(href: string, origin: string): ClickEvent | null {
+  let url: URL;
+  try { url = new URL(href, origin); } catch { return null; }
+  if (url.protocol !== "https:" && url.protocol !== "http:") return null;
+  if (url.hostname === "chat.whatsapp.com" && url.pathname === "/E7jIWqgBxGxLwV7cF0qKwp") {
+    return { name: "community_click", target: "comunidade_imparaveis" };
+  }
+  if (url.hostname === "wa.me" && url.pathname === "/5579936181642") {
+    return { name: "whatsapp_click", target: "company_whatsapp" };
+  }
+  if (url.origin === origin && url.pathname.replace(/\/$/, "") === "/mission-control" && !url.hash) {
+    return { name: "product_click", target: "mission_control" };
+  }
+  if (["vacinapp.com", "www.vacinapp.com"].includes(url.hostname) || (url.origin === origin && url.pathname.replace(/\/$/, "") === "/vacinapp" && !url.hash)) {
+    return { name: "product_click", target: "vacinapp_brasil" };
+  }
+  return null;
+}
+
+export function trackLinkClick(href: string, pathname: string) {
+  if (!initialized || readAnalyticsConsent() !== "accepted") return;
+  const event = classifyAnalyticsLink(href, window.location.origin);
+  if (!event) return;
+  // Only fixed identifiers and the page path: no phone, invite token, URL or link text.
+  window.gtag?.("event", event.name, {
+    click_target: event.target,
+    page_path: pathname,
+    transport_type: "beacon",
+  });
+}
+
 export function readAnalyticsConsent(): Consent | null {
   try {
     const value = localStorage.getItem(analyticsConsentKey);

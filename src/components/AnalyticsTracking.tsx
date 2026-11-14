@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { initializeAnalytics, readAnalyticsConsent, saveAnalyticsConsent, trackPageView } from "@/lib/analytics";
+import { initializeAnalytics, readAnalyticsConsent, saveAnalyticsConsent, trackPageView, trackLinkClick } from "@/lib/analytics";
 
 export default function AnalyticsTracking() {
   const { pathname } = useLocation();
@@ -20,6 +20,24 @@ export default function AnalyticsTracking() {
       if (initializeAnalytics(measurementId)) trackPageView(pathname);
     }, 100);
     return () => window.clearTimeout(timer);
+  }, [consent, measurementId, pathname]);
+  useEffect(() => {
+    if (consent !== "accepted") return;
+    const handleClick = (event: MouseEvent) => {
+      if (event.type === "auxclick" && event.button !== 1) return;
+      if (!(event.target instanceof Element)) return;
+      const anchor = event.target.closest("a[href]");
+      if (!(anchor instanceof HTMLAnchorElement)) return;
+      if (!initializeAnalytics(measurementId)) return;
+      trackLinkClick(anchor.href, pathname);
+    };
+    // Capture before SPA navigation or opening WhatsApp; never prevent navigation.
+    document.addEventListener("click", handleClick, true);
+    document.addEventListener("auxclick", handleClick, true);
+    return () => {
+      document.removeEventListener("click", handleClick, true);
+      document.removeEventListener("auxclick", handleClick, true);
+    };
   }, [consent, measurementId, pathname]);
   if (!measurementId || consent) return null;
   const english = language.startsWith("en");

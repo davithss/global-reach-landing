@@ -8,3 +8,4 @@
 - [x] Create the /links Instagram bio page with products and WhatsApp; verify on mobile and desktop.
 - [x] Configure page-specific SEO and synchronize the sitemap for every public page.
 - [x] Connect Google Analytics and verify consent-based visit tracking and navigation.
+- [x] Track WhatsApp, product and community clicks in Google Analytics and verify consent and navigation.
