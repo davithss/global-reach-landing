@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      mission_control_applications: {
+        Row: {
+          bottleneck: string
+          company: string
+          created_at: string
+          id: string
+          name: string
+          status: string
+          team_size: string
+          waitlist_opt_in: boolean
+          whatsapp: string
+        }
+        Insert: {
+          bottleneck: string
+          company: string
+          created_at?: string
+          id?: string
+          name: string
+          status?: string
+          team_size: string
+          waitlist_opt_in?: boolean
+          whatsapp: string
+        }
+        Update: {
+          bottleneck?: string
+          company?: string
+          created_at?: string
+          id?: string
+          name?: string
+          status?: string
+          team_size?: string
+          waitlist_opt_in?: boolean
+          whatsapp?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
