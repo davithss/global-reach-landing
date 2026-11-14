@@ -8,11 +8,18 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+import PageSEO from "@/components/PageSEO";
+import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+
+const HomeSEO = () => {
+  const { language } = useLanguage();
+  return <PageSEO path="/" language={language} />;
+};
 
 const Index = () => {
   return (
     <LanguageProvider>
+      <HomeSEO />
       <div className="min-h-screen bg-background">
         <Header />
         <main>

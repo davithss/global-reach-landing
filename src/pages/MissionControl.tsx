@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import PageSEO from "@/components/PageSEO";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Bot, Check, CheckCircle2, Clock3, FileText, Layers3, Megaphone, Menu, MessageCircle, Palette, Settings2, ShieldCheck, Sparkles, Target, Users, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -37,7 +37,7 @@ export default function MissionControl() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [hours, setHours] = useState(2);
   return <div className="mc-page min-h-screen bg-background font-outfit text-foreground">
-    <Helmet><html lang="pt-BR" /><title>Mission Control — Uma empresa inteira de IA para seu negócio</title><meta name="description" content="Agentes de marketing, conteúdo, design, atendimento e operações trabalhando juntos. Implantação sob medida com você no comando. Fale pelo WhatsApp para um diagnóstico." /><meta property="og:title" content="Mission Control — Sua empresa de IA" /><meta property="og:description" content="Um time de agentes de IA. Um só painel. Implantação feita sob medida para sua operação." /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary_large_image" /><link rel="canonical" href="https://thiesse.com.br/mission-control" /></Helmet>
+    <PageSEO path="/mission-control" />
     <header className="relative z-30 border-b border-border bg-background"><div className="mc-container flex h-20 items-center justify-between gap-4"><Link to="/mission-control" className="flex shrink-0 items-center gap-3" aria-label="Mission Control início"><span className="flex h-9 w-9 items-center justify-center rounded-md border border-accent/40 bg-accent/10"><Layers3 className="h-5 w-5 text-accent" /></span><span className="text-base font-semibold">Mission Control<span className="ml-2 hidden font-mono text-[9px] font-normal text-muted-foreground sm:inline">BY TSOFTWARES</span></span></Link><nav className="hidden items-center gap-7 text-sm text-muted-foreground lg:flex"><a href="#departamentos" className="hover:text-foreground">Seu time de IA</a><a href="#como-funciona" className="hover:text-foreground">Como funciona</a><a href="#faq" className="hover:text-foreground">Dúvidas</a></nav><div className="hidden sm:block"><WhatsAppButton label="Agendar diagnóstico" /></div><Button variant="ghost" size="icon" className="sm:hidden" aria-label={mobileMenu ? "Fechar menu" : "Abrir menu"} onClick={() => setMobileMenu(!mobileMenu)}>{mobileMenu ? <X /> : <Menu />}</Button></div>{mobileMenu && <nav className="flex flex-col gap-5 border-t border-border px-6 py-6 sm:hidden">{[["#departamentos", "Seu time de IA"], ["#como-funciona", "Como funciona"], ["#faq", "Dúvidas"], [whatsappUrl, "Falar no WhatsApp"]].map(([href, label]) => <a key={href} href={href} onClick={() => setMobileMenu(false)}>{label}</a>)}</nav>}</header>
     <main>
       <section className="mc-hero relative isolate overflow-hidden border-b border-border">

@@ -3,13 +3,37 @@
     {
       "source": "/mission-control",
       "headers": [
-        { "key": "x-mc-route", "value": "true" }
+        {
+          "key": "x-mc-route",
+          "value": "true"
+        }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/mission-control/politica-de-privacidade", "destination": "/index.html" },
-    { "source": "/mission-control/(.*)", "destination": "/index.html" },
-    { "source": "/((?!mission-control).*)", "destination": "/index.html" }
+    {
+      "source": "/mission-control",
+      "destination": "/mission-control/index.html"
+    },
+    {
+      "source": "/vacinapp",
+      "destination": "/vacinapp/index.html"
+    },
+    {
+      "source": "/links",
+      "destination": "/links/index.html"
+    },
+    {
+      "source": "/mission-control/politica-de-privacidade",
+      "destination": "/mission-control/politica-de-privacidade/index.html"
+    },
+    {
+      "source": "/mission-control/termos-de-servico",
+      "destination": "/mission-control/termos-de-servico/index.html"
+    },
+    {
+      "source": "/((?!.*\\.[^/]+$).*)",
+      "destination": "/index.html"
+    }
   ]
 }

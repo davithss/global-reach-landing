@@ -1,0 +1,36 @@
+{
+  "/": {
+    "title": "TSoftwares | Software sob Medida e Automação com IA",
+    "description": "Desenvolvemos sistemas, aplicativos e automações com IA para empresas e setor público. Experiência nos mercados brasileiro, americano e europeu desde 2017.",
+    "titleEn": "TSoftwares | Custom Software & AI Automation",
+    "descriptionEn": "Custom systems, web and mobile apps, and AI automation for businesses and the public sector. Experience in Brazil, the USA and Europe since 2017.",
+    "schemaType": "WebPage"
+  },
+  "/mission-control": {
+    "title": "Mission Control | Agentes de IA para Empresas — TSoftwares",
+    "description": "Agentes de marketing, conteúdo, design, atendimento e operações em um só painel. Implantação sob medida para seu negócio. Agende um diagnóstico pelo WhatsApp.",
+    "schemaType": "WebPage"
+  },
+  "/vacinapp": {
+    "title": "VacinApp Brasil | Calendário e Lembretes de Vacinação",
+    "description": "Conheça o VacinApp Brasil: calendário de vacinação, lembretes de doses e histórico de vacinas para organizar os cuidados da sua família. Disponível para iOS e Android.",
+    "schemaType": "WebPage"
+  },
+  "/links": {
+    "title": "TSoftwares | Links Oficiais, Produtos e WhatsApp",
+    "description": "Acesse os links oficiais da TSoftwares: Mission Control, VacinApp Brasil, Comunidade dos Imparáveis e contato direto pelo WhatsApp.",
+    "titleEn": "TSoftwares | Official Links, Products & WhatsApp",
+    "descriptionEn": "Explore TSoftwares' official links: Mission Control, VacinApp Brasil, Comunidade dos Imparáveis and direct WhatsApp contact.",
+    "schemaType": "CollectionPage"
+  },
+  "/mission-control/politica-de-privacidade": {
+    "title": "Política de Privacidade | Mission Control — TSoftwares",
+    "description": "Consulte a Política de Privacidade do Mission Control: tratamento de dados, integrações, segurança e direitos dos usuários.",
+    "schemaType": "WebPage"
+  },
+  "/mission-control/termos-de-servico": {
+    "title": "Termos de Serviço | Mission Control — TSoftwares",
+    "description": "Leia os Termos de Serviço do Mission Control: condições de uso, responsabilidades, integrações e regras da prestação do serviço.",
+    "schemaType": "WebPage"
+  }
+}

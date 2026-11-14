@@ -10,14 +10,12 @@ import {
   Clock,
   HeartPulse,
 } from "lucide-react";
-import { Helmet } from "react-helmet-async";
+import PageSEO from "@/components/PageSEO";
 
 export default function VacinApp() {
   return (
     <div className="bg-gray-950 text-white min-h-screen font-sans">
-      <Helmet>
-        <title>VacinAPP Brasil</title>
-      </Helmet>
+      <PageSEO path="/vacinapp" />
 
       {/* ── HERO ───────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
