@@ -38,7 +38,7 @@ const Products = () => {
           <p className="text-muted-foreground">{t("products.description")}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {products.map((product) => (
             <div
               key={product.key}
