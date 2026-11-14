@@ -7,8 +7,8 @@ const About = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { value: "18+", label: t("stat.years_exp") },
-    { value: "8+", label: t("stat.intl_exp") },
+    { value: "20+", label: t("stat.years_exp") },
+    { value: "9+", label: t("stat.intl_exp") },
     { value: "7+", label: t("stat.countries") },
     { value: "1", label: t("stat.startup") },
   ];
