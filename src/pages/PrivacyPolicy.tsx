@@ -1,6 +1,9 @@
+import PageSEO from "@/components/PageSEO";
+
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-black text-gray-200">
+      <PageSEO path="/mission-control/politica-de-privacidade" />
       <div className="max-w-3xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-12">
@@ -171,8 +174,11 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-lg font-semibold text-white mb-3">10. Cookies</h2>
             <p>
-              Nosso site pode utilizar cookies técnicos essenciais para o funcionamento das páginas.
-              Não utilizamos cookies para rastreamento publicitário de terceiros.
+              Nosso site utiliza cookies técnicos essenciais. Com sua autorização, utilizamos o Google Analytics
+              para medir visitas e navegação. Você pode aceitar ou recusar essa medição no aviso do site;
+              o Google Analytics não é carregado antes da sua escolha. Não ativamos rastreamento publicitário.
+              Para alterar sua escolha, remova a preferência de cookies deste site no seu navegador.
+              O Google recebe dados técnicos de navegação quando a medição é autorizada.
             </p>
           </section>
 

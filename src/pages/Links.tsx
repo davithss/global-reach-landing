@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import PageSEO from "@/components/PageSEO";
 import { ArrowUpRight, Globe, HeartPulse, LayoutDashboard, Linkedin, MessageCircle, Users } from "lucide-react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
@@ -6,7 +6,7 @@ import logo from "@/assets/thiesse-logo-dark.svg";
 import portrait from "@/assets/davi-links-profile.jpg.asset.json";
 
 const LinksContent = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const links = [
     {
@@ -48,16 +48,7 @@ const LinksContent = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-background">
-      <Helmet>
-        <html lang="pt-BR" />
-        <title>TSoftwares · Links</title>
-        <meta name="description" content={t("links.meta_description")} />
-        <meta name="robots" content="noindex" />
-        <meta property="og:title" content="TSoftwares · Links" />
-        <meta property="og:description" content={t("links.meta_description")} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-      </Helmet>
+      <PageSEO path="/links" language={language} />
 
       {/* Ambient background */}
       <div className="absolute inset-0 -z-10" aria-hidden="true">

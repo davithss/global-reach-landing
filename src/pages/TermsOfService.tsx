@@ -1,6 +1,9 @@
+import PageSEO from "@/components/PageSEO";
+
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-black text-gray-200">
+      <PageSEO path="/mission-control/termos-de-servico" />
       <div className="max-w-3xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="mb-12">

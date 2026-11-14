@@ -10,4 +10,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://thiesse.com.br/vacinapp</loc>
+  </url>
+  <url>
+    <loc>https://thiesse.com.br/links</loc>
+  </url>
+  <url>
+    <loc>https://thiesse.com.br/mission-control/politica-de-privacidade</loc>
+  </url>
+  <url>
+    <loc>https://thiesse.com.br/mission-control/termos-de-servico</loc>
+  </url>
 </urlset>

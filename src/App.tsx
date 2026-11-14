@@ -11,6 +11,7 @@ import Links from "./pages/Links";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+import AnalyticsTracking from "./components/AnalyticsTracking";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AnalyticsTracking />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/mission-control" element={<MissionControl />} />
