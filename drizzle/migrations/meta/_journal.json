@@ -8,6 +8,13 @@
       "when": 1794689679263,
       "tag": "0000_create_mission_control_applications",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794693006147,
+      "tag": "0001_search_console_monitor",
+      "breakpoints": true
     }
   ]
 }

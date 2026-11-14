@@ -1,0 +1,21 @@
+CREATE TABLE public.profiles (id uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE, display_name text NOT NULL DEFAULT '', avatar_url text, updated_at timestamptz NOT NULL DEFAULT now());
+GRANT SELECT, UPDATE ON public.profiles TO authenticated; GRANT ALL ON public.profiles TO service_role;
+ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
+CREATE POLICY own_profile_read ON public.profiles FOR SELECT TO authenticated USING (id = auth.uid());
+CREATE POLICY own_profile_update ON public.profiles FOR UPDATE TO authenticated USING (id = auth.uid()) WITH CHECK (id = auth.uid());
+CREATE TABLE public.user_roles (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), user_id uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE, role text NOT NULL CHECK (role = 'admin'), UNIQUE(user_id,role));
+GRANT SELECT ON public.user_roles TO authenticated; GRANT ALL ON public.user_roles TO service_role;
+ALTER TABLE public.user_roles ENABLE ROW LEVEL SECURITY;
+CREATE POLICY own_role_read ON public.user_roles FOR SELECT TO authenticated USING (user_id = auth.uid());
+CREATE TABLE public.search_console_admin_invites (email text PRIMARY KEY);
+GRANT ALL ON public.search_console_admin_invites TO service_role;
+ALTER TABLE public.search_console_admin_invites ENABLE ROW LEVEL SECURITY;
+CREATE TABLE public.search_console_snapshot (id text PRIMARY KEY DEFAULT 'site', selected_site text, payload jsonb NOT NULL DEFAULT '{}', updated_at timestamptz, retry_after timestamptz, last_error jsonb);
+GRANT ALL ON public.search_console_snapshot TO service_role;
+ALTER TABLE public.search_console_snapshot ENABLE ROW LEVEL SECURITY;
+CREATE FUNCTION public.initialize_monitor_user() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path = public AS $$ BEGIN
+INSERT INTO public.profiles(id,display_name,avatar_url) VALUES (NEW.id, coalesce(NEW.raw_user_meta_data->>'full_name',''),NEW.raw_user_meta_data->>'avatar_url') ON CONFLICT (id) DO NOTHING;
+IF NEW.email_confirmed_at IS NOT NULL AND EXISTS (SELECT 1 FROM public.search_console_admin_invites WHERE email = lower(NEW.email)) THEN INSERT INTO public.user_roles(user_id,role) VALUES (NEW.id,'admin') ON CONFLICT DO NOTHING; END IF;
+RETURN NEW; END; $$;
+REVOKE ALL ON FUNCTION public.initialize_monitor_user() FROM PUBLIC;
+CREATE TRIGGER initialize_monitor_user AFTER INSERT OR UPDATE OF email_confirmed_at ON auth.users FOR EACH ROW EXECUTE FUNCTION public.initialize_monitor_user();
