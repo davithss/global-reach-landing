@@ -5,3 +5,4 @@
 - [x] Create the Mission Control sales page with a command-center preview, transparent custom implementation, and application form.
 - [x] Store and validate applications securely; verify a real test submission and desktop/mobile views.
 - [x] Replace the Mission Control form with TSoftwares WhatsApp contact and verify all contact buttons.
+- [ ] Create the /links Instagram bio page with products and WhatsApp; verify on mobile and desktop.

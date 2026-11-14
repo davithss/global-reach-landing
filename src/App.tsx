@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import MissionControl from "./pages/MissionControl";
 import VacinApp from "./pages/VacinApp";
+import Links from "./pages/Links";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/mission-control" element={<MissionControl />} />
           <Route path="/vacinapp" element={<VacinApp />} />
+          <Route path="/links" element={<Links />} />
           <Route path="/mission-control/politica-de-privacidade" element={<PrivacyPolicy />} />
           <Route path="/mission-control/termos-de-servico" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

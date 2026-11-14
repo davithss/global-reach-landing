@@ -297,6 +297,25 @@ export const translations: Translations = {
   'contact.availability': { en: 'Availability', pt: 'Disponibilidade' },
   'contact.availability_desc': { en: 'Open to new projects', pt: 'Abertos a novos projetos' },
 
+  // Links (Instagram bio page)
+  'links.meta_description': {
+    en: 'TSoftwares — custom software, AI automation and digital products. Talk to us on WhatsApp or explore our products.',
+    pt: 'TSoftwares — software sob medida, automação com IA e produtos digitais. Fale conosco no WhatsApp ou conheça nossos produtos.',
+  },
+  'links.tagline': {
+    en: 'Custom software, AI automation and digital products — Brazil, USA & Europe.',
+    pt: 'Software sob medida, automação com IA e produtos digitais — Brasil, EUA e Europa.',
+  },
+  'links.nav_label': { en: 'Featured links', pt: 'Links em destaque' },
+  'links.whatsapp.title': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
+  'links.whatsapp.subtitle': { en: 'Talk directly with our founder', pt: 'Converse diretamente com o fundador' },
+  'links.mission.title': { en: 'Mission Control', pt: 'Mission Control' },
+  'links.mission.subtitle': { en: 'An entire AI company at your command', pt: 'Uma empresa inteira de IA ao seu comando' },
+  'links.vacinapp.title': { en: 'VacinApp Brasil', pt: 'VacinApp Brasil' },
+  'links.vacinapp.subtitle': { en: 'Vaccination reminders for 3,000+ families', pt: 'Lembretes de vacinação para mais de 3 mil famílias' },
+  'links.site.title': { en: 'Official website', pt: 'Site oficial' },
+  'links.site.subtitle': { en: 'Solutions, experience and cases', pt: 'Soluções, experiência e cases' },
+
   // Footer
   'footer.company': { en: 'Software engineering with a global vision', pt: 'Engenharia de software com visão global' },
   'footer.rights': { en: 'All rights reserved.', pt: 'Todos os direitos reservados.' },
