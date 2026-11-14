@@ -4,3 +4,4 @@
 - Keep Mission Control as an independent product page with direct WhatsApp contact instead of an application form; retain existing application records as service-role-only data so visitor contact details cannot be read publicly.
 - Share route SEO definitions between Helmet and the static HTML metadata script so all public pages keep self-referencing metadata; preserve the static sitemap mechanism.
 - Load Google Analytics only after explicit analytics consent on production hosts, disable advertising features, and report SPA visits once without query strings.
+- Capture Google Analytics link clicks in the existing consent-aware tracker so WhatsApp, community and product links across all pages share fixed non-personal event identifiers without changing navigation.
