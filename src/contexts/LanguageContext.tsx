@@ -309,6 +309,8 @@ export const translations: Translations = {
   'links.nav_label': { en: 'Featured links', pt: 'Links em destaque' },
   'links.whatsapp.title': { en: 'Chat on WhatsApp', pt: 'Falar no WhatsApp' },
   'links.whatsapp.subtitle': { en: 'Talk directly with our founder', pt: 'Converse diretamente com o fundador' },
+  'links.community.title': { en: 'Comunidade dos Imparáveis', pt: 'Comunidade dos Imparáveis' },
+  'links.community.subtitle': { en: 'Join our WhatsApp community', pt: 'Entre para a nossa comunidade no WhatsApp' },
   'links.mission.title': { en: 'Mission Control', pt: 'Mission Control' },
   'links.mission.subtitle': { en: 'An entire AI company at your command', pt: 'Uma empresa inteira de IA ao seu comando' },
   'links.vacinapp.title': { en: 'VacinApp Brasil', pt: 'VacinApp Brasil' },
