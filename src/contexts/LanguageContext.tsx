@@ -199,8 +199,8 @@ export const translations: Translations = {
   'about.title': { en: 'International engineering,', pt: 'Engenharia internacional,' },
   'about.title_highlight': { en: 'Brazilian roots', pt: 'raízes brasileiras' },
   'about.p1': {
-    en: 'TSoftwares was born from more than 18 years of software development — 8 of them serving international clients in the demanding standards of the American and European markets.',
-    pt: 'A TSoftwares nasce de mais de 18 anos de desenvolvimento de software — 8 deles atendendo clientes internacionais nos padrões exigentes dos mercados americano e europeu.',
+    en: 'TSoftwares was born from more than 20 years of software development — 9 of them serving international clients in the demanding standards of the American and European markets.',
+    pt: 'A TSoftwares nasce de mais de 20 anos de desenvolvimento de software — 9 deles atendendo clientes internacionais nos padrões exigentes dos mercados americano e europeu.',
   },
   'about.p2': {
     en: 'Our history includes cofounding a tech startup in Denmark, from where we expanded operations across Scandinavia, Germany and other European countries. This entrepreneurial experience shapes how we build products that scale across markets and cultures.',
