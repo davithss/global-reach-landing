@@ -27,3 +27,8 @@ for (const [path, page] of Object.entries(pages)) {
   writeFileSync(resolve(outDir, "index.html"), html);
   console.log(`✓ ${path} metadata generated`);
 }
+const privateDir = resolve(distDir, 'painel-seo');
+mkdirSync(privateDir, { recursive: true });
+const privateHtml = base.replace(/<title>[^<]*<\/title>/, '<title>Painel Search Console | TSoftwares</title>')
+  .replace(/<meta (?:data-rh="true" )?name="robots"[^>]*>/, '<meta data-rh="true" name="robots" content="noindex, nofollow" />');
+writeFileSync(resolve(privateDir, 'index.html'), privateHtml);

@@ -12,6 +12,10 @@
   ],
   "rewrites": [
     {
+      "source": "/painel-seo",
+      "destination": "/painel-seo/index.html"
+    },
+    {
       "source": "/mission-control",
       "destination": "/mission-control/index.html"
     },
