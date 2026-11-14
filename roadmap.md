@@ -9,3 +9,4 @@
 - [x] Configure page-specific SEO and synchronize the sitemap for every public page.
 - [x] Connect Google Analytics and verify consent-based visit tracking and navigation.
 - [x] Track WhatsApp, product and community clicks in Google Analytics and verify consent and navigation.
+- [ ] Add a private Search Console dashboard for six pages, sitemap alerts, and daily cached monitoring; verify authenticated access.
