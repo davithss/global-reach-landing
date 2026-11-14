@@ -1,143 +1,72 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, MessageCircle, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import portrait from "@/assets/davi-portrait-hero.jpg.asset.json";
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen bg-hero-gradient overflow-hidden">
-      {/* Grid overlay */}
-      <div className="absolute inset-0 bg-grid" aria-hidden="true" />
-      <div
-        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent"
-        aria-hidden="true"
-      />
+    <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-background">
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
+        <img src={portrait.url} alt="" fetchPriority="high" className="hero-portrait" />
+        <div className="hero-photo-shade absolute inset-0" />
+      </div>
 
-      <div className="container mx-auto px-6 pt-36 pb-24 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-10rem)]">
-          {/* Content */}
-          <div>
-            <p className="animate-fade-up font-mono text-xs uppercase tracking-[0.25em] text-accent mb-6 flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-accent" />
-              {t("hero.kicker")}
-            </p>
-
-            <h1 className="animate-fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] mb-6">
-              {t("hero.title")}{" "}
-              <span className="text-gradient-gold">{t("hero.title_highlight")}</span>
-            </h1>
-
-            <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed">
-              {t("hero.subtitle")}
-            </p>
-
-            <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 mb-12">
-              <Button variant="hero" size="xl" asChild>
-                <a href="#contact" className="flex items-center gap-2">
-                  {t("hero.cta_primary")}
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <a href="#solutions" className="flex items-center gap-2">
-                  {t("hero.cta_secondary")}
-                  <ArrowDown className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
-
-            <div className="animate-fade-up-delay-4 flex flex-wrap gap-x-10 gap-y-4">
-              <div>
-                <p className="text-2xl font-bold text-foreground">18+</p>
-                <p className="text-sm text-muted-foreground">{t("hero.stat_years")}</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">8+</p>
-                <p className="text-sm text-muted-foreground">{t("hero.stat_intl")}</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">2017</p>
-                <p className="text-sm text-muted-foreground">{t("hero.stat_since")}</p>
-              </div>
-            </div>
+      <div className="container relative mx-auto px-6 pt-24 pb-6 md:pt-32 md:pb-10">
+        <div className="max-w-xl md:w-[60%] lg:w-[57%] lg:max-w-2xl">
+          <p className="animate-fade-up mb-4 flex items-center gap-2 text-xs font-medium uppercase text-accent">
+            <span className="h-px w-6 bg-accent" aria-hidden="true" />
+            {t("hero.kicker")}
+          </p>
+          <h1 id="hero-title" className="animate-fade-up-delay-1 mb-4 text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-6xl">
+            T<span className="text-primary">Softwares</span><span className="text-accent">.</span>
+          </h1>
+          <h2 className="animate-fade-up-delay-1 mb-5 text-3xl font-medium leading-[1.15] text-foreground md:text-4xl lg:text-5xl">
+            {t("hero.title")}<br />
+            <span className="text-accent">{t("hero.title_highlight")}</span>
+          </h2>
+          <p className="animate-fade-up-delay-2 mb-5 max-w-lg text-sm leading-relaxed text-foreground/80 md:mb-6 md:text-lg">
+            {t("hero.subtitle")}
+          </p>
+          <ul className="animate-fade-up-delay-2 mb-5 flex flex-wrap gap-x-5 gap-y-2 text-xs text-foreground/80 md:mb-7 md:text-sm">
+            {["hero.benefit1", "hero.benefit2", "hero.benefit3"].map((key) => (
+              <li key={key} className="flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-accent" aria-hidden="true" />{t(key)}</li>
+            ))}
+          </ul>
+          <div className="animate-fade-up-delay-3 flex flex-col gap-3 sm:flex-row">
+            <Button size="lg" asChild className="px-5 font-semibold">
+              <a href="https://wa.me/5579981029218" target="_blank" rel="noopener noreferrer">
+                <MessageCircle aria-hidden="true" />{t("hero.cta_primary")}<ArrowRight aria-hidden="true" />
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild className="border-foreground/20 bg-background/30 px-5 text-foreground hover:bg-secondary hover:text-foreground">
+              <a href="#solutions">{t("hero.cta_secondary")}<ArrowDown aria-hidden="true" /></a>
+            </Button>
           </div>
+          <p className="mt-3 text-xs text-foreground/65">{t("hero.contact_note")}</p>
+        </div>
 
-          {/* Abstract architecture visualization */}
-          <div className="relative animate-scale-in">
-            <div className="relative bg-card-gradient rounded-2xl border border-border/70 shadow-card-hover p-6 md:p-8">
-              <div className="flex items-center justify-between mb-6">
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  {t("hero.diagram_title")}
-                </p>
-                <div className="flex gap-1.5" aria-hidden="true">
-                  <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-accent/70" />
-                </div>
+        <div className="absolute bottom-12 right-8 hidden text-right md:block lg:right-12">
+          <p className="text-sm font-semibold text-foreground">Davi Thiesse</p>
+          <p className="mt-1 text-xs text-foreground/70">{t("about.founder_role")}</p>
+        </div>
+      </div>
+
+      <div className="relative border-y border-border bg-background/90">
+        <div className="container mx-auto flex flex-col gap-6 px-6 py-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="grid grid-cols-3 gap-4 sm:gap-10">
+            {[["18+", "hero.stat_years"], ["8+", "hero.stat_intl"], ["2017", "hero.stat_since"]].map(([value, key]) => (
+              <div key={key} className="border-l border-primary/40 pl-3">
+                <p className="text-xl font-semibold leading-none text-foreground md:text-2xl">{value}</p>
+                <p className="mt-2 text-xs text-muted-foreground">{t(key)}</p>
               </div>
-
-              <svg viewBox="0 0 480 340" className="w-full h-auto" role="img" aria-label={t("hero.diagram_title")}>
-                {/* Connection lines */}
-                <g stroke="hsl(217 91% 60% / 0.35)" strokeWidth="1.5" fill="none">
-                  <path className="flow-line" d="M 240 170 L 110 70" />
-                  <path className="flow-line" d="M 240 170 L 370 70" />
-                  <path className="flow-line" d="M 240 170 L 110 270" />
-                  <path className="flow-line" d="M 240 170 L 370 270" />
-                </g>
-
-                {/* Module nodes */}
-                <g>
-                  <rect x="40" y="44" width="140" height="52" rx="10" fill="hsl(222 32% 10%)" stroke="hsl(220 18% 20%)" />
-                  <text x="110" y="75" textAnchor="middle" fill="hsl(210 30% 96%)" fontSize="13" fontWeight="600" fontFamily="Outfit, sans-serif">
-                    {t("hero.diagram_products")}
-                  </text>
-
-                  <rect x="300" y="44" width="140" height="52" rx="10" fill="hsl(222 32% 10%)" stroke="hsl(220 18% 20%)" />
-                  <text x="370" y="75" textAnchor="middle" fill="hsl(210 30% 96%)" fontSize="13" fontWeight="600" fontFamily="Outfit, sans-serif">
-                    {t("hero.diagram_operations")}
-                  </text>
-
-                  <rect x="40" y="244" width="140" height="52" rx="10" fill="hsl(222 32% 10%)" stroke="hsl(220 18% 20%)" />
-                  <text x="110" y="275" textAnchor="middle" fill="hsl(210 30% 96%)" fontSize="13" fontWeight="600" fontFamily="Outfit, sans-serif">
-                    {t("hero.diagram_public")}
-                  </text>
-
-                  <rect x="300" y="244" width="140" height="52" rx="10" fill="hsl(222 32% 10%)" stroke="hsl(220 18% 20%)" />
-                  <text x="370" y="275" textAnchor="middle" fill="hsl(210 30% 96%)" fontSize="12" fontWeight="600" fontFamily="Outfit, sans-serif">
-                    {t("hero.diagram_markets")}
-                  </text>
-                </g>
-
-                {/* Core node */}
-                <g>
-                  <rect x="165" y="138" width="150" height="64" rx="12" fill="hsl(217 91% 60% / 0.12)" stroke="hsl(217 91% 60%)" strokeWidth="1.5" />
-                  <text x="240" y="175" textAnchor="middle" fill="hsl(199 95% 70%)" fontSize="14" fontWeight="700" fontFamily="Outfit, sans-serif">
-                    {t("hero.diagram_core")}
-                  </text>
-                </g>
-
-                {/* Connection dots at module edges */}
-                <g fill="hsl(187 92% 50%)">
-                  <circle cx="175" cy="115" r="3" />
-                  <circle cx="305" cy="115" r="3" />
-                  <circle cx="175" cy="225" r="3" />
-                  <circle cx="305" cy="225" r="3" />
-                </g>
-              </svg>
-            </div>
-
-            {/* Floating chips */}
-            <div className="absolute -top-4 -right-3 md:-right-6 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float">
-              <p className="font-mono text-xs text-accent">BR · US · EU</p>
-            </div>
-            <div
-              className="absolute -bottom-4 -left-3 md:-left-6 bg-card px-4 py-2 rounded-lg shadow-card border border-border animate-float"
-              style={{ animationDelay: "0.8s" }}
-            >
-              <p className="font-mono text-xs text-muted-foreground">since 2017</p>
-            </div>
+            ))}
           </div>
+          <a href="#clients" className="hidden max-w-md text-sm text-foreground/80 sm:block">
+            <span className="mb-2 block text-xs text-muted-foreground">{t("hero.proof_label")}</span>
+            {t("clients.sergipe.name")} <span className="px-1 text-primary">/</span> CenExel <span className="px-1 text-primary">/</span> RealPage
+          </a>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: "Thiesse Software",
+      company: "TSoftwares",
       role: t("exp.thiesse.role"),
       period: t("exp.current"),
       location: t("exp.thiesse.location"),
