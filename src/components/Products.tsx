@@ -13,12 +13,6 @@ const Products = () => {
       external: false,
     },
     {
-      key: "ops",
-      icon: MessageSquare,
-      link: "https://agentes.thiesse.com.br",
-      external: true,
-    },
-    {
       key: "vacinapp",
       icon: HeartPulse,
       link: "https://vacinapp.com",
@@ -44,7 +38,7 @@ const Products = () => {
           <p className="text-muted-foreground">{t("products.description")}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
           {products.map((product) => (
             <div
               key={product.key}
