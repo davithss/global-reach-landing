@@ -10,6 +10,7 @@ export function matches(site: string) {
 export function resolve(entries: {siteUrl: string; permissionLevel?: string}[], selected?: string | null) {
   const candidates = entries.filter(e => e.permissionLevel !== 'siteUnverifiedUser' && matches(e.siteUrl)).map(e => e.siteUrl);
   if (selected && candidates.includes(selected)) return {status: 'selected', siteUrl: selected};
+  if (selected) return {status:'unavailable',candidates};
   if (candidates.length === 1) return {status: 'selected', siteUrl: candidates[0]};
   return {status: candidates.length ? 'selection_required' : 'unavailable', candidates};
 }

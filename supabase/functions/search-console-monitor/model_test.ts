@@ -5,3 +5,4 @@ Deno.test('multiple verified properties require choice', () => assertEquals(reso
 Deno.test('unverified properties never selected', () => assertEquals(resolve([{siteUrl:'https://thiesse.com.br/',permissionLevel:'siteUnverifiedUser'}]).status, 'unavailable'));
 Deno.test('unknown is not not-indexed', () => assertEquals(indexingState({}), 'unknown'));
 Deno.test('fetch error is highlighted', () => assertEquals(indexingState({pageFetchState:'SERVER_ERROR',verdict:'FAIL'}), 'crawl_error'));
+Deno.test('invalid selected property is rejected', () => assertEquals(resolve([{siteUrl:'https://thiesse.com.br/'}],'sc-domain:other.com').status,'unavailable'));
