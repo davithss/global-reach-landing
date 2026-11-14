@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { ArrowUpRight, Globe, HeartPulse, LayoutDashboard, Linkedin, MessageCircle } from "lucide-react";
+import { ArrowUpRight, Globe, HeartPulse, LayoutDashboard, Linkedin, MessageCircle, Users } from "lucide-react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
 import logo from "@/assets/thiesse-logo-dark.svg";
@@ -15,6 +15,13 @@ const LinksContent = () => {
       href: "https://wa.me/5579936181642",
       external: true,
       highlight: true,
+    },
+    {
+      key: "community",
+      icon: Users,
+      href: "https://chat.whatsapp.com/E7jIWqgBxGxLwV7cF0qKwp?s=cl&p=i&iam=2",
+      external: true,
+      highlight: false,
     },
     {
       key: "mission",
