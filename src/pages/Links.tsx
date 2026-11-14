@@ -3,7 +3,7 @@ import { ArrowUpRight, Globe, HeartPulse, LayoutDashboard, Linkedin, MessageCirc
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
 import logo from "@/assets/thiesse-logo-dark.svg";
-import portrait from "@/assets/davi-portrait-profile.jpg.asset.json";
+import portrait from "@/assets/davi-links-profile.jpg.asset.json";
 
 const LinksContent = () => {
   const { t } = useLanguage();
@@ -72,6 +72,7 @@ const LinksContent = () => {
               src={portrait.url}
               alt="Davi Thiesse"
               className="relative h-28 w-28 rounded-full border-2 border-background object-cover"
+              style={{ objectPosition: "center 18%" }}
             />
           </div>
           <img src={logo} alt="TSoftwares" className="mt-6 h-9 w-auto" />
