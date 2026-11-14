@@ -14,9 +14,9 @@ const distDir = resolve(__dirname, "../dist");
 const pages = [
   {
     route: "mission-control",
-    title: "Mission Control — Agente de IA para WhatsApp e Instagram",
+    title: "Mission Control — Uma empresa inteira de IA para seu negócio",
     description:
-      "Agente de IA para WhatsApp e Instagram que atende, agenda e vende enquanto você dorme. A partir de R$297/mês.",
+      "Agentes de marketing, conteúdo, design, atendimento e operações trabalhando juntos. Implantação sob medida com você no comando. Aplique para um diagnóstico.",
     ogImage: "https://thiesse.com.br/og-mission-control.png?v=2",
     canonical: "https://thiesse.com.br/mission-control",
   },
