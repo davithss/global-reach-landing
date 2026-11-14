@@ -1,81 +1,29 @@
-/**
- * inject-meta.mjs
- * Roda após o build do Vite.
- * Cria dist/mission-control/index.html com as meta tags corretas
- * para que scrapers (WhatsApp, Twitter, etc.) leiam o HTML estático certo.
- */
-import { readFileSync, writeFileSync, mkdirSync } from "fs";
-import { resolve, dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const distDir = resolve(__dirname, "../dist");
-
-const pages = [
-  {
-    route: "mission-control",
-    title: "Mission Control — Uma empresa inteira de IA para seu negócio",
-    description:
-      "Agentes de marketing, conteúdo, design, atendimento e operações trabalhando juntos. Implantação sob medida com você no comando. Aplique para um diagnóstico.",
-    ogImage: "https://thiesse.com.br/og-mission-control.png?v=2",
-    canonical: "https://thiesse.com.br/mission-control",
-  },
-];
-
-const base = readFileSync(`${distDir}/index.html`, "utf-8");
-
-for (const page of pages) {
-  let html = base
-    // title
-    .replace(/<title>[^<]*<\/title>/, `<title>${page.title}</title>`)
-    // description
-    .replace(
-      /<meta name="description"[^>]*>/,
-      `<meta name="description" content="${page.description}" />`
-    )
-    // canonical
-    .replace(
-      /<link rel="canonical"[^>]*>/,
-      `<link rel="canonical" href="${page.canonical}" />`
-    )
-    // og:title
-    .replace(
-      /<meta property="og:title"[^>]*>/,
-      `<meta property="og:title" content="${page.title}" />`
-    )
-    // og:description
-    .replace(
-      /<meta property="og:description"[^>]*>/,
-      `<meta property="og:description" content="${page.description}" />`
-    )
-    // og:url
-    .replace(
-      /<meta property="og:url"[^>]*>/,
-      `<meta property="og:url" content="${page.canonical}" />`
-    )
-    // og:image
-    .replace(
-      /<meta property="og:image"[^>]*>/,
-      `<meta property="og:image" content="${page.ogImage}" />`
-    )
-    // twitter:title
-    .replace(
-      /<meta name="twitter:title"[^>]*>/,
-      `<meta name="twitter:title" content="${page.title}" />`
-    )
-    // twitter:description
-    .replace(
-      /<meta name="twitter:description"[^>]*>/,
-      `<meta name="twitter:description" content="${page.description}" />`
-    )
-    // twitter:image
-    .replace(
-      /<meta name="twitter:image"[^>]*>/,
-      `<meta name="twitter:image" content="${page.ogImage}" />`
-    );
-
-  const outDir = `${distDir}/${page.route}`;
+/** Create static route-specific heads for crawlers, preserving the React entry point. */
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const distDir = resolve(root, "dist");
+const pages = JSON.parse(readFileSync(resolve(root, "src/lib/seo-pages.json"), "utf8"));
+const base = readFileSync(resolve(distDir, "index.html"), "utf8");
+const escape = value => value.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+for (const [path, page] of Object.entries(pages)) {
+  const url = `https://thiesse.com.br${path}`;
+  let html = base.replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>`);
+  for (const [attribute, key, value] of [
+    ["name", "description", page.description], ["property", "og:title", page.title],
+    ["property", "og:description", page.description], ["property", "og:url", url],
+    ["name", "twitter:title", page.title], ["name", "twitter:description", page.description],
+  ]) html = html.replace(new RegExp(`<meta ${attribute}="${key}"[^>]*>`), `<meta ${attribute}="${key}" content="${escape(value)}" />`);
+  // Route canonicals are absent from the app shell: Helmet owns them at runtime.
+  html = html.replace(/<link rel="canonical"[^>]*>/g, "");
+  html = html.replace("</head>", `  <link rel="canonical" href="${url}" />\n    <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": page.schemaType, name: page.title, description: page.description, url, inLanguage: "pt-BR", publisher: { "@id": "https://thiesse.com.br/#organization" } }).replaceAll("<", "\\u003c")}</script>\n  </head>`);
+  // Preserve the existing Mission Control share image; don't generate a new image.
+  if (path.startsWith("/mission-control")) {
+    html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")[^"]*(")/g, '$1https://thiesse.com.br/og-mission-control.png?v=2$2');
+  }
+  const outDir = path === "/" ? distDir : resolve(distDir, path.slice(1));
   mkdirSync(outDir, { recursive: true });
-  writeFileSync(`${outDir}/index.html`, html);
-  console.log(`✓ dist/${page.route}/index.html gerado`);
+  writeFileSync(resolve(outDir, "index.html"), html);
+  console.log(`✓ ${path} metadata generated`);
 }
