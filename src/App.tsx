@@ -12,6 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import AnalyticsTracking from "./components/AnalyticsTracking";
+import SearchConsole from "./pages/SearchConsole";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/mission-control" element={<MissionControl />} />
           <Route path="/vacinapp" element={<VacinApp />} />
           <Route path="/links" element={<Links />} />
+          <Route path="/painel-seo" element={<SearchConsole />} />
           <Route path="/mission-control/politica-de-privacidade" element={<PrivacyPolicy />} />
           <Route path="/mission-control/termos-de-servico" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
