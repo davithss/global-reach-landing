@@ -50,6 +50,84 @@ export type Database = {
         }
         Relationships: []
       }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          display_name: string
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          display_name?: string
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          display_name?: string
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      search_console_admin_invites: {
+        Row: {
+          email: string
+        }
+        Insert: {
+          email: string
+        }
+        Update: {
+          email?: string
+        }
+        Relationships: []
+      }
+      search_console_snapshot: {
+        Row: {
+          id: string
+          last_error: Json | null
+          payload: Json
+          retry_after: string | null
+          selected_site: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          last_error?: Json | null
+          payload?: Json
+          retry_after?: string | null
+          selected_site?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          last_error?: Json | null
+          payload?: Json
+          retry_after?: string | null
+          selected_site?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          id: string
+          role: string
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          role: string
+          user_id: string
+        }
+        Update: {
+          id?: string
+          role?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
