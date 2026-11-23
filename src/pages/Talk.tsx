@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import PageSEO from "@/components/PageSEO";
 import { supabase } from "@/integrations/supabase/client";
 import { talkDetails, talkRegistrationSchema } from "@/lib/talk-registration";
-import photo from "@/assets/davi-palestra-portrait.jpg.asset.json";
+import photo from "@/assets/davi-palestra-portrait-2.jpg.asset.json";
 import logo from "@/assets/thiesse-logo-dark.svg";
 
 export default function Talk() {
@@ -49,7 +49,8 @@ export default function Talk() {
     </header>
     <main>
       <section className="talk-hero relative isolate overflow-hidden">
-        <img src={photo.url} alt="Retrato profissional de Davi Thiesse" className="talk-photo absolute inset-y-0 right-0 -z-20 h-full object-cover" />
+        <div className="talk-photo-space" aria-hidden="true" />
+        <img src={photo.url} alt="Retrato profissional de Davi Thiesse" className="talk-photo absolute right-0 -z-20 object-cover" />
         <div className="talk-shade absolute inset-0 -z-10" />
         <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
           <p className="mb-6 flex items-center gap-3 text-sm font-medium text-accent"><span className="h-px w-8 bg-accent" /> PALESTRA · 26 NOV 2026</p>
