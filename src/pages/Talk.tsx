@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import PageSEO from "@/components/PageSEO";
 import { supabase } from "@/integrations/supabase/client";
 import { talkDetails, talkRegistrationSchema } from "@/lib/talk-registration";
-import photo from "@/assets/davi-speaking.jpeg";
+import photo from "@/assets/davi-palestra-portrait.jpg.asset.json";
 import logo from "@/assets/thiesse-logo-dark.svg";
 
 export default function Talk() {
@@ -49,7 +49,7 @@ export default function Talk() {
     </header>
     <main>
       <section className="talk-hero relative isolate overflow-hidden">
-        <img src={photo} alt="Davi Thiesse durante uma palestra" className="talk-photo absolute inset-y-0 right-0 -z-20 h-full object-cover" />
+        <img src={photo.url} alt="Retrato profissional de Davi Thiesse" className="talk-photo absolute inset-y-0 right-0 -z-20 h-full object-cover" />
         <div className="talk-shade absolute inset-0 -z-10" />
         <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
           <p className="mb-6 flex items-center gap-3 text-sm font-medium text-accent"><span className="h-px w-8 bg-accent" /> PALESTRA · 26 NOV 2026</p>
@@ -60,7 +60,7 @@ export default function Talk() {
             <span className="flex items-center gap-2"><CalendarDays className="h-4 w-4 text-accent" /><time dateTime={talkDetails.startsAt}>26 de novembro de 2026</time></span>
             <span className="flex items-center gap-2"><Clock3 className="h-4 w-4 text-accent" />08h30</span>
           </div>
-          <Button size="lg" asChild className="mt-9"><a href="#inscricao">Inscrever-me <ArrowRight className="h-4 w-4" /></a></Button>
+          <Button size="lg" asChild className="mt-9"><a href="#inscricao">Inscrever <ArrowRight className="h-4 w-4" /></a></Button>
         </div>
       </section>
       <section id="inscricao" className="scroll-mt-6 border-t border-border">
@@ -85,7 +85,7 @@ export default function Talk() {
               <div><label htmlFor="talk-email" className="mb-2 block text-sm font-medium">Email</label><Input id="talk-email" name="email" autoComplete="email" type="email" required maxLength={255} placeholder="voce@exemplo.com" className="h-12 bg-card" /></div>
             </div>
             {error && <p role="alert" className="text-sm text-mc-warning">{error}</p>}
-            <Button type="submit" size="lg" disabled={busy} className="w-full">{busy ? <><Loader2 className="h-4 w-4 animate-spin" /> Enviando inscrição</> : <>Confirmar inscrição <ArrowRight className="h-4 w-4" /></>}</Button>
+            <Button type="submit" size="lg" disabled={busy} className="w-full">{busy ? <><Loader2 className="h-4 w-4 animate-spin" /> Enviando inscrição</> : <>Inscrever <ArrowRight className="h-4 w-4" /></>}</Button>
             <p className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground"><ShieldCheck className="mt-0.5 h-4 w-4 shrink-0" /> Seus dados serão usados para organizar a inscrição nesta palestra. A participação na comunidade é opcional.</p>
           </form>}
         </div>
