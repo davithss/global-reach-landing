@@ -13,6 +13,7 @@ import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import AnalyticsTracking from "./components/AnalyticsTracking";
 import SearchConsole from "./pages/SearchConsole";
+import Talk from "./pages/Talk";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/mission-control" element={<MissionControl />} />
           <Route path="/vacinapp" element={<VacinApp />} />
           <Route path="/links" element={<Links />} />
+          <Route path="/palestra" element={<Talk />} />
           <Route path="/painel-seo" element={<SearchConsole />} />
           <Route path="/mission-control/politica-de-privacidade" element={<PrivacyPolicy />} />
           <Route path="/mission-control/termos-de-servico" element={<TermsOfService />} />

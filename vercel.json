@@ -12,6 +12,10 @@
   ],
   "rewrites": [
     {
+      "source": "/palestra",
+      "destination": "/palestra/index.html"
+    },
+    {
       "source": "/painel-seo",
       "destination": "/painel-seo/index.html"
     },

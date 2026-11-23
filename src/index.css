@@ -139,6 +139,14 @@
 }
 
 @layer utilities {
+  .talk-hero { min-height: 540px; }
+  .talk-photo { width: 55%; object-position: center 35%; }
+  .talk-shade { background: linear-gradient(90deg, hsl(var(--background)) 0%, hsl(var(--background)) 35%, hsl(var(--background) / 0.85) 52%, hsl(var(--background) / 0.18) 85%), linear-gradient(0deg, hsl(var(--background)), transparent 28%); }
+  @media (max-width: 767px) {
+    .talk-hero { min-height: 540px; }
+    .talk-photo { width: 100%; object-position: center 32%; }
+    .talk-shade { background: linear-gradient(90deg, hsl(var(--background) / 0.94), hsl(var(--background) / 0.65)), linear-gradient(0deg, hsl(var(--background)), transparent 45%); }
+  }
   .mc-container {
     width: 100%;
     max-width: 1200px;

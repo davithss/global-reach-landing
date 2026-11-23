@@ -1,4 +1,5 @@
 # Architecture rules
+- Keep event registration on its independent page and append validated submissions server-side to the fixed Google Sheet with RAW values; show community access only after Sheets confirms the write, so no public visitor can read registrations or choose a destination.
 - Keep the main-page sales copy in the bilingual language context so both languages stay complete.
 - Use the existing asset pointer for the full-bleed hero portrait and semantic CSS overlays to keep text legible without a decorative image card.
 - Keep Mission Control as an independent product page with direct WhatsApp contact instead of an application form; retain existing application records as service-role-only data so visitor contact details cannot be read publicly.

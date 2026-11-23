@@ -1,6 +1,6 @@
 # Tasks
-- [ ] Create /palestra for the November 26 event at 08:30 with four registration fields and community access after submission.
-- [ ] Save registrations directly to Google Sheets and verify a real submission plus mobile/desktop views.
+- [x] Create /palestra for “Inteligência Artificial na Gestão Pública” on November 26 at 08:30 with four registration fields and community access after submission.
+- [x] Save registrations directly to Google Sheets and verify a real submission plus mobile/desktop views.
 - [x] Improve the main presentation with a commercial message, Davi's professional portrait, and direct WhatsApp contact.
 - [x] Apply TSoftwares branding throughout the main page and preserve PT/EN.
 - [x] Verify desktop, mobile, and contact links.
